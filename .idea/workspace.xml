@@ -5,40 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="500eb244-025d-4b09-af1a-524c958427a2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.prettierrc.cjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/family-2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/family-small.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/gianna-background-large.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/gianna-background-small.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/how-you-can-help-1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/subtext.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/tree.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/wave-2.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/wave.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/button/button.component.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/button/button.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/paragraph/paragraph.component.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/paragraph/paragraph.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/title/title.component.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/title/title.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fonts/OpenSans.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fonts/PTSerif-Bold.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fonts/PTSerif-BoldItalic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fonts/PTSerif-Italic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fonts/PTSerif-Regular.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/layout/intro/intro.component.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/layout/intro/intro.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/layout/navbar/navbar.layout.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/layout/navbar/navbar.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/home/1-who-we-are/whoWeAre.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/home/1-who-we-are/whoWeAre.view.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/home/2-verse/verse.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/home/2-verse/verse.view.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/home/3-who-is-gianna/whoIsGianna.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/home/3-who-is-gianna/whoIsGianna.view.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/home/4-our-vision/ourVision.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/home/4-our-vision/ourVision.view.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/next.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/next.config.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +29,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "com.codeium.enabled": "true",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "main",
     "last_opened_file_path": "/Users/ethancannelongo/Desktop/Projects/code/new-gias-hope/src/views/home/5-how-you-can-help",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -115,6 +82,7 @@
       <workItem from="1734039472776" duration="7231000" />
       <workItem from="1734099677783" duration="622000" />
       <workItem from="1734126434055" duration="3506000" />
+      <workItem from="1734147583703" duration="358000" />
     </task>
     <servers />
   </component>
