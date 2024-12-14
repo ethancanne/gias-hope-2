@@ -1,0 +1,29 @@
+@import '../../globals.scss';
+.container {
+  .subTitle {
+    color: $color-yellow;
+    font-size: $fz-xs;
+    margin-bottom: -5px;
+    text-transform: uppercase;
+    font-family: var(--font-pt-bold);
+
+    @include mobile {
+      font-size: $fz-xxxs;
+    }
+  }
+
+  .title {
+    color: $color-green;
+    font-size: $fz-lg;
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-pt-bold);
+    &.uppercase {
+      text-transform: uppercase;
+    }
+
+    @include mobile {
+      font-size: $fz-mdl;
+    }
+  }
+}

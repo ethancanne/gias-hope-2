@@ -1,0 +1,78 @@
+@import '../../globals.scss';
+.wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 50px;
+    height: 4rem;
+
+    transition: all 0.3s ease-in-out;
+
+    @include mobile {
+      padding: 30px 30px;
+    }
+    &.withBackground {
+      background-color: $color-white;
+      box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+      height: 2rem;
+    }
+
+    .left {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+
+      gap: 50px;
+
+      .logo {
+        @include mobile {
+          width: 140px;
+          object-fit: contain;
+        }
+      }
+
+      .navItems {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 40px;
+
+        @include mobile {
+          display: none;
+        }
+        .link {
+          color: $color-green;
+          text-transform: lowercase;
+        }
+      }
+    }
+
+    .right {
+      .rightButtons {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 20px;
+        @include mobile {
+          display: none;
+        }
+      }
+
+      .hamburger {
+        display: none;
+        color: $color-green;
+        font-size: $fz-md;
+
+        @include mobile {
+          display: block;
+        }
+      }
+    }
+  }
+}

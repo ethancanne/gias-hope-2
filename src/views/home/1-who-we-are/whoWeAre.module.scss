@@ -1,0 +1,59 @@
+@import '../../../globals.scss';
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  padding: 80px 0 250px 0;
+  position: relative;
+
+  @include mobile {
+    padding: 80px 0 190px 0;
+  }
+
+  .text {
+    text-align: center;
+    font-size: $fz-sm;
+    font-family: var(--font-sans);
+    line-height: 2;
+    color: $color-green;
+    width: 60%;
+
+    @include mobile {
+      width: 90%;
+      font-size: $fz-xs;
+    }
+  }
+
+  .imageContainer {
+    position: absolute;
+    z-index: 0;
+    bottom: -140px;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 20px;
+
+    overflow: scroll;
+
+    @include mobile {
+      bottom: -100px;
+      gap: 0px;
+    }
+    .image {
+      background-color: white;
+
+      margin: 0 20px;
+      object-fit: cover;
+      border-radius: 20px;
+      @include mobile {
+        width: 200px;
+        height: 200px;
+        margin: 0 10px;
+      }
+    }
+  }
+}

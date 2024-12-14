@@ -1,0 +1,36 @@
+@import '../../../globals.scss';
+.container {
+  background-color: $color-green;
+  color: $color-white;
+  font-family: var(--font-pt-bold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+
+  padding: 200px 0 40px 0;
+
+  border-bottom: $color-yellow 10px solid;
+
+  @include mobile {
+    padding: 150px 0 40px 0;
+  }
+
+  .verse {
+    font-size: $fz-lg;
+    padding: 0 clamp(100px, calc(50px + 8vw), 200px);
+    @include mobile {
+      padding: 0 20px;
+      font-size: $fz-md;
+    }
+  }
+  .reference {
+    font-size: $fz-md;
+
+    @include mobile {
+      font-size: $fz-sm;
+    }
+  }
+}

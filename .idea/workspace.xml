@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="500eb244-025d-4b09-af1a-524c958427a2" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.prettierrc.cjs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/family-2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/family-small.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/gianna-background-large.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/gianna-background-small.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/how-you-can-help-1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/subtext.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/tree.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/wave-2.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/wave.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/button/button.component.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/button/button.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/paragraph/paragraph.component.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/paragraph/paragraph.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/title/title.component.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/title/title.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fonts/OpenSans.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fonts/PTSerif-Bold.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fonts/PTSerif-BoldItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fonts/PTSerif-Italic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fonts/PTSerif-Regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/layout/intro/intro.component.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/layout/intro/intro.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/layout/navbar/navbar.layout.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/layout/navbar/navbar.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/home/1-who-we-are/whoWeAre.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/home/1-who-we-are/whoWeAre.view.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/home/2-verse/verse.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/home/2-verse/verse.view.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/home/3-who-is-gianna/whoIsGianna.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/home/3-who-is-gianna/whoIsGianna.view.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/home/4-our-vision/ourVision.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/home/4-our-vision/ourVision.view.tsx" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
+  <component name="ProjectId" id="2poHDS097RH8mVPOOOqVKUQNMM0" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "com.codeium.enabled": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "/Users/ethancannelongo/Desktop/Projects/code/new-gias-hope/src/views/home/5-how-you-can-help",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "prettierjs.PrettierConfiguration.Package": "/Users/ethancannelongo/Desktop/Projects/code/new-gias-hope/node_modules/prettier",
+    "settings.editor.selected.configurable": "preferences.customizations",
+    "ts.external.directory.path": "/Users/ethancannelongo/Desktop/Projects/code/new-gias-hope/node_modules/typescript/lib",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/views/home/5-how-you-can-help" />
+      <recent name="$PROJECT_DIR$/public" />
+      <recent name="$PROJECT_DIR$/" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/fonts" />
+      <recent name="$PROJECT_DIR$/src" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-e768b9ed790e-JavaScript-WS-243.21565.180" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="500eb244-025d-4b09-af1a-524c958427a2" name="Changes" comment="" />
+      <created>1733425387994</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1733425387994</updated>
+      <workItem from="1733425389037" duration="301000" />
+      <workItem from="1733500798382" duration="90000" />
+      <workItem from="1733500897150" duration="218000" />
+      <workItem from="1733501118637" duration="335000" />
+      <workItem from="1733501457164" duration="2170000" />
+      <workItem from="1733607884936" duration="284000" />
+      <workItem from="1733608175151" duration="9758000" />
+      <workItem from="1733877391412" duration="3696000" />
+      <workItem from="1734012883725" duration="2697000" />
+      <workItem from="1734026956437" duration="4113000" />
+      <workItem from="1734039472776" duration="7231000" />
+      <workItem from="1734099677783" duration="622000" />
+      <workItem from="1734126434055" duration="3506000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

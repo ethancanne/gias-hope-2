@@ -1,0 +1,72 @@
+@import '../../../globals.scss';
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  padding: 200px 0;
+
+  @include tablet {
+    gap: 0px;
+    padding: 150px 0;
+  }
+  @include mobile {
+    flex-direction: column;
+    gap: 0;
+    padding: 100px 40px;
+  }
+
+  .textContainer {
+    width: 255px;
+    flex: 0.4;
+    @include tablet {
+      padding-left: 30px;
+    }
+    @include mobile {
+      width: 100%;
+      padding-left: 0px;
+    }
+  }
+  .imagesContainer {
+    flex: 0.6;
+
+    position: relative;
+
+    max-width: 600px;
+    min-width: 600px;
+
+    margin-top: -200px;
+    @include tablet {
+      transform: scale(0.8);
+    }
+
+    @include mobile {
+      transform: scale(0.5);
+      margin-top: 0px;
+    }
+
+    .image {
+      width: 300px;
+      height: 300px;
+      border-radius: 50%;
+      object-fit: cover;
+
+      &:nth-child(1) {
+        position: absolute;
+        top: 120%;
+        left: 23%;
+        scale: 0.7;
+        transform: translateY(-50%);
+      }
+
+      &:nth-child(2) {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        scale: 0.8;
+
+        transform: translateY(-50%);
+      }
+    }
+  }
+}

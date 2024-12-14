@@ -1,0 +1,77 @@
+@import '../../../globals.scss';
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+
+  @include tablet {
+    gap: 40px;
+    padding: 30px;
+  }
+  @include mobile {
+    flex-direction: column-reverse;
+    gap: 0;
+  }
+
+  .visionContainer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 40px;
+
+    @include tablet {
+      transform: scale(0.8);
+    }
+
+    @include mobile {
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .visionGroup {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+
+      gap: 30px;
+
+      @include mobile {
+        flex-direction: row;
+      }
+
+      &:first-child {
+        margin-bottom: 80px;
+        @include mobile {
+          margin-bottom: 0;
+        }
+      }
+
+      .visionItem {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        background-color: white;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+
+        padding: 20px;
+        height: 200px;
+        width: 200px;
+
+        @include mobile {
+          height: 135px;
+          width: 130px;
+        }
+      }
+    }
+  }
+  .textContainer {
+    width: 555px;
+
+    @include mobile {
+      width: 90%;
+    }
+  }
+}

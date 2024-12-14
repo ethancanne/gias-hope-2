@@ -1,0 +1,8 @@
+@import '../../globals.scss';
+.container {
+  color: $color-black;
+  font-family: var(--font-sans);
+  line-height: 2;
+  font-size: clamp($fz-xxxs, 1.4vw, $fz-sm);
+  font-weight: 100;
+}

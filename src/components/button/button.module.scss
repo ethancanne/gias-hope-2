@@ -1,0 +1,39 @@
+@import '../../globals.scss';
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: fit-content;
+  height: 20px;
+  padding: 20px 30px;
+  border-radius: 100px;
+  cursor: pointer;
+  border: none;
+
+  text-transform: lowercase;
+
+  font-family: var(--font-pt-bold);
+
+  color: $color-white;
+
+  &.yellow {
+    background-color: $color-yellow;
+  }
+  &.green {
+    background-color: $color-green;
+  }
+  &.white {
+    color: $color-black;
+    background-color: $color-white;
+  }
+  &.large {
+    height: 50px;
+    padding: 20px 50px;
+    font-size: 15px;
+  }
+  background-color: $color-white;
+  box-shadow:
+    rgba(27, 31, 35, 0.04) 0px 1px 0px,
+    rgba(255, 255, 255, 0.25) 0px 1px 0px inset;
+}
