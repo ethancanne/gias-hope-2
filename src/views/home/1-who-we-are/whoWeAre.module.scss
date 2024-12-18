@@ -19,6 +19,7 @@
     line-height: 2;
     color: $color-green;
     width: 60%;
+    max-width: 1000px;
 
     @include mobile {
       width: 90%;

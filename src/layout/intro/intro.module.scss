@@ -6,6 +6,9 @@
   position: relative;
   z-index: 0;
   overflow: hidden;
+  @include mobile {
+    height: 80vh;
+  }
 
   &::before {
     content: '';

@@ -1,7 +1,5 @@
 import type { NextConfig } from 'next';
 
-const nextConfig: NextConfig = {
-  basePath: '/gias-hope-2',
-};
+const nextConfig: NextConfig = {};
 
 export default nextConfig;

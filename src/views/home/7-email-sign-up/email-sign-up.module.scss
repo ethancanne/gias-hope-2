@@ -1,0 +1,60 @@
+@import '../../../globals.scss';
+.wrapper {
+  display: flex;
+  background-color: $color-gray;
+
+  padding: 0px 100px 100px 100px;
+  overflow-x: hidden;
+
+  @include mobile {
+    padding: 80px 40px 190px 40px;
+  }
+
+  .container {
+    background: $color-white;
+
+    width: 100%;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+
+    position: relative;
+
+    .signUpContainer {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 20px;
+      justify-content: flex-start;
+
+      @include mobile {
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+      }
+    }
+    .imageContainer {
+      flex: 1;
+
+      font-size: 600px;
+
+      color: $color-gray;
+      position: absolute;
+      z-index: 0;
+      top: 50%;
+      right: -100px;
+      transform: translate(-0%, -40%);
+
+      @include mobile {
+        display: none;
+      }
+    }
+  }
+}

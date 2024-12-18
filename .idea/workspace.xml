@@ -5,7 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="500eb244-025d-4b09-af1a-524c958427a2" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/public/full-logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/textbox/textbox.component.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/textbox/textbox.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/layout/footer/footer.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/layout/footer/footer.view.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/home/6-updates/updates.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/home/7-email-sign-up/email-sign-up.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/home/7-email-sign-up/email-sign-up.view.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/next.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/next.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/paragraph/paragraph.component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/paragraph/paragraph.component.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/paragraph/paragraph.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/paragraph/paragraph.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/title/title.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/title/title.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/globals.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/globals.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layout/intro/intro.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/intro/intro.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/home/1-who-we-are/whoWeAre.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/home/1-who-we-are/whoWeAre.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/home/5-how-you-can-help/how-you-can-help.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/home/5-how-you-can-help/how-you-can-help.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/home/5-how-you-can-help/how-you-can-help.view.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/home/5-how-you-can-help/how-you-can-help.view.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,32 +42,34 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "com.codeium.enabled": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/ethancannelongo/Desktop/Projects/code/new-gias-hope/src/views/home/5-how-you-can-help",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "prettierjs.PrettierConfiguration.Package": "/Users/ethancannelongo/Desktop/Projects/code/new-gias-hope/node_modules/prettier",
-    "settings.editor.selected.configurable": "preferences.customizations",
-    "ts.external.directory.path": "/Users/ethancannelongo/Desktop/Projects/code/new-gias-hope/node_modules/typescript/lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;com.codeium.enabled&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/ethancannelongo/Desktop/Projects/code/new-gias-hope/src/components&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/Users/ethancannelongo/Desktop/Projects/code/new-gias-hope/node_modules/prettier&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.customizations&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Users/ethancannelongo/Desktop/Projects/code/new-gias-hope/node_modules/typescript/lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components" />
       <recent name="$PROJECT_DIR$/src/views/home/5-how-you-can-help" />
       <recent name="$PROJECT_DIR$/public" />
       <recent name="$PROJECT_DIR$/" />
       <recent name="$PROJECT_DIR$" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public" />
       <recent name="$PROJECT_DIR$/src/fonts" />
       <recent name="$PROJECT_DIR$/src" />
     </key>
@@ -82,7 +102,11 @@
       <workItem from="1734039472776" duration="7231000" />
       <workItem from="1734099677783" duration="622000" />
       <workItem from="1734126434055" duration="3506000" />
-      <workItem from="1734147583703" duration="358000" />
+      <workItem from="1734147583703" duration="694000" />
+      <workItem from="1734195559394" duration="2362000" />
+      <workItem from="1734226157102" duration="2226000" />
+      <workItem from="1734314128524" duration="3490000" />
+      <workItem from="1734482986599" duration="1040000" />
     </task>
     <servers />
   </component>
@@ -99,5 +123,16 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/views/home/7-email-sign-up/email-sign-up.view.tsx</url>
+          <line>17</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

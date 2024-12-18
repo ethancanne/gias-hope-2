@@ -2,10 +2,21 @@ import styles from './paragraph.module.scss';
 type Props = {
   children?: React.ReactNode;
   className?: string;
+  small?: boolean;
 };
 const Paragraph = (props: Props) => {
   return (
-    <p className={styles.container + ' ' + props.className}>{props.children}</p>
+    <p
+      className={
+        styles.container +
+        ' ' +
+        props.className +
+        ' ' +
+        (props.small && styles.small)
+      }
+    >
+      {props.children}
+    </p>
   );
 };
 export default Paragraph;

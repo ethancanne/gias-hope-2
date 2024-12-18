@@ -1,0 +1,21 @@
+@import '../../globals.scss';
+.container {
+  border-radius: 100px;
+  border: none;
+  background-color: $color-gray;
+  padding: 10px 10px;
+
+  font-family: var(--pt-sans);
+  font-size: $fz-xs;
+
+  width: 100%;
+  max-width: 500px;
+
+  @include mobile {
+    text-align: center;
+  }
+
+  &::placeholder {
+    color: darken($color-gray, 20%);
+  }
+}
