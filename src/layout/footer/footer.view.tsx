@@ -1,5 +1,7 @@
 import styles from './footer.module.scss';
 import Image from 'next/image';
+import * as NextImage from 'next/image';
+
 type Props = {};
 const Footer = (props: Props) => {
   return (

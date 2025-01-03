@@ -2,11 +2,13 @@ import styles from './button.module.scss';
 import Link from 'next/link';
 
 type Props = {
-  text: string;
+  children?: React.ReactNode;
+  text?: string;
   onClick?: () => void;
   href: string;
   type: 'yellow' | 'green' | 'white';
   large?: boolean;
+  className?: string;
 };
 const Button = (props: Props) => {
   return (
@@ -17,10 +19,12 @@ const Button = (props: Props) => {
           ' ' +
           styles[props.type] +
           ' ' +
-          (props.large ? styles.large : '')
+          (props.large ? styles.large : '') +
+          ' ' +
+          props.className
         }
       >
-        {props.text}
+        {props.children || props.text}
       </button>
     </Link>
   );

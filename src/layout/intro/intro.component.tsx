@@ -4,9 +4,10 @@ type Props = {
   header?: string;
   subText?: string;
   headerImg?: string;
-  size: 'small' | 'medium' | 'large';
+  size: 'small' | 'large';
   largeBackgroundImg: string;
   smallBackgroundImg: string;
+  grayWave?: boolean;
 };
 
 const Intro = (props: Props) => {
@@ -26,13 +27,15 @@ const Intro = (props: Props) => {
         height={680}
         className={styles.smallBackgroundImg}
       />
-      <Image
-        src={'/tree.png'}
-        width={600}
-        height={500}
-        alt="tree"
-        className={styles.tree}
-      />
+      {props.size === 'large' && (
+        <Image
+          src={'/tree.png'}
+          width={600}
+          height={500}
+          alt="tree"
+          className={styles.tree}
+        />
+      )}
 
       <div className={styles.content}>
         {props.headerImg ? (
@@ -49,15 +52,40 @@ const Intro = (props: Props) => {
         <p className={styles.subText}>{props.subText || 'Subtext'}</p>
       </div>
 
-      <Image
-        className={styles.wave}
-        src={'/wave.svg'}
-        width={1920}
-        height={1080}
-        alt={'wave'}
-        layout="responsive"
-        objectFit="cover"
-      />
+      {props.size === 'large' && (
+        <Image
+          className={styles.wave}
+          src={'/wave.svg'}
+          width={1920}
+          height={1080}
+          alt={'wave'}
+          layout="responsive"
+          objectFit="cover"
+        />
+      )}
+      {props.size === 'small' && !props.grayWave && (
+        <Image
+          className={styles.wave}
+          src={'/wave-2.svg'}
+          width={1920}
+          height={1080}
+          alt={'wave'}
+          layout="responsive"
+          objectFit="cover"
+        />
+      )}
+
+      {props.size === 'small' && props.grayWave && (
+        <Image
+          className={styles.wave}
+          src={'/wave-gray.svg'}
+          width={1920}
+          height={1080}
+          alt={'wave'}
+          layout="responsive"
+          objectFit="cover"
+        />
+      )}
     </div>
   );
 };

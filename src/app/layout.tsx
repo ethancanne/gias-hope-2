@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import localFont from 'next/font/local';
 import '../globals.scss';
 import NavbarLayout from '@/layout/navbar/navbar.layout';
+import Footer from '@/layout/footer/footer.view';
 
 const serifFont = localFont({
   src: '../fonts/PTSerif-Regular.ttf',
@@ -39,6 +40,7 @@ export default function RootLayout({
         <NavbarLayout />
 
         {children}
+        <Footer />
       </body>
     </html>
   );

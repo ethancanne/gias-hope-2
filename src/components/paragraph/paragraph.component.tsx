@@ -3,6 +3,8 @@ type Props = {
   children?: React.ReactNode;
   className?: string;
   small?: boolean;
+  center?: boolean;
+  full?: boolean;
 };
 const Paragraph = (props: Props) => {
   return (
@@ -12,7 +14,11 @@ const Paragraph = (props: Props) => {
         ' ' +
         props.className +
         ' ' +
-        (props.small && styles.small)
+        (props.small && styles.small) +
+        ' ' +
+        (props.center && styles.center) +
+        ' ' +
+        (props.full && styles.full)
       }
     >
       {props.children}

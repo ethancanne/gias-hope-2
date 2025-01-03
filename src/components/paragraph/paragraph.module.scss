@@ -1,6 +1,6 @@
 @import '../../globals.scss';
 .container {
-  color: $color-black;
+  color: $color-light-black;
   font-family: var(--font-sans);
   line-height: 2;
   font-size: clamp($fz-xxxs, 1.4vw, $fz-sm);
@@ -10,7 +10,25 @@
   padding: 0;
   margin: 0;
 
+  &.full {
+    max-width: 100%;
+  }
+
   &.small {
     font-size: clamp($fz-xxs, 1.4vw, $fz-xs);
+  }
+  &.center {
+    text-align: center;
+    font-size: $fz-sm;
+    font-family: var(--font-sans);
+    line-height: 2;
+    color: $color-green;
+    width: 60%;
+    max-width: 1000px;
+
+    @include mobile {
+      width: 90%;
+      font-size: $fz-xs;
+    }
   }
 }

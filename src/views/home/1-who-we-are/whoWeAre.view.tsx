@@ -2,6 +2,7 @@ import styles from './whoWeAre.module.scss';
 import Button from '@/components/button/button.component';
 import Image from 'next/image';
 import Title from '@/components/title/title.component';
+import Paragraph from '@/components/paragraph/paragraph.component';
 type Props = {};
 
 const images = [
@@ -37,14 +38,14 @@ const images = [
 const WhoWeAreView = (props: Props) => {
   return (
     <div className={styles.container}>
-      <Title title={'Who We Are'} />
-      <p className={styles.text}>
+      <Title title={'Who We Are'} center />
+      <Paragraph center>
         We are a family commissioned to plant God’s seed of love so that
         abundant life can grow and hope can bloom through the four branches of
         orphan care, orphan prevention, adoption aid and care ministry for the
         most hurting and broken, where we have seen God’s goodness arising and
         hope shining.
-      </p>
+      </Paragraph>
       <Button text={'Our Story'} href={'/our-story'} type={'yellow'} large />
       <div className={styles.imageContainer}>
         {images.map((image: { src: string; alt: string }, index: number) => {

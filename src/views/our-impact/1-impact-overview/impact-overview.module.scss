@@ -1,0 +1,86 @@
+@import '../../../globals.scss';
+.container {
+  padding: 80px 80px 80px 80px;
+  background-color: $color-gray;
+  position: relative;
+
+  border-bottom: rgb(245, 245, 245) 3px solid;
+
+  @include mobile {
+    padding: 80px 20px 0px 20px;
+  }
+  .title {
+    font-weight: 700;
+    margin-bottom: 1rem;
+    max-width: 1800px;
+    color: black;
+    font-family: var(--font-pt);
+    font-size: clamp(1.5rem, 2.5vw, 2rem);
+    // width: 70%;
+
+    @include mobile {
+      font-size: 1.5rem;
+    }
+  }
+  .bold {
+    font-family: var(--font-pt-bold);
+    font-style: italic;
+  }
+
+  .impactOverviewCards {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(200px, 300px));
+    gap: 30px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+
+    @include mobile {
+      gap: 10px;
+      grid-template-columns: repeat(auto-fill, minmax(200px, auto));
+      justify-content: space-evenly;
+    }
+
+    .card {
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow:
+        rgba(14, 63, 126, 0.04) 0px 0px 0px 1px,
+        rgba(42, 51, 69, 0.04) 0px 1px 1px -0.5px,
+        rgba(42, 51, 70, 0.04) 0px 3px 3px -1.5px,
+        rgba(42, 51, 70, 0.04) 0px 6px 6px -3px,
+        rgba(14, 63, 126, 0.04) 0px 12px 12px -6px,
+        rgba(14, 63, 126, 0.04) 0px 24px 24px -12px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+
+      border-bottom: $color-yellow 3px solid;
+
+      @include mobile {
+        padding: 10px;
+      }
+      .number {
+        font-family: var(--font-pt-bold);
+        margin-top: 10px;
+        color: $color-yellow;
+
+        font-size: clamp(1.5rem, 2.5vw, 2rem);
+      }
+
+      .text {
+        font-family: var(--font-pt-bold);
+        margin-top: 0px;
+        // text-transform: lowercase;
+
+        font-size: clamp(0.8rem, 1vw, 1rem);
+      }
+    }
+  }
+}

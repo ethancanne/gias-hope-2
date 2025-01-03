@@ -22,9 +22,20 @@
     &.uppercase {
       text-transform: uppercase;
     }
+    &.center {
+      text-align: center;
+    }
 
     @include mobile {
       font-size: $fz-mdl;
+    }
+    &.small {
+      font-size: $fz-md;
+      font-family: var(--font-pt);
+
+      @include mobile {
+        font-size: $fz-sm;
+      }
     }
   }
 }

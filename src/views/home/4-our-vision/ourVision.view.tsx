@@ -7,8 +7,8 @@ const OurVision = (props: Props) => {
     <div className={styles.container}>
       <div className={styles.visionContainer}>
         <div className={styles.visionGroup}>
-          <div className={styles.visionItem}> WOW!</div>
-          <div className={styles.visionItem}> WOW!</div>
+          <div className={styles.visionItem}>No way</div>
+          <div className={styles.visionItem}>NO</div>
         </div>
         <div className={styles.visionGroup}>
           <div className={styles.visionItem}> WOW!</div>
