@@ -1,0 +1,279 @@
+@import '../../../../../globals.scss';
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+
+  max-width: 1500px;
+
+  margin: 0 2rem 0 2rem;
+
+  @include mobile {
+    flex-direction: column;
+  }
+
+  &.reverse {
+    flex-direction: row-reverse;
+  }
+  &.noImage {
+    display: block;
+  }
+
+  .textContainer {
+    flex: 0.8;
+
+    .title {
+      //   color: white !important;
+    }
+    .paragraph {
+      margin-bottom: 1rem;
+      //   color: white;
+    }
+  }
+  .imageContainer {
+    flex: 0.2;
+    min-width: 400px;
+    min-height: 400px;
+
+    position: relative;
+
+    //border-radius: 50%;
+    //overflow: hidden;
+
+    @include tablet {
+      min-width: 350px;
+      min-height: 350px;
+    }
+
+    @include mobile {
+      min-width: 80vw;
+      min-height: 400px;
+    }
+
+    .image {
+      object-fit: cover;
+      border-radius: 5px;
+      width: 100%;
+      height: 100%;
+      box-shadow:
+        rgba(14, 63, 126, 0.04) 0px 0px 0px 1px,
+        rgba(42, 51, 69, 0.04) 0px 1px 1px -0.5px,
+        rgba(42, 51, 70, 0.04) 0px 3px 3px -1.5px,
+        rgba(42, 51, 70, 0.04) 0px 6px 6px -3px,
+        rgba(14, 63, 126, 0.04) 0px 12px 12px -6px,
+        rgba(14, 63, 126, 0.04) 0px 24px 24px -12px;
+    }
+  }
+}
+
+.coloredContainer {
+  background: linear-gradient(
+    270deg,
+    $color-yellow 0%,
+    darken($color-yellow, 6%) 100%
+  );
+  //height: 570px;
+  //width: 100%;
+  max-width: 1500px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  overflow: hidden;
+
+  gap: 1rem;
+
+  position: relative;
+
+  border-radius: 10px;
+  box-shadow:
+    rgba(14, 63, 126, 0.04) 0px 0px 0px 1px,
+    rgba(42, 51, 69, 0.04) 0px 1px 1px -0.5px,
+    rgba(42, 51, 70, 0.04) 0px 3px 3px -1.5px,
+    rgba(42, 51, 70, 0.04) 0px 6px 6px -3px,
+    rgba(14, 63, 126, 0.04) 0px 12px 12px -6px,
+    rgba(14, 63, 126, 0.04) 0px 24px 24px -12px;
+
+  @include mobile {
+    flex-direction: column;
+    padding: 0;
+    height: fit-content;
+    box-shadow: none;
+  }
+
+  .textContainer {
+    flex: 1;
+    color: white !important;
+    z-index: 1;
+    position: relative;
+
+    padding: 40px;
+
+    .title {
+      color: white !important;
+      font-family: var(--font-pt-bold);
+    }
+    .paragraph {
+      color: white !important;
+    }
+  }
+  .imageContainer {
+    position: relative;
+    z-index: 0;
+    height: 570px;
+    width: 570px;
+    rotate: 90deg;
+
+    object-position: right;
+
+    margin-left: -10px;
+
+    clip-path: polygon(
+      100% 0%,
+      0% 0%,
+      0% 92.02%,
+      2.5% 92.51%,
+      5% 93%,
+      7.5% 93.48%,
+      10% 93.94%,
+      12.5% 94.4%,
+      15% 94.84%,
+      17.5% 95.26%,
+      20% 95.66%,
+      22.5% 96.04%,
+      25% 96.41%,
+      27.5% 96.74%,
+      30% 97.06%,
+      32.5% 97.35%,
+      35% 97.61%,
+      37.5% 97.85%,
+      40% 98.05%,
+      42.5% 98.23%,
+      45% 98.38%,
+      47.5% 98.5%,
+      50% 98.58%,
+      52.5% 98.64%,
+      55% 98.66%,
+      57.5% 98.65%,
+      60% 98.61%,
+      62.5% 98.54%,
+      65% 98.44%,
+      67.5% 98.3%,
+      70% 98.14%,
+      72.5% 97.94%,
+      75% 97.72%,
+      77.5% 97.47%,
+      80% 97.19%,
+      82.5% 96.89%,
+      85% 96.56%,
+      87.5% 96.21%,
+      90% 95.83%,
+      92.5% 95.44%,
+      95% 95.03%,
+      97.5% 94.59%,
+      100% 94.15%
+    );
+
+    @include tablet {
+      margin-left: -100px;
+    }
+    @include mobile {
+      rotate: 180deg;
+      width: 100vw;
+      height: 400px;
+      margin-left: 00px;
+    }
+
+    .image {
+      margin-top: 4px;
+      rotate: 270deg;
+
+      width: 100%;
+      height: 100%;
+
+      object-fit: cover;
+
+      @include mobile {
+        rotate: 180deg;
+
+        margin: 0;
+      }
+    }
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    z-index: 1;
+
+    background: linear-gradient(
+      230deg,
+      rgba(255, 255, 255, 1) 3%,
+      rgba(255, 255, 255, 0.19) 10%,
+      rgba(255, 255, 255, 0) 100%
+    );
+
+    @include mobile {
+      background: linear-gradient(
+        00deg,
+        rgba(255, 255, 255, 1) 3%,
+        rgba(255, 255, 255, 0.19) 20%,
+        rgba(255, 255, 255, 0) 100%
+      );
+    }
+  }
+
+  &.reverse {
+    flex-direction: row-reverse;
+    padding-right: 50px;
+
+    background: linear-gradient(
+      270deg,
+      $color-green 0%,
+      lighten($color-green, 5%) 100%
+    );
+
+    @include mobile {
+      padding: 0;
+      flex-direction: column-reverse;
+    }
+
+    .imageContainer {
+      rotate: 270deg;
+      @include mobile {
+        rotate: 0deg;
+      }
+      .image {
+        rotate: 90deg;
+        @include mobile {
+          rotate: 0deg;
+        }
+      }
+    }
+
+    &::before {
+      background: linear-gradient(
+        130deg,
+        rgba(255, 255, 255, 1) 3%,
+        rgba(255, 255, 255, 0.19) 10%,
+        rgba(255, 255, 255, 0) 100%
+      );
+
+      @include mobile {
+        background: linear-gradient(
+          180deg,
+          rgba(255, 255, 255, 1) 3%,
+          rgba(255, 255, 255, 0.19) 20%,
+          rgba(255, 255, 255, 0) 100%
+        );
+      }
+    }
+  }
+}

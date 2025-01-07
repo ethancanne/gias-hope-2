@@ -15,7 +15,7 @@
   }
 
   &.small {
-    font-size: clamp($fz-xxs, 1.4vw, $fz-xs);
+    font-size: clamp($fz-xxs, 1vw, $fz-xs);
   }
   &.center {
     text-align: center;

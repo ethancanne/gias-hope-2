@@ -13,8 +13,9 @@ const VisionOverview = (props: Props) => {
         <span className={styles.bold}>4-part global initiative</span>
       </Title>
       <Paragraph center>
-        Our mission is plant God’s seed of love so that abundant life can grow
-        and hope can bloom.
+        Our mission is to witness goodness arising by shining God's light, and
+        hope for the most broken, hurting, poor, orphaned and vulnerable ones
+        around the world.
       </Paragraph>
 
       <div className={styles.visionContainer}>
