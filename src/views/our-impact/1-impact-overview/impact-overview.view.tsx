@@ -8,7 +8,7 @@ type Props = {};
 const impactOverviewData = [
   {
     number: '32',
-    text: 'Adoption Grants Awarded',
+    text: 'Grants Given',
   },
   {
     number: '1,000',
@@ -29,11 +29,10 @@ const ImpactOverview = (props: Props) => {
     <div className={styles.container}>
       <h1 className={styles.title}>
         Over the past several years, God has blessed our ministry by granting us
-        the humbling privilege of{' '}
-        <span className={styles.bold}>
-          serving others and witnessing His work firsthand. 4-part global
-          initiative
-        </span>
+        the humbling privilege of <br />
+      </h1>
+      <h1 className={styles.bold}>
+        serving others and witnessing His work firsthand.
       </h1>
 
       <div className={styles.impactOverviewCards}>

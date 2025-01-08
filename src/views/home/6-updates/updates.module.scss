@@ -1,91 +1,184 @@
 @import '../../../globals.scss';
-.container {
-  background-color: $color-gray;
-  margin-top: -10px;
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  clip-path: polygon(
+    100% 100%,
+    0% 100%,
+    0% 3.19%,
+    1.25% 3.26%,
+    2.5% 3.33%,
+    3.75% 3.41%,
+    5% 3.5%,
+    6.25% 3.59%,
+    7.5% 3.68%,
+    8.75% 3.78%,
+    10% 3.88%,
+    11.25% 3.99%,
+    12.5% 4.1%,
+    13.75% 4.21%,
+    15% 4.32%,
+    16.25% 4.43%,
+    17.5% 4.53%,
+    18.75% 4.64%,
+    20% 4.75%,
+    21.25% 4.85%,
+    22.5% 4.95%,
+    23.75% 5.05%,
+    25% 5.14%,
+    26.25% 5.23%,
+    27.5% 5.31%,
+    28.75% 5.39%,
+    30% 5.46%,
+    31.25% 5.52%,
+    32.5% 5.58%,
+    33.75% 5.62%,
+    35% 5.66%,
+    36.25% 5.7%,
+    37.5% 5.72%,
+    38.75% 5.73%,
+    40% 5.74%,
+    41.25% 5.74%,
+    42.5% 5.73%,
+    43.75% 5.71%,
+    45% 5.68%,
+    46.25% 5.64%,
+    47.5% 5.6%,
+    48.75% 5.55%,
+    50% 5.49%,
+    51.25% 5.42%,
+    52.5% 5.35%,
+    53.75% 5.27%,
+    55% 5.18%,
+    56.25% 5.09%,
+    57.5% 5%,
+    58.75% 4.9%,
+    60% 4.8%,
+    61.25% 4.69%,
+    62.5% 4.58%,
+    63.75% 4.47%,
+    65% 4.36%,
+    66.25% 4.25%,
+    67.5% 4.15%,
+    68.75% 4.04%,
+    70% 3.93%,
+    71.25% 3.83%,
+    72.5% 3.73%,
+    73.75% 3.63%,
+    75% 3.54%,
+    76.25% 3.45%,
+    77.5% 3.37%,
+    78.75% 3.29%,
+    80% 3.22%,
+    81.25% 3.16%,
+    82.5% 3.1%,
+    83.75% 3.06%,
+    85% 3.02%,
+    86.25% 2.98%,
+    87.5% 2.96%,
+    88.75% 2.95%,
+    90% 2.94%,
+    91.25% 2.94%,
+    92.5% 2.95%,
+    93.75% 2.97%,
+    95% 3%,
+    96.25% 3.04%,
+    97.5% 3.08%,
+    98.75% 3.13%,
+    100% 3.19%
+  );
+  .container {
+    background-color: $color-gray;
+    margin-top: -10px;
 
-  padding: 80px 100px 100px 100px;
-  overflow-x: hidden;
+    padding: 200px 100px 200px 100px;
+    overflow-x: hidden;
 
-  @include mobile {
-    padding: 80px 40px 50px 40px;
-  }
+    max-width: 2000px;
+    width: 100%;
 
-  .postsContainer {
-    display: flex;
-    //flex-wrap: wrap;
-    gap: 30px;
-    justify-content: space-around;
-    position: relative;
+    @include mobile {
+      padding: 80px 40px 150px 40px;
+    }
 
-    overflow: scroll;
-    margin-left: -100px;
-    margin-right: -100px;
-    padding-right: 100px;
-    padding-left: 100px;
-    padding-bottom: 50px;
-    padding-top: 50px;
-    scroll-snap-type: x mandatory;
-
-    .post {
-      scroll-snap-align: center;
-
-      flex: 1;
-      max-width: 400px;
-      min-width: 300px;
+    .postsContainer {
       display: flex;
-      flex-direction: column;
-      align-items: center;
-      width: 320px;
-      border: 1px solid #ddd;
-      border-radius: 8px;
-      overflow: hidden;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      transition:
-        transform 0.3s,
-        box-shadow 0.3s;
+      //flex-wrap: wrap;
+      gap: 30px;
+      justify-content: space-around;
+      position: relative;
 
-      &:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
-      }
+      overflow: scroll;
+      margin-left: -100px;
+      margin-right: -100px;
+      padding-right: 100px;
+      padding-left: 100px;
+      padding-bottom: 50px;
+      padding-top: 50px;
+      scroll-snap-type: x mandatory;
 
-      .image {
-        width: 100%;
-        height: auto;
-        border-bottom: $color-yellow 3px solid;
-      }
+      .post {
+        scroll-snap-align: center;
 
-      .textContainer {
-        padding: 15px;
-        text-align: center;
-
+        flex: 1;
+        max-width: 400px;
+        min-width: 300px;
         display: flex;
         flex-direction: column;
         align-items: center;
+        width: 320px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition:
+          transform 0.3s,
+          box-shadow 0.3s;
 
-        .category {
-          font-size: $fz-xxxs;
-          font-family: var(--font-pt-bold);
-          width: fit-content;
-          padding: 5px 10px;
-          border-radius: 5px;
-          color: $color-white;
-          margin-bottom: 8px;
-          background-color: $color-yellow;
-
-          margin-top: -30px;
+        &:hover {
+          transform: translateY(-5px);
+          box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
         }
 
-        .title {
-          font-size: 18px;
-          font-weight: 600;
-          margin-bottom: 12px;
-          color: #333;
+        .image {
+          width: 100%;
+          height: auto;
+          border-bottom: $color-yellow 3px solid;
         }
 
-        .date {
-          font-size: 12px;
-          color: #aaa;
+        .textContainer {
+          padding: 15px;
+          text-align: center;
+
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+
+          .category {
+            font-size: $fz-xxxs;
+            font-family: var(--font-pt-bold);
+            width: fit-content;
+            padding: 5px 10px;
+            border-radius: 5px;
+            color: $color-white;
+            margin-bottom: 8px;
+            background-color: $color-yellow;
+
+            margin-top: -30px;
+          }
+
+          .title {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 12px;
+            color: #333;
+          }
+
+          .date {
+            font-size: 12px;
+            color: #aaa;
+          }
         }
       }
     }

@@ -1,11 +1,12 @@
 import Intro from '@/layout/intro/intro.component';
 import VisionDetails from '@/views/what-we-do/2-vision-details/vision-details.view';
 import VisionOverview from '@/views/what-we-do/1-vision-overview/vision-overview.view';
+import PageWrapper from '@/layout/page-wrapper/page-wrapper.layout';
 
 type Props = {};
 const Page = (props: Props) => {
   return (
-    <div>
+    <PageWrapper>
       <Intro
         size={'small'}
         largeBackgroundImg={'/family-2.png'}
@@ -17,7 +18,7 @@ const Page = (props: Props) => {
       />
       <VisionOverview />
       <VisionDetails />
-    </div>
+    </PageWrapper>
   );
 };
 export default Page;

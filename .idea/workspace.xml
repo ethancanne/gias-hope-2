@@ -5,18 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="500eb244-025d-4b09-af1a-524c958427a2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/public/wave-green.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/wave-white-2.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/our-story/1-story.view/components/image-scroll/image-scroll.component.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/our-story/1-story.view/components/image-scroll/image-scroll.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/paragraph/paragraph.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/paragraph/paragraph.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/home/1-who-we-are/whoWeAre.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/home/1-who-we-are/whoWeAre.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layout/navbar/navbar.layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/navbar/navbar.layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layout/navbar/navbar.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/navbar/navbar.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/our-impact/1-impact-overview/impact-overview.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/our-impact/1-impact-overview/impact-overview.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/our-impact/1-impact-overview/impact-overview.view.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/our-impact/1-impact-overview/impact-overview.view.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/our-impact/2-impact-details/impact-details.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/our-impact/2-impact-details/impact-details.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/our-story/1-story.view/story-view.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/our-story/1-story.view/story-view.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/our-story/1-story.view/story-view.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/our-story/1-story.view/story-view.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/what-we-do/1-vision-overview/vision-overview.view.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/what-we-do/1-vision-overview/vision-overview.view.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +45,7 @@
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "prettierjs.PrettierConfiguration.Package": "/Users/ethancannelongo/Desktop/Projects/code/new-gias-hope/node_modules/prettier",
-    "settings.editor.selected.configurable": "preferences.customizations",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "ts.external.directory.path": "/Users/ethancannelongo/Desktop/Projects/code/new-gias-hope/node_modules/typescript/lib",
     "vue.rearranger.settings.migration": "true"
   }
@@ -107,6 +101,9 @@
       <workItem from="1736211879273" duration="48000" />
       <workItem from="1736211941581" duration="6742000" />
       <workItem from="1736259903304" duration="7437000" />
+      <workItem from="1736306618085" duration="4902000" />
+      <workItem from="1736353168294" duration="3000" />
+      <workItem from="1736353215825" duration="120000" />
     </task>
     <servers />
   </component>
@@ -135,7 +132,6 @@
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/views/our-story/1-story.view/story-view.tsx</url>
           <line>59</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>

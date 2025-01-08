@@ -49,9 +49,14 @@
       }
 
       .visionItem {
+        text-align: center;
+
         display: flex;
         align-items: center;
         justify-content: center;
+        flex-direction: column;
+        position: relative;
+        z-index: 2;
 
         background-color: white;
         box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
@@ -60,9 +65,17 @@
         height: 200px;
         width: 200px;
 
+        .icon {
+          font-size: $fz-xl;
+        }
+        .text {
+          font-family: var(--font-pt-bold);
+          font-size: $fz-sm;
+        }
+
         @include mobile {
-          height: 135px;
-          width: 130px;
+          height: 100px;
+          width: 100px;
         }
       }
     }

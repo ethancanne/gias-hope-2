@@ -54,6 +54,8 @@
         height: 300px;
         border-radius: 50%;
         object-fit: cover;
+        position: relative;
+        z-index: 2;
 
         border: $color-yellow 10px solid;
 

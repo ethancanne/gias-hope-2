@@ -1,13 +1,21 @@
 @import '../../../globals.scss';
 .container {
   padding: 80px 80px 80px 80px;
-  background-color: $color-gray;
+  // background-color: $color-gray;
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: -230px;
 
   border-bottom: rgb(245, 245, 245) 3px solid;
 
   @include mobile {
-    padding: 80px 20px 0px 20px;
+    margin-bottom: -140px;
+
+    padding: 80px 40px 0px 40px;
   }
   .title {
     font-weight: 700;
@@ -24,13 +32,20 @@
   }
   .bold {
     font-family: var(--font-pt-bold);
-    font-style: italic;
+
+    padding: 0 20px 0 20px;
+    margin-top: 0;
+
+    //border-bottom: $color-green 3px solid;
+    @include mobile {
+      font-size: 1.5rem;
+    }
   }
 
   .impactOverviewCards {
     display: grid;
     grid-template-columns: repeat(4, minmax(200px, 300px));
-    gap: 30px;
+    gap: 35px;
     margin-top: 40px;
     margin-bottom: 40px;
     justify-content: flex-start;
@@ -40,7 +55,7 @@
 
     @include mobile {
       gap: 10px;
-      grid-template-columns: repeat(auto-fill, minmax(200px, auto));
+      grid-template-columns: repeat(2, minmax(150px, auto));
       justify-content: space-evenly;
     }
 
@@ -78,6 +93,7 @@
         font-family: var(--font-pt-bold);
         margin-top: 0px;
         // text-transform: lowercase;
+        word-break: break-all;
 
         font-size: clamp(0.8rem, 1vw, 1rem);
       }

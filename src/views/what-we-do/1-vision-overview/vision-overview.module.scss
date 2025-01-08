@@ -40,6 +40,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      flex-direction: column;
       position: relative;
       z-index: 2;
 
@@ -49,6 +50,14 @@
       padding: 20px;
       height: 200px;
       width: 200px;
+
+      .icon {
+        font-size: $fz-xl;
+      }
+      .text {
+        font-family: var(--font-pt-bold);
+        font-size: $fz-sm;
+      }
 
       @include mobile {
         height: 100px;

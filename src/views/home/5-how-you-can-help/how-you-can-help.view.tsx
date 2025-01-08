@@ -49,14 +49,14 @@ const OurVision = (props: Props) => {
           })}
         </div>
       </div>
-      <Image
+      {/* <Image
         src={'/gray-wave.svg'}
         alt={'wave'}
         height={1080}
         width={1920}
         layout="responsive"
         objectFit="cover"
-      />
+      /> */}
     </div>
   );
 };

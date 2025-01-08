@@ -77,20 +77,8 @@ const ImpactDetails = (props: Props) => {
               )}
             </div>
 
-            <Image
-              className={styles.line}
-              src={'/line.svg'}
-              width={500}
-              height={500}
-              alt={'line'}
-            />
-            <Image
-              className={styles.line2}
-              src={'/line-2.svg'}
-              width={500}
-              height={500}
-              alt={'line'}
-            />
+            <img className={styles.line} src={'/line.svg'} alt={'line'} />
+            <img className={styles.line2} src={'/line-2.svg'} alt={'line'} />
           </div>
         ))}
       </div>

@@ -1,11 +1,135 @@
 @import '../../globals.scss';
 .wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-top: $color-gray 1px solid;
+  padding: 50px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+  border-bottom: $color-yellow 10px solid;
+  position: relative;
+  padding-top: 230px;
+
+  @include mobile {
+    padding-top: 300px;
+  }
+
+  .emailWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+
+    top: -100px;
+    left: 0;
+    right: 0;
+
+    .emailSignUpContainer {
+      max-width: 2000px;
+
+      margin: 0 90px;
+      width: 100%;
+
+      background: $color-white;
+
+      padding: 40px 200px 40px 200px;
+      border-radius: 10px;
+      box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+      border-left: $color-yellow 5px solid;
+      border-right: $color-yellow 5px solid;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      overflow: hidden;
+
+      @include mobile {
+        margin: 0 0px;
+        padding: 20px;
+        border: none;
+
+        border-radius: 0;
+      }
+      .signUpContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        justify-content: flex-start;
+
+        .emailTitle {
+          margin-bottom: -20px;
+        }
+
+        .email {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          gap: 10px;
+          border: 1px solid $color-gray;
+          background-color: $color-gray;
+          padding: 10px;
+          border-radius: 10px;
+          width: 100%;
+        }
+
+        @include mobile {
+          align-items: center;
+          text-align: center;
+          padding: 20px;
+        }
+      }
+    }
+  }
   .container {
     background-color: $color-white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    .logo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 50px;
 
-    border-top: $color-gray 1px solid;
-    padding: 50px;
-    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
-    border-bottom: $color-yellow 10px solid;
+      @include mobile {
+        margin-right: 15px;
+      }
+    }
+
+    .links {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+      .link {
+        color: $color-green;
+        text-transform: lowercase;
+
+        &:hover {
+          text-decoration: underline;
+          cursor: pointer;
+        }
+      }
+    }
+
+    .socials {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      font-size: $fz-sm;
+      margin-bottom: -20px;
+    }
+
+    .copyright {
+      margin-bottom: -30px;
+      color: darken($color-gray, 40%);
+    }
   }
 }

@@ -6,7 +6,7 @@ type Props = {
   text?: string;
   onClick?: () => void;
   href: string;
-  type: 'yellow' | 'green' | 'white';
+  type: 'yellow' | 'green' | 'white' | 'ghost';
   large?: boolean;
   className?: string;
 };

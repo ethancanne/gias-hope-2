@@ -13,6 +13,8 @@
 
   text-transform: lowercase;
 
+  transition: all 0.1s ease-in-out;
+
   font-family: var(--font-pt-bold);
 
   color: $color-white;
@@ -26,6 +28,16 @@
   &.white {
     color: $color-black;
     background-color: $color-white;
+  }
+  &.ghost {
+    background-color: transparent;
+    box-shadow: none;
+    color: $color-black;
+
+    &:hover {
+      background-color: $color-yellow;
+      color: $color-white;
+    }
   }
   &.large {
     height: 50px;

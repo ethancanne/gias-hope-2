@@ -1,6 +1,8 @@
 'use client';
 import Image from 'next/image';
 import { RxHamburgerMenu } from 'react-icons/rx';
+import { IoIosClose } from 'react-icons/io';
+import { usePathname } from 'next/navigation';
 
 type Props = {};
 
@@ -27,13 +29,19 @@ const navigation: { name: string; href: string }[] = [
 const NavbarLayout = (props: Props) => {
   //Create a way to see if the user has scrolled down, then make a use state for it
 
+  const pathname = usePathname();
+
   const [hasScrolledDown, setHasScrolledDown] = useState(false);
+  const [menuIsOpen, setMenuIsOpen] = useState(false);
 
   useEffect((): (() => void) => {
     const handleScroll = () => {
       // Check if the scroll position is greater than 0
       const scrolled: boolean = window.scrollY > 0;
       setHasScrolledDown(scrolled);
+      if (scrolled) {
+        setMenuIsOpen(false);
+      }
     };
 
     // Add the scroll event listener
@@ -62,12 +70,40 @@ const NavbarLayout = (props: Props) => {
               className={styles.logo}
             />
           </Link>
-          <div className={styles.navItems}>
+          <div
+            className={styles.navItems + ' ' + (menuIsOpen ? styles.open : '')}
+          >
             {navigation.map((item: { name: string; href: string }) => (
-              <Link href={item.href} className={styles.link}>
+              <Link
+                href={item.href}
+                className={
+                  styles.link +
+                  ' ' +
+                  (pathname === item.href ? styles.active : '')
+                }
+                onClick={() => setMenuIsOpen(false)}
+              >
                 {item.name}
               </Link>
             ))}
+            <div className={styles.mobileButtons}>
+              <div className={styles.link}>
+                <Button
+                  text="donate"
+                  href={'/donate'}
+                  type="green"
+                  onClick={() => setMenuIsOpen(false)}
+                />
+              </div>
+              <div className={styles.link}>
+                <Button
+                  text="apply for a grant"
+                  href={'#'}
+                  type="yellow"
+                  onClick={() => setMenuIsOpen(false)}
+                />
+              </div>
+            </div>
           </div>
         </div>
         <div className={styles.right}>
@@ -75,7 +111,23 @@ const NavbarLayout = (props: Props) => {
             <Button text="donate" href={'/donate'} type="green" />
             <Button text="apply for a grant" href={'#'} type="yellow" />
           </div>
-          <RxHamburgerMenu className={styles.hamburger} />
+          {menuIsOpen ? (
+            <IoIosClose
+              className={styles.hamburger + ' ' + styles.close}
+              onClick={() => {
+                setHasScrolledDown(true);
+                setMenuIsOpen(!menuIsOpen);
+              }}
+            />
+          ) : (
+            <RxHamburgerMenu
+              className={styles.hamburger}
+              onClick={() => {
+                setHasScrolledDown(true);
+                setMenuIsOpen(!menuIsOpen);
+              }}
+            />
+          )}
         </div>
       </div>
     </div>

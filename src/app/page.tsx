@@ -1,4 +1,5 @@
 import Intro from '@/layout/intro/intro.component';
+import PageWrapper from '@/layout/page-wrapper/page-wrapper.layout';
 import WhoWeAreView from '@/views/home/1-who-we-are/whoWeAre.view';
 import VerseView from '@/views/home/2-verse/verse.view';
 import WhoIsGiannaView from '@/views/home/3-who-is-gianna/whoIsGianna.view';
@@ -9,7 +10,7 @@ import EmailSignUpView from '@/views/home/7-email-sign-up/email-sign-up.view';
 
 export default function Home() {
   return (
-    <div className="App">
+    <PageWrapper>
       <Intro
         size={'large'}
         largeBackgroundImg={'/family-2.png'}
@@ -23,7 +24,7 @@ export default function Home() {
       <OurVisionView />
       <HowYouCanHelpView />
       <UpdatesView />
-      <EmailSignUpView />
-    </div>
+      {/* <EmailSignUpView /> */}
+    </PageWrapper>
   );
 }

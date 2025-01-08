@@ -3,6 +3,11 @@ import styles from './vision-overview.module.scss';
 import Paragraph from '@/components/paragraph/paragraph.component';
 import Image from 'next/image';
 
+import { LuHeartHandshake } from 'react-icons/lu';
+import { LuHandCoins } from 'react-icons/lu';
+import { LuShieldPlus } from 'react-icons/lu';
+import { LuActivity } from 'react-icons/lu';
+
 type Props = {};
 
 const VisionOverview = (props: Props) => {
@@ -19,10 +24,22 @@ const VisionOverview = (props: Props) => {
       </Paragraph>
 
       <div className={styles.visionContainer}>
-        <div className={styles.visionItem}>Orphan Care</div>
-        <div className={styles.visionItem}>Orphan Prevention</div>
-        <div className={styles.visionItem}>Adoption Aid</div>
-        <div className={styles.visionItem}>Care Ministry</div>
+        <div className={styles.visionItem}>
+          <LuActivity className={styles.icon} />
+          <h1 className={styles.text}>Orphan Care</h1>
+        </div>
+        <div className={styles.visionItem}>
+          <LuShieldPlus className={styles.icon} />
+          <h1 className={styles.text}>Orphan Prevention</h1>
+        </div>
+        <div className={styles.visionItem}>
+          <LuHandCoins className={styles.icon} />
+          <h1 className={styles.text}>Adoption Aid</h1>
+        </div>
+        <div className={styles.visionItem}>
+          <LuHeartHandshake className={styles.icon} />
+          <h1 className={styles.text}>Care Ministry</h1>
+        </div>
       </div>
 
       <Image

@@ -38,28 +38,30 @@ const posts = [
 ];
 const Updates = () => {
   return (
-    <div className={styles.container}>
-      <Title title={'Recent Updates'} subTitle={'Stay in the know'} />
-      <div className={styles.postsContainer}>
-        {posts.map((post) => {
-          return (
-            <div className={styles.post} key={post.id}>
-              <Image
-                src={post.image}
-                alt={post.title}
-                width={300}
-                height={300}
-                className={styles.image}
-              />
+    <div className={styles.wrapper}>
+      <div className={styles.container}>
+        <Title title={'Recent Updates'} subTitle={'Stay in the know'} />
+        <div className={styles.postsContainer}>
+          {posts.map((post) => {
+            return (
+              <div className={styles.post} key={post.id}>
+                <Image
+                  src={post.image}
+                  alt={post.title}
+                  width={300}
+                  height={300}
+                  className={styles.image}
+                />
 
-              <div className={styles.textContainer}>
-                <p className={styles.category}>{post.category}</p>
-                <p className={styles.title}>{post.title}</p>
-                <p className={styles.date}>{post.date}</p>
+                <div className={styles.textContainer}>
+                  <p className={styles.category}>{post.category}</p>
+                  <p className={styles.title}>{post.title}</p>
+                  <p className={styles.date}>{post.date}</p>
+                </div>
               </div>
-            </div>
-          );
-        })}
+            );
+          })}
+        </div>
       </div>
     </div>
   );

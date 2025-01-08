@@ -9,10 +9,10 @@
   font-size: $fz-xs;
 
   width: 100%;
-  max-width: 500px;
+  // max-width: 500px;
 
   @include mobile {
-    text-align: center;
+    font-size: $fz-xxs;
   }
 
   &::placeholder {
