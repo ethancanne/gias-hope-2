@@ -13,15 +13,17 @@ type Props = {};
 const VisionOverview = (props: Props) => {
   return (
     <div className={styles.container}>
-      <Title center small>
-        The vision of GIA’S Hope is a{' '}
-        <span className={styles.bold}>4-part global initiative</span>
-      </Title>
-      <Paragraph center>
-        Our mission is to witness goodness arising by shining God's light, and
-        hope for the most broken, hurting, poor, orphaned and vulnerable ones
-        around the world.
-      </Paragraph>
+      <div className={styles.textContainer}>
+        <Title center small>
+          The vision of GIA’S Hope is a{' '}
+          <span className={styles.bold}>4-part global initiative</span>
+        </Title>
+        <Paragraph center>
+          Our mission is to witness goodness arising by shining God's light, and
+          hope for the most broken, hurting, poor, orphaned and vulnerable ones
+          around the world.
+        </Paragraph>
+      </div>
 
       <div className={styles.visionContainer}>
         <div className={styles.visionItem}>
