@@ -9,11 +9,13 @@ type Props = {
   type: 'yellow' | 'green' | 'white' | 'ghost';
   large?: boolean;
   className?: string;
+  htmlType?: 'button' | 'submit' | 'reset';
 };
 const Button = (props: Props) => {
   return props.href ? (
     <Link href={props.href}>
       <button
+        type={props.htmlType || 'button'}
         className={
           styles.container +
           ' ' +
@@ -29,6 +31,7 @@ const Button = (props: Props) => {
     </Link>
   ) : (
     <button
+      type={props.htmlType || 'button'}
       className={
         styles.container +
         ' ' +

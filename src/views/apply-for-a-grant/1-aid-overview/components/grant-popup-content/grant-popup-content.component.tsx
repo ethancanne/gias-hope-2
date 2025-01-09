@@ -88,7 +88,7 @@ const GrantPopupContent = (props: Props) => {
 
       <div className={styles.buttonContainer}>
         <Button
-          text={'Apply'}
+          text={'Open Application'}
           onClick={() => props.setPopupIsOpen(false)}
           type="yellow"
           href="/apply-for-a-grant?show-application=true"

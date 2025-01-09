@@ -31,7 +31,14 @@ const OurVision = (props: Props) => {
             most. It would be a blessing if you would consider partnering with
             us in prayer and financial support <br />
             <br />
-            <Button text={'Donate'} href={'/donate'} type={'yellow'} large />
+            <Button
+              text={'Donate'}
+              href={
+                'https://www.paypal.com/donate?hosted_button_id=YSWB8EJUJVX7N'
+              }
+              type={'yellow'}
+              large
+            />
           </Paragraph>
         </div>
         <div className={styles.imagesContainer}>
