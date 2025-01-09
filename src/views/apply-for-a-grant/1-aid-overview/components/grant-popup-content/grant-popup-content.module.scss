@@ -1,0 +1,23 @@
+@import '../../../../../globals.scss';
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+
+  .content {
+    font-family: var(--font-sans);
+    font-size: 1.2rem;
+  }
+
+  h3 {
+    font-family: var(--font-pt-bold);
+    margin-bottom: 0;
+  }
+
+  .buttonContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

@@ -8,11 +8,12 @@ import Title from '@/components/title/title.component';
 type Props = {
   className?: string;
   mainHeader?: string;
-  header: string;
+  header?: string;
   content: React.ReactNode;
   image?: string;
   colored?: Boolean;
   reverse?: Boolean;
+  isParagraph?: Boolean;
 };
 
 const SideBySide = (props: Props) => {
@@ -32,13 +33,19 @@ const SideBySide = (props: Props) => {
         {props.mainHeader && (
           <Title className={styles.mainHeader}>{props.mainHeader}</Title>
         )}
-        <Title small className={styles.title}>
-          {props.header}
-        </Title>
+        {props.header && (
+          <Title small className={styles.title}>
+            {props.header}
+          </Title>
+        )}
 
-        <Paragraph small full className={styles.paragraph}>
-          {props.content}
-        </Paragraph>
+        {props.isParagraph ? (
+          <Paragraph small full className={styles.paragraph}>
+            {props.content}
+          </Paragraph>
+        ) : (
+          props.content
+        )}
       </div>
       {props.image && (
         <div className={styles.imageContainer}>

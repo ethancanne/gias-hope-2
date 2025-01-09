@@ -7,6 +7,7 @@ import { LuHeartHandshake } from 'react-icons/lu';
 import { LuHandCoins } from 'react-icons/lu';
 import { LuShieldPlus } from 'react-icons/lu';
 import { LuActivity } from 'react-icons/lu';
+import Link from 'next/link';
 
 type Props = {};
 
@@ -26,33 +27,23 @@ const VisionOverview = (props: Props) => {
       </div>
 
       <div className={styles.visionContainer}>
-        <div className={styles.visionItem}>
+        <Link className={styles.visionItem} href={'#orphan-care'}>
           <LuActivity className={styles.icon} />
           <h1 className={styles.text}>Orphan Care</h1>
-        </div>
-        <div className={styles.visionItem}>
+        </Link>
+        <Link className={styles.visionItem} href={'#orphan-prevention'}>
           <LuShieldPlus className={styles.icon} />
           <h1 className={styles.text}>Orphan Prevention</h1>
-        </div>
-        <div className={styles.visionItem}>
+        </Link>
+        <Link className={styles.visionItem} href={'#adoption-aid'}>
           <LuHandCoins className={styles.icon} />
           <h1 className={styles.text}>Adoption Aid</h1>
-        </div>
-        <div className={styles.visionItem}>
+        </Link>
+        <Link className={styles.visionItem} href={'#care-ministry'}>
           <LuHeartHandshake className={styles.icon} />
           <h1 className={styles.text}>Care Ministry</h1>
-        </div>
+        </Link>
       </div>
-
-      <Image
-        className={styles.wave}
-        src={'/wave-2.svg'}
-        width={1920}
-        height={1080}
-        alt={'wave'}
-        layout="responsive"
-        objectFit="cover"
-      />
     </div>
   );
 };

@@ -2,7 +2,7 @@ import Image from 'next/image';
 import styles from './story-view.module.scss';
 import Title from '@/components/title/title.component';
 import Paragraph from '@/components/paragraph/paragraph.component';
-import SideBySideComponent from './components/side-by-side/side-by-side.component';
+import SideBySideComponent from '../../../components/side-by-side/side-by-side.component';
 import ImageScroll from '@/views/our-story/1-story.view/components/image-scroll/image-scroll.component';
 
 type Props = {};

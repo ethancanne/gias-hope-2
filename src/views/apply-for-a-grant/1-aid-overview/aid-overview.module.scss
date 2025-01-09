@@ -1,0 +1,33 @@
+@import '../../../globals.scss';
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .container {
+    padding: 100px 0 200px 0;
+
+    max-width: 1300px;
+
+    .status {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      font-size: $fz-xxs;
+
+      font-family: var(--font-sans);
+
+      padding: 5px 20px;
+
+      border-radius: 10px;
+
+      background-color: $color-gray;
+      margin-top: 20px;
+
+      &.open {
+      }
+      &.closed {
+      }
+    }
+  }
+}

@@ -73,9 +73,10 @@ const NavbarLayout = (props: Props) => {
           <div
             className={styles.navItems + ' ' + (menuIsOpen ? styles.open : '')}
           >
-            {navigation.map((item: { name: string; href: string }) => (
+            {navigation.map((item: { name: string; href: string }, key) => (
               <Link
                 href={item.href}
+                key={key}
                 className={
                   styles.link +
                   ' ' +
@@ -90,7 +91,9 @@ const NavbarLayout = (props: Props) => {
               <div className={styles.link}>
                 <Button
                   text="donate"
-                  href={'/donate'}
+                  href={
+                    'https://www.paypal.com/donate?hosted_button_id=YSWB8EJUJVX7N'
+                  }
                   type="green"
                   onClick={() => setMenuIsOpen(false)}
                 />
@@ -98,7 +101,7 @@ const NavbarLayout = (props: Props) => {
               <div className={styles.link}>
                 <Button
                   text="apply for a grant"
-                  href={'#'}
+                  href={'/apply-for-a-grant'}
                   type="yellow"
                   onClick={() => setMenuIsOpen(false)}
                 />
@@ -108,8 +111,18 @@ const NavbarLayout = (props: Props) => {
         </div>
         <div className={styles.right}>
           <div className={styles.rightButtons}>
-            <Button text="donate" href={'/donate'} type="green" />
-            <Button text="apply for a grant" href={'#'} type="yellow" />
+            <Button
+              text="donate"
+              href={
+                'https://www.paypal.com/donate?hosted_button_id=YSWB8EJUJVX7N'
+              }
+              type="green"
+            />
+            <Button
+              text="apply for a grant"
+              href={'/apply-for-a-grant'}
+              type="yellow"
+            />
           </div>
           {menuIsOpen ? (
             <IoIosClose

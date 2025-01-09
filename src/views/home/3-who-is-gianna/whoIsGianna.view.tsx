@@ -38,16 +38,6 @@ const WhoIsGiannaView = () => {
             share this gift and hope with others.
           </Paragraph>
         </div>
-        {/* 
-        <Image
-          className={styles.wave}
-          src={'/wave-2.svg'}
-          width={1920}
-          height={1080}
-          alt={'wave'}
-          layout="responsive"
-          objectFit="cover"
-        /> */}
       </div>
     </div>
   );

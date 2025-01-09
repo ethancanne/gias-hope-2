@@ -1,0 +1,87 @@
+@import '../../globals.scss';
+.wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 3;
+
+  transition: all 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
+
+  opacity: 0;
+
+  pointer-events: none;
+
+  .container {
+    opacity: 0;
+    transition: all 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    height: 80%;
+    padding: 2rem;
+
+    overflow: auto;
+    transform: translate(-50%, -50%) scale(0.7);
+    background-color: $color-white;
+    border-radius: 10px;
+    box-shadow:
+      rgba(14, 63, 126, 0.04) 0px 0px 0px 1px,
+      rgba(42, 51, 69, 0.04) 0px 1px 1px -0.5px,
+      rgba(42, 51, 70, 0.04) 0px 3px 3px -1.5px,
+      rgba(42, 51, 70, 0.04) 0px 6px 6px -3px,
+      rgba(14, 63, 126, 0.04) 0px 12px 12px -6px,
+      rgba(14, 63, 126, 0.04) 0px 24px 24px -12px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+
+    @include mobile {
+      padding: 0;
+      height: 90%;
+      width: 95vw;
+    }
+
+    .title {
+      font-size: $fz-lg;
+      font-weight: 600;
+      margin-bottom: 0;
+
+      @include mobile {
+        margin-top: 40px;
+
+        font-size: $fz-md;
+      }
+    }
+
+    .closeButton {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      cursor: pointer;
+      font-size: $fz-md;
+
+      @include mobile {
+        top: 0.5rem;
+        right: 0.5rem;
+      }
+    }
+  }
+
+  &.open {
+    pointer-events: all;
+    opacity: 1;
+
+    .container {
+      transform: translate(-50%, -50%) scale(1);
+      opacity: 1;
+    }
+  }
+}

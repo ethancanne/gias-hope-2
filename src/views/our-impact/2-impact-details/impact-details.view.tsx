@@ -38,16 +38,6 @@ const impactDetailsData = [
 const ImpactDetails = (props: Props) => {
   return (
     <div className={styles.container}>
-      {/* <Image
-        className={styles.wave}
-        src={'/wave-2.svg'}
-        width={1920}
-        height={1080}
-        alt={'wave'}
-        layout="responsive"
-        objectFit="contain"
-      /> */}
-
       <div className={styles.detailsContainer}>
         {impactDetailsData.map((data, index) => (
           <div key={index} className={styles.detail}>

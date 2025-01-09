@@ -20,6 +20,7 @@ const Footer = (props: Props) => {
               in your email inbox.
             </Paragraph>
             <div className={styles.email}>
+              {/* //TODO Mailchimp add email */}
               <TextField placeholder={'Enter your email'} />
               <Button text={'Subscribe'} href={'/'} type={'ghost'} />
             </div>
@@ -34,6 +35,9 @@ const Footer = (props: Props) => {
 
         <div className={styles.links}>
           <div className={styles.link}>
+            <Link href={'/'}>home</Link>
+          </div>
+          <div className={styles.link}>
             <Link href={'/our-story'}>our story</Link>
           </div>
           <div className={styles.link}>
@@ -43,7 +47,13 @@ const Footer = (props: Props) => {
             <Link href={'/our-impact'}>our impact</Link>
           </div>
           <div className={styles.link}>
-            <Link href={'/our-vision'}>donate</Link>
+            <Link
+              href={
+                'https://www.paypal.com/donate?hosted_button_id=YSWB8EJUJVX7N'
+              }
+            >
+              donate
+            </Link>
           </div>
           <div className={styles.link}>
             <Link href={'/our-impact'}>apply for a grant</Link>

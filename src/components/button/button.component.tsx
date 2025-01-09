@@ -5,13 +5,13 @@ type Props = {
   children?: React.ReactNode;
   text?: string;
   onClick?: () => void;
-  href: string;
+  href?: string;
   type: 'yellow' | 'green' | 'white' | 'ghost';
   large?: boolean;
   className?: string;
 };
 const Button = (props: Props) => {
-  return (
+  return props.href ? (
     <Link href={props.href}>
       <button
         className={
@@ -27,6 +27,21 @@ const Button = (props: Props) => {
         {props.children || props.text}
       </button>
     </Link>
+  ) : (
+    <button
+      className={
+        styles.container +
+        ' ' +
+        styles[props.type] +
+        ' ' +
+        (props.large ? styles.large : '') +
+        ' ' +
+        props.className
+      }
+      onClick={props.onClick}
+    >
+      {props.children || props.text}
+    </button>
   );
 };
 

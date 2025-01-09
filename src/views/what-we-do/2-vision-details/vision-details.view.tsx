@@ -13,8 +13,9 @@ type Props = {};
 
 const visions = [
   {
-    icon: LuHeartHandshake,
+    icon: LuActivity,
     title: 'Orphan Care',
+    id: 'orphan-care',
     backgroundImage: '/vision-background.png',
     backgroundColor: 'rgba(221, 177, 177, 0.9)',
     description:
@@ -39,8 +40,9 @@ const visions = [
     ],
   },
   {
-    icon: LuHandCoins,
+    icon: LuShieldPlus,
     title: 'Orphan Prevention',
+    id: 'orphan-prevention',
     backgroundImage: '/vision-background.png',
     backgroundColor: 'rgba(93, 81, 81, 0.9)',
     description:
@@ -65,8 +67,9 @@ const visions = [
     ],
   },
   {
-    icon: LuShieldPlus,
+    icon: LuHandCoins,
     title: 'Adoption Aid',
+    id: 'adoption-aid',
     backgroundImage: '/vision-background.png',
     backgroundColor: 'rgba(40, 104, 55, 0.9)',
     description:
@@ -91,8 +94,9 @@ const visions = [
     ],
   },
   {
-    icon: LuActivity,
+    icon: LuHeartHandshake,
     title: 'Care Ministry',
+    id: 'care-ministry',
     backgroundImage: '/vision-background.png',
     backgroundColor: 'rgba(142, 40, 40, 0.9)',
     description:
@@ -121,10 +125,12 @@ const visions = [
 const VisionDetails = (props: Props) => {
   return (
     <div className={styles.container}>
-      {visions.map((vision: any) => (
+      {visions.map((vision: any, key: number) => (
         <div
+          key={key}
           className={styles.vision}
           style={{ backgroundImage: `url(${vision.backgroundImage})` }}
+          id={vision.id}
         >
           <div
             className={styles.overlay}
@@ -141,8 +147,9 @@ const VisionDetails = (props: Props) => {
             </Paragraph>
           </div>
           <div className={styles.visionImages}>
-            {vision.images.map((image: any) => (
+            {vision.images.map((image: any, key: number) => (
               <Image
+                key={key}
                 src={image.src}
                 alt={image.alt}
                 width={300}
