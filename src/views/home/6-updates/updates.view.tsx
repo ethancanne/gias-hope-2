@@ -3,10 +3,10 @@ import Image from 'next/image';
 import Title from '@/components/title/title.component';
 import PostPreview from '@/components/post-preview/post-preview.component';
 import Button from '@/components/button/button.component';
-import { getMarkdownData } from '../../../../lib/getMarkdownData';
+import { getPostsData } from '@/lib/getData';
 
 const Updates = () => {
-  const postsData = getMarkdownData('./content/posts');
+  const postsData = getPostsData();
 
   return (
     <div className={styles.wrapper}>

@@ -3,28 +3,18 @@ import styles from './impact-overview.module.scss';
 import Paragraph from '@/components/paragraph/paragraph.component';
 import Image from 'next/image';
 
-type Props = {};
-
-const impactOverviewData = [
-  {
-    number: '32',
-    text: 'Grants Given',
-  },
-  {
-    number: '1,000',
-    text: 'families served',
-  },
-  {
-    number: '1,000',
-    text: 'families served',
-  },
-  {
-    number: '1,000',
-    text: 'families served',
-  },
-];
+type Props = {
+  impactOverviewData: [
+    {
+      number: number;
+      text: string;
+    },
+  ];
+};
 
 const ImpactOverview = (props: Props) => {
+  console.log('HELP', props.impactOverviewData);
+
   return (
     <div className={styles.container}>
       <h1 className={styles.title}>
@@ -36,7 +26,7 @@ const ImpactOverview = (props: Props) => {
       </h1>
 
       <div className={styles.impactOverviewCards}>
-        {impactOverviewData.map((data, index) => (
+        {props.impactOverviewData.map((data, index) => (
           <div key={index} className={styles.card}>
             <h1 className={styles.number}>{data.number}</h1>
             <p className={styles.text}>{data.text}</p>

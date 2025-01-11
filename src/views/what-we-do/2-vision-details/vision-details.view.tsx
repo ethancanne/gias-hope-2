@@ -9,7 +9,20 @@ import { LuActivity } from 'react-icons/lu';
 import Paragraph from '@/components/paragraph/paragraph.component';
 import Image from 'next/image';
 
-type Props = {};
+type Props = {
+  visionsData: {
+    icon: any;
+    title: string;
+    id: string;
+    backgroundImage: string;
+    backgroundColor: string;
+    description: string;
+    images: {
+      src: string;
+      alt: string;
+    }[];
+  };
+};
 
 const visions = [
   {

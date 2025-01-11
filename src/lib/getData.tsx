@@ -21,3 +21,11 @@ export function getMarkdownData(folder: string) {
 
   return markdownData;
 }
+
+export function getPostsData() {
+  return getMarkdownData('./content/posts');
+}
+
+export function getPagesData(pageSlug: string) {
+  return getMarkdownData(`./content/pages/`)[pageSlug].data;
+}

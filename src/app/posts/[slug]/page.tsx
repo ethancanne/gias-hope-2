@@ -2,7 +2,7 @@ import PageWrapper from '@/layout/page-wrapper/page-wrapper.layout';
 import PostContent from '@/views/posts/post-content/post-content.view';
 import React from 'react';
 import Markdown from 'react-markdown';
-import { getMarkdownData } from '../../../../lib/getMarkdownData';
+import { getPostsData } from '@/lib/getData';
 import { GetStaticPaths } from 'next';
 
 interface Props {
@@ -13,17 +13,17 @@ interface Props {
 const PostPage = ({ params }: Props) => {
   const { slug } = params;
 
-  const markdownData = getMarkdownData('./content/posts');
+  const postsData = getPostsData();
 
   return (
     <PageWrapper>
-      <PostContent post={markdownData[slug].data} />
+      <PostContent post={postsData[slug].data} />
     </PageWrapper>
   );
 };
 
 export const getStaticPaths: GetStaticPaths = async () => {
-  const markdownData = getMarkdownData('./content/posts');
+  const markdownData = getPostsData();
   const paths = Object.keys(markdownData);
 
   return {

@@ -23,31 +23,30 @@ collections:
 
   - name: 'pages'
     label: 'Pages'
-    folder: '/content/pages'
     files:
       - label: 'Our Impact Page'
-        name: 'our-impact-page'
-        file: 'our-impact-page.md'
+        name: 'ourImpactPage'
+        file: '/content/pages/our-impact-page.md'
         fields:
           [
             {
               label: 'Page Description',
-              name: 'page-description',
+              name: 'pageDescription',
               widget: 'string',
             },
             {
               label: 'Large Page Image',
-              name: 'large-page-image',
+              name: 'largePageImage',
               widget: 'image',
             },
             {
               label: 'Mobile Page Image',
-              name: 'mobile-page-image',
+              name: 'mobilePageImage',
               widget: 'image',
             },
             {
               label: 'Featured Data',
-              name: 'featured-data',
+              name: 'featuredData',
               widget: 'list',
               fields:
                 [
@@ -56,8 +55,8 @@ collections:
                 ],
             },
             {
-              label: 'Impact Data',
-              name: 'impact-data',
+              label: 'Impact Details Items',
+              name: 'detailsData',
               widget: 'list',
               fields:
                 [
@@ -79,23 +78,45 @@ collections:
           ]
 
       - label: 'What We Do Page'
-        name: 'what-we-do-page'
-        file: 'what-we-do-page.md'
+        name: 'whatWeDoPage'
+        file: '/content/pages/what-we-do-page.md'
         fields:
           [
             {
               label: 'Page Description',
-              name: 'page-description',
+              name: 'pageDescription',
               widget: 'string',
             },
             {
               label: 'Large Page Image',
-              name: 'large-page-image',
+              name: 'largePageImage',
               widget: 'image',
             },
             {
               label: 'Mobile Page Image',
-              name: 'mobile-page-image',
+              name: 'mobilePageImage',
               widget: 'image',
+            },
+            {
+              label: 'Visions',
+              name: 'visions',
+              widget: 'object',
+              fields:
+                [
+                  { label: 'Title', name: 'title', widget: 'string' },
+                  { label: 'Icon', name: 'icon', widget: 'string' },
+                  { label: 'ID', name: 'id', widget: 'string' },
+                  { label: 'Description', name: 'description', widget: 'text' },
+                  {
+                    label: 'Background Image',
+                    name: 'backgroundImage',
+                    widget: 'image',
+                  },
+                  {
+                    label: 'Background Color',
+                    name: 'backgroundColor',
+                    widget: 'string',
+                  },
+                ],
             },
           ]
