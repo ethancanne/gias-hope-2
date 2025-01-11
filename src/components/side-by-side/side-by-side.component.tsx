@@ -13,7 +13,7 @@ type Props = {
   image?: string;
   colored?: Boolean;
   reverse?: Boolean;
-  isParagraph?: Boolean;
+  isNotParagraph?: Boolean;
 };
 
 const SideBySide = (props: Props) => {
@@ -39,12 +39,12 @@ const SideBySide = (props: Props) => {
           </Title>
         )}
 
-        {props.isParagraph ? (
+        {props.isNotParagraph ? (
+          <div className={styles.paragraph}>{props.content}</div>
+        ) : (
           <Paragraph small full className={styles.paragraph}>
             {props.content}
           </Paragraph>
-        ) : (
-          props.content
         )}
       </div>
       {props.image && (

@@ -3,50 +3,25 @@ import Image from 'next/image';
 import Title from '@/components/title/title.component';
 import PostPreview from '@/components/post-preview/post-preview.component';
 import Button from '@/components/button/button.component';
+import { getMarkdownData } from '../../../../lib/getMarkdownData';
 
-const posts = [
-  {
-    id: 1,
-    title:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, magnam.',
-    image: '/family-small.png',
-    date: 'May 1, 2023',
-    category: 'News',
-  },
-  {
-    id: 1,
-    title:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, magnam.',
-    image: '/family-small.png',
-    date: 'May 1, 2023',
-    category: 'News',
-  },
-  {
-    id: 1,
-    title:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, magnam.',
-    image: '/family-small.png',
-    date: 'May 1, 2023',
-    category: 'News',
-  },
-  {
-    id: 1,
-    title:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, magnam.',
-    image: '/family-small.png',
-    date: 'May 1, 2023',
-    category: 'News',
-  },
-];
 const Updates = () => {
+  const postsData = getMarkdownData('./content/posts');
+
   return (
     <div className={styles.wrapper}>
       <div className={styles.container}>
         <Title title={'Recent Updates'} subTitle={'Stay in the know'} />
         <div className={styles.postsContainer}>
-          {posts.map((post) => {
-            return <PostPreview key={post.id} post={post} />;
-          })}
+          {Object.keys(postsData)
+            .slice(0, 4)
+            .map((slug: any) => (
+              <PostPreview
+                key={slug}
+                post={postsData[slug].data}
+                postSlug={slug}
+              />
+            ))}
         </div>
         <div className={styles.seeAllButtonContainer}>
           <Button text={'See All Posts'} href={'/posts'} type={'ghost'} />

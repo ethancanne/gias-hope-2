@@ -25,6 +25,10 @@
 
   .image {
     width: 100%;
+    min-height: 330px;
+    max-height: 330px;
+    object-fit: cover;
+
     height: auto;
     border-bottom: $color-yellow 3px solid;
   }

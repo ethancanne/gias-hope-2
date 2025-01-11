@@ -1,7 +1,10 @@
 backend:
   name: github
   repo: ethancanne/gias-hope-2
+
 media_folder: 'public'
+public_folder: '/'
+
 collections:
   - name: 'posts'
     label: 'Posts'
@@ -9,10 +12,90 @@ collections:
     create: true
     slug: '{{slug}}'
     fields:
-      - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Description', name: 'description', widget: 'string' }
-      - { label: 'Image', name: 'image', widget: 'image' }
-      - { label: 'Date', name: 'date', widget: 'datetime' }
-      - { label: 'Content', name: 'content', widget: 'markdown' }
-      - { label: 'Author', name: 'author', widget: 'string' }
-      - { label: 'Tags', name: 'tags', widget: 'string' }
+      [
+        { label: 'Title', name: 'title', widget: 'string' },
+        { label: 'Image', name: 'image', widget: 'image' },
+        { label: 'Date', name: 'date', widget: 'datetime' },
+        { label: 'Author', name: 'author', widget: 'string' },
+        { label: 'Category', name: 'category', widget: 'string' },
+        { label: 'Content', name: 'content', widget: 'markdown' },
+      ]
+
+  - name: 'pages'
+    label: 'Pages'
+    folder: '/content/pages'
+    files:
+      - label: 'Our Impact Page'
+        name: 'our-impact-page'
+        file: 'our-impact-page.md'
+        fields:
+          [
+            {
+              label: 'Page Description',
+              name: 'page-description',
+              widget: 'string',
+            },
+            {
+              label: 'Large Page Image',
+              name: 'large-page-image',
+              widget: 'image',
+            },
+            {
+              label: 'Mobile Page Image',
+              name: 'mobile-page-image',
+              widget: 'image',
+            },
+            {
+              label: 'Featured Data',
+              name: 'featured-data',
+              widget: 'list',
+              fields:
+                [
+                  { label: 'Text', name: 'text', widget: 'string' },
+                  { label: 'Number', name: 'number', widget: 'number' },
+                ],
+            },
+            {
+              label: 'Impact Data',
+              name: 'impact-data',
+              widget: 'list',
+              fields:
+                [
+                  { label: 'Title', name: 'title', widget: 'string' },
+                  {
+                    label: 'Description',
+                    name: 'description',
+                    widget: 'markdown',
+                  },
+                  { label: 'Image', name: 'image', widget: 'image' },
+                  {
+                    label: 'Link',
+                    name: 'link',
+                    widget: 'string',
+                    required: false,
+                  },
+                ],
+            },
+          ]
+
+      - label: 'What We Do Page'
+        name: 'what-we-do-page'
+        file: 'what-we-do-page.md'
+        fields:
+          [
+            {
+              label: 'Page Description',
+              name: 'page-description',
+              widget: 'string',
+            },
+            {
+              label: 'Large Page Image',
+              name: 'large-page-image',
+              widget: 'image',
+            },
+            {
+              label: 'Mobile Page Image',
+              name: 'mobile-page-image',
+              widget: 'image',
+            },
+          ]

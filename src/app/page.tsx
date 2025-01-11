@@ -6,7 +6,6 @@ import WhoIsGiannaView from '@/views/home/3-who-is-gianna/whoIsGianna.view';
 import OurVisionView from '@/views/home/4-our-vision/ourVision.view';
 import HowYouCanHelpView from '@/views/home/5-how-you-can-help/how-you-can-help.view';
 import UpdatesView from '@/views/home/6-updates/updates.view';
-import EmailSignUpView from '@/views/home/7-email-sign-up/email-sign-up.view';
 
 export default function Home() {
   return (
@@ -24,7 +23,6 @@ export default function Home() {
       <OurVisionView />
       <HowYouCanHelpView />
       <UpdatesView />
-      {/* <EmailSignUpView /> */}
     </PageWrapper>
   );
 }

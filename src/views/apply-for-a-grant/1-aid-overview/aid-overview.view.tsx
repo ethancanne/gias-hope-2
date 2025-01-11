@@ -28,6 +28,7 @@ const AidOverview = (props: Props) => {
         <SideBySide
           mainHeader="Adoption Aid"
           image="/family-small.png"
+          isNotParagraph={true}
           content={
             <>
               <p>

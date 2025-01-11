@@ -5,8 +5,8 @@ type Props = {
   subText?: string;
   headerImg?: string;
   size: 'small' | 'large';
-  largeBackgroundImg: string;
-  smallBackgroundImg: string;
+  largeBackgroundImg?: string;
+  smallBackgroundImg?: string;
   grayWave?: boolean;
 };
 
@@ -14,20 +14,24 @@ const Intro = (props: Props) => {
   return (
     <div className={styles.wrapper}>
       <div className={styles.container + ' ' + styles[props.size]}>
-        <Image
-          src={props.largeBackgroundImg}
-          alt="background"
-          width={1920}
-          height={680}
-          className={styles.largeBackgroundImg}
-        />
-        <Image
-          src={props.smallBackgroundImg}
-          alt="background"
-          width={1920}
-          height={680}
-          className={styles.smallBackgroundImg}
-        />
+        {props.largeBackgroundImg && (
+          <Image
+            src={props.largeBackgroundImg}
+            alt="background"
+            width={1920}
+            height={680}
+            className={styles.largeBackgroundImg}
+          />
+        )}
+        {props.smallBackgroundImg && (
+          <Image
+            src={props.smallBackgroundImg}
+            alt="background"
+            width={1920}
+            height={680}
+            className={styles.smallBackgroundImg}
+          />
+        )}
         {props.size === 'large' && (
           <Image
             src={'/tree.png'}

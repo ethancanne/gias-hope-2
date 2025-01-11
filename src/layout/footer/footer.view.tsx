@@ -38,14 +38,15 @@ const Footer = (props: Props) => {
             <Link href={'/'}>home</Link>
           </div>
           <div className={styles.link}>
-            <Link href={'/our-story'}>our story</Link>
-          </div>
-          <div className={styles.link}>
-            <Link href={'/our-vision'}>our vision</Link>
-          </div>
-          <div className={styles.link}>
             <Link href={'/our-impact'}>our impact</Link>
           </div>
+          <div className={styles.link}>
+            <Link href={'/what-we-do'}>what we do</Link>
+          </div>
+          <div className={styles.link}>
+            <Link href={'/our-story'}>our story</Link>
+          </div>
+
           <div className={styles.link}>
             <Link
               href={
@@ -56,7 +57,7 @@ const Footer = (props: Props) => {
             </Link>
           </div>
           <div className={styles.link}>
-            <Link href={'/our-impact'}>apply for a grant</Link>
+            <Link href={'/apply-for-a-grant'}>apply for a grant</Link>
           </div>
         </div>
 
