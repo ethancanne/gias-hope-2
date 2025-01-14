@@ -1,0 +1,27 @@
+@import '../../../globals.scss';
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 300px;
+  gap: 0px;
+
+  .field {
+    width: 100%;
+  }
+
+  .label {
+    font-size: $fz-xs;
+    font-weight: 500;
+    color: #6b6b6b;
+  }
+
+  .value {
+    font-size: 1.1rem;
+    color: #333;
+    padding: 8px;
+    background-color: $color-gray;
+    border-radius: 6px;
+  }
+}

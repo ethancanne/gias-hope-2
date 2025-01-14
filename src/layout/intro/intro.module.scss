@@ -200,6 +200,9 @@
       height: 50vh;
       @include mobile {
         height: 60vh;
+        &.noBackground {
+          height: 30vh;
+        }
       }
     }
 

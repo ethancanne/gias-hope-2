@@ -10,10 +10,10 @@ interface Props {
 }
 
 //
-const PostPage = ({ params }: Props) => {
+const PostPage = async ({ params }: Props) => {
   const { slug } = params;
 
-  const postsData = getPostsData();
+  const postsData = await getPostsData();
 
   return (
     <PageWrapper>

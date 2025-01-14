@@ -9,9 +9,31 @@ import { LuShieldPlus } from 'react-icons/lu';
 import { LuActivity } from 'react-icons/lu';
 import Link from 'next/link';
 
-type Props = {};
+type Props = {
+  visionsData: {
+    id: string;
+    title: string;
+    description: string;
+    backgroundImage: string;
+    backgroundColor: string;
+    icon: any;
+    images: {
+      src: string;
+      alt: string;
+    }[];
+  }[];
+};
+
+const iconMapping: { [key: string]: React.ComponentType } = {
+  LuHeartHandshake,
+  LuHandCoins,
+  LuShieldPlus,
+  LuActivity,
+};
 
 const VisionOverview = (props: Props) => {
+  console.log('THIS IS HOME!', props.visionsData);
+
   return (
     <div className={styles.container}>
       <div className={styles.textContainer}>
@@ -27,22 +49,19 @@ const VisionOverview = (props: Props) => {
       </div>
 
       <div className={styles.visionContainer}>
-        <Link className={styles.visionItem} href={'#orphan-care'}>
-          <LuActivity className={styles.icon} />
-          <h1 className={styles.text}>Orphan Care</h1>
-        </Link>
-        <Link className={styles.visionItem} href={'#orphan-prevention'}>
-          <LuShieldPlus className={styles.icon} />
-          <h1 className={styles.text}>Orphan Prevention</h1>
-        </Link>
-        <Link className={styles.visionItem} href={'#adoption-aid'}>
-          <LuHandCoins className={styles.icon} />
-          <h1 className={styles.text}>Adoption Aid</h1>
-        </Link>
-        <Link className={styles.visionItem} href={'#care-ministry'}>
-          <LuHeartHandshake className={styles.icon} />
-          <h1 className={styles.text}>Care Ministry</h1>
-        </Link>
+        {props.visionsData.map((vision: any, key: number) => {
+          const IconComponent = iconMapping[vision.icon] as any;
+          return (
+            <Link
+              key={key}
+              className={styles.visionItem}
+              href={'#' + vision.id}
+            >
+              {IconComponent && <IconComponent className={styles.icon} />}
+              <h1 className={styles.text}>{vision.title}</h1>
+            </Link>
+          );
+        })}
       </div>
     </div>
   );

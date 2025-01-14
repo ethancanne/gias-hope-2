@@ -1,122 +1,272 @@
+pageInformation: &pageInformation
+  label: 'Page Information'
+  name: 'pageInformation'
+  widget: 'object'
+  fields:
+    - { label: 'Page Title', name: 'title', widget: 'string' }
+    - { label: 'Link', name: 'link', widget: 'string' }
+    - { label: 'Page Description', name: 'description', widget: 'string' }
+    - {
+        label: 'Desktop Page Image',
+        name: 'desktopPageImage',
+        widget: 'image',
+        required: false,
+      }
+    - {
+        label: 'Mobile Page Image',
+        name: 'mobilePageImage',
+        widget: 'image',
+        required: false,
+      }
+    - {
+        label: 'Is the page hidden from the menu?',
+        name: 'isHidden',
+        widget: 'boolean',
+        required: false,
+      }
+    - {
+        label: 'Should the page have a button instead of a link in the menu?',
+        name: 'hasButton',
+        widget: 'boolean',
+        required: false,
+      }
+    - {
+        label: 'Button Type',
+        name: 'buttonType',
+        widget: 'select',
+        options: ['yellow', 'green'],
+        required: false,
+      }
+    - {
+        label: 'Order that the page should appear in the menu',
+        name: 'order',
+        widget: 'number',
+        required: false,
+      }
+
 backend:
   name: github
   repo: ethancanne/gias-hope-2
-
-media_folder: 'public'
-public_folder: '/'
-
+media_folder: public
+public_folder: /
 collections:
-  - name: 'posts'
-    label: 'Posts'
-    folder: '/content/posts'
+  - name: posts
+    label: Posts
+    folder: /content/posts
     create: true
     slug: '{{slug}}'
     fields:
-      [
-        { label: 'Title', name: 'title', widget: 'string' },
-        { label: 'Image', name: 'image', widget: 'image' },
-        { label: 'Date', name: 'date', widget: 'datetime' },
-        { label: 'Author', name: 'author', widget: 'string' },
-        { label: 'Category', name: 'category', widget: 'string' },
-        { label: 'Content', name: 'content', widget: 'markdown' },
-      ]
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Image', name: 'image', widget: 'image' }
+      - { label: 'Date', name: 'date', widget: 'datetime' }
+      - { label: 'Author', name: 'author', widget: 'string' }
+      - { label: 'Category', name: 'category', widget: 'string' }
+      - { label: 'Content', name: 'content', widget: 'markdown' }
 
-  - name: 'pages'
-    label: 'Pages'
+  - name: pages
+    label: Pages
     files:
+      - label: 'Home Page'
+        name: 'homePage'
+        file: /content/pages/home-page.md
+        fields:
+          - *pageInformation
+          - label: 'Who We Are'
+            name: 'whoWeAreData'
+            widget: 'object'
+            fields:
+              - { label: 'Text', name: 'text', widget: 'markdown' }
+              - label: 'Featured Images'
+                name: 'featuredImages'
+                widget: 'list'
+                fields:
+                  - { label: 'Image', name: 'src', widget: 'image' }
+                  - { label: 'Alt Text', name: 'alt', widget: 'string' }
+          - label: 'Verse'
+            name: 'verseData'
+            widget: 'object'
+            fields:
+              - { label: 'Text', name: 'text', widget: 'string' }
+              - { label: 'Reference', name: 'reference', widget: 'string' }
+          - {
+              label: 'Who is Gianna Text',
+              name: 'whoIsGiannaText',
+              widget: 'markdown',
+            }
+          - {
+              label: 'Our Vision Text',
+              name: 'ourVisionText',
+              widget: 'markdown',
+            }
+          - label: 'How You Can Help'
+            name: 'howYouCanHelpData'
+            widget: 'object'
+            fields:
+              - { label: 'Text', name: 'text', widget: 'markdown' }
+              - { label: 'Donate Link', name: 'donateLink', widget: 'string' }
+              - label: 'Images'
+                name: 'images'
+                widget: 'list'
+                fields:
+                  - { label: 'Image', name: 'src', widget: 'image' }
+                  - { label: 'Alt Text', name: 'alt', widget: 'string' }
+
       - label: 'Our Impact Page'
         name: 'ourImpactPage'
-        file: '/content/pages/our-impact-page.md'
+        file: /content/pages/our-impact-page.md
         fields:
-          [
-            {
-              label: 'Page Description',
-              name: 'pageDescription',
-              widget: 'string',
-            },
-            {
-              label: 'Large Page Image',
-              name: 'largePageImage',
-              widget: 'image',
-            },
-            {
-              label: 'Mobile Page Image',
-              name: 'mobilePageImage',
-              widget: 'image',
-            },
-            {
-              label: 'Featured Data',
-              name: 'featuredData',
-              widget: 'list',
-              fields:
-                [
-                  { label: 'Text', name: 'text', widget: 'string' },
-                  { label: 'Number', name: 'number', widget: 'number' },
-                ],
-            },
-            {
-              label: 'Impact Details Items',
-              name: 'detailsData',
-              widget: 'list',
-              fields:
-                [
-                  { label: 'Title', name: 'title', widget: 'string' },
-                  {
-                    label: 'Description',
-                    name: 'description',
-                    widget: 'markdown',
-                  },
-                  { label: 'Image', name: 'image', widget: 'image' },
-                  {
-                    label: 'Link',
-                    name: 'link',
-                    widget: 'string',
-                    required: false,
-                  },
-                ],
-            },
-          ]
+          - *pageInformation
+          - label: 'Featured Data'
+            name: 'featuredData'
+            widget: 'list'
+            fields:
+              - { label: 'Text', name: 'text', widget: 'string' }
+              - { label: 'Number', name: 'number', widget: 'number' }
+          - label: 'Impact Details Items'
+            name: 'detailsData'
+            widget: 'list'
+            fields:
+              - { label: 'Title', name: 'title', widget: 'string' }
+              - {
+                  label: 'Description',
+                  name: 'description',
+                  widget: 'markdown',
+                }
+              - { label: 'Image', name: 'image', widget: 'image' }
+              - {
+                  label: 'Link',
+                  name: 'link',
+                  widget: 'string',
+                  required: false,
+                }
 
       - label: 'What We Do Page'
         name: 'whatWeDoPage'
-        file: '/content/pages/what-we-do-page.md'
+        file: /content/pages/what-we-do-page.md
         fields:
-          [
-            {
-              label: 'Page Description',
-              name: 'pageDescription',
-              widget: 'string',
-            },
-            {
-              label: 'Large Page Image',
-              name: 'largePageImage',
-              widget: 'image',
-            },
-            {
-              label: 'Mobile Page Image',
-              name: 'mobilePageImage',
-              widget: 'image',
-            },
-            {
-              label: 'Visions',
-              name: 'visions',
-              widget: 'object',
-              fields:
-                [
-                  { label: 'Title', name: 'title', widget: 'string' },
-                  { label: 'Icon', name: 'icon', widget: 'string' },
-                  { label: 'ID', name: 'id', widget: 'string' },
-                  { label: 'Description', name: 'description', widget: 'text' },
-                  {
-                    label: 'Background Image',
-                    name: 'backgroundImage',
-                    widget: 'image',
-                  },
-                  {
-                    label: 'Background Color',
-                    name: 'backgroundColor',
-                    widget: 'string',
-                  },
-                ],
-            },
-          ]
+          - *pageInformation
+          - label: 'Visions'
+            name: 'visionsData'
+            widget: 'list'
+            fields:
+              - { label: 'Title', name: 'title', widget: 'string' }
+              - { label: 'Icon', name: 'icon', widget: 'string' }
+              - { label: 'ID', name: 'id', widget: 'string' }
+              - { label: 'Description', name: 'description', widget: 'text' }
+              - {
+                  label: 'Background Image',
+                  name: 'backgroundImage',
+                  widget: 'image',
+                }
+              - {
+                  label: 'Background Color',
+                  name: 'backgroundColor',
+                  widget: 'string',
+                }
+
+      - label: 'Our Story Page'
+        name: 'ourStoryPage'
+        file: /content/pages/our-story-page.md
+        fields:
+          - *pageInformation
+          - label: 'Story Blocks'
+            name: 'storyBlocks'
+            widget: 'list'
+            fields:
+              - {
+                  label: 'Title',
+                  name: 'title',
+                  widget: 'string',
+                  required: false,
+                }
+              - {
+                  label: 'Header',
+                  name: 'header',
+                  widget: 'string',
+                  required: false,
+                }
+              - { label: 'Content', name: 'content', widget: 'markdown' }
+              - {
+                  label: 'Image',
+                  name: 'image',
+                  widget: 'image',
+                  required: false,
+                }
+              - {
+                  label: 'Colored Block?',
+                  name: 'coloredBlock',
+                  widget: 'boolean',
+                  required: false,
+                }
+              - {
+                  label: 'Reversed Block?',
+                  name: 'reversedBlock',
+                  widget: 'boolean',
+                  required: false,
+                }
+
+      - label: 'Apply for a Grant Page'
+        name: 'applyForGrantPage'
+        file: /content/pages/apply-for-a-grant-page.md
+        fields:
+          - *pageInformation
+          - label: 'Grant Information'
+            name: 'grantInformationData'
+            widget: 'object'
+            fields:
+              - {
+                  label: 'Grant Description',
+                  name: 'description',
+                  widget: 'markdown',
+                }
+              - {
+                  label: 'Grant Guidelines',
+                  name: 'guidelines',
+                  widget: 'markdown',
+                }
+              - { label: 'Image', name: 'image', widget: 'image' }
+          - label: 'Grant Settings'
+            name: 'grantSettings'
+            widget: 'object'
+            fields:
+              - {
+                  label: 'Is the Grant Open?',
+                  name: 'isOpen',
+                  widget: 'boolean',
+                }
+              - {
+                  label: 'Grant Deadline',
+                  name: 'deadline',
+                  widget: 'datetime',
+                  required: false,
+                }
+          - label: 'Grant Form Fields'
+            name: 'grantFormFields'
+            widget: 'list'
+            fields:
+              - { label: 'Label', name: 'label', widget: 'string' }
+              - {
+                  label: 'Name',
+                  name: 'name',
+                  widget: 'string',
+                  pattern: '^[a-z0-9]+(?:-[a-z0-9]+)*$',
+                }
+              - {
+                  label: 'Type',
+                  name: 'type',
+                  widget: 'select',
+                  options: ['text', 'email', 'phone', 'date', 'textarea'],
+                }
+              - { label: 'Required?', name: 'required', widget: 'boolean' }
+
+      - label: 'Posts Page'
+        name: 'postsPage'
+        file: /content/pages/posts-page.md
+        fields:
+          - *pageInformation
+
+      - label: 'Donate Page'
+        name: 'donatePage'
+        file: /content/pages/donate-page.md
+        fields:
+          - *pageInformation

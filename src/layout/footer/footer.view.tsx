@@ -6,27 +6,24 @@ import Button from '@/components/button/button.component';
 import Title from '@/components/title/title.component';
 import Paragraph from '@/components/paragraph/paragraph.component';
 import TextField from '@/components/textbox/textbox.component';
+import EmailSignUp from './components/email-sign-up/email-sign-up.component';
+import { getPagesData } from '@/lib/getData';
 
 type Props = {};
-const Footer = (props: Props) => {
+const Footer = async (props: Props) => {
+  const navData = await getPagesData();
+
+  const pageInformationList = Object.values(navData)
+    .map((pageData: any) => {
+      return pageData.data && pageData.data.pageInformation
+        ? pageData.data.pageInformation
+        : null;
+    })
+    .filter((item) => item !== null);
+
   return (
     <div className={styles.wrapper}>
-      <div className={styles.emailWrapper}>
-        <div className={styles.emailSignUpContainer}>
-          <div className={styles.signUpContainer}>
-            <Title title={'Get Notified'} className={styles.emailTitle} />
-            <Paragraph small>
-              Subscribe to our newsletter and receive updates about our ministry
-              in your email inbox.
-            </Paragraph>
-            <div className={styles.email}>
-              {/* //TODO Mailchimp add email */}
-              <TextField placeholder={'Enter your email'} />
-              <Button text={'Subscribe'} href={'/'} type={'ghost'} />
-            </div>
-          </div>
-        </div>
-      </div>
+      <EmailSignUp />
       <div className={styles.container}>
         <div className={styles.logo}>
           <Image src={'/tree.png'} alt={'logo'} width={120} height={100} />
@@ -34,42 +31,23 @@ const Footer = (props: Props) => {
         </div>
 
         <div className={styles.links}>
-          <div className={styles.link}>
-            <Link href={'/'}>home</Link>
-          </div>
-          <div className={styles.link}>
-            <Link href={'/our-impact'}>our impact</Link>
-          </div>
-          <div className={styles.link}>
-            <Link href={'/what-we-do'}>what we do</Link>
-          </div>
-          <div className={styles.link}>
-            <Link href={'/our-story'}>our story</Link>
-          </div>
-
-          <div className={styles.link}>
-            <Link
-              href={
-                'https://www.paypal.com/donate?hosted_button_id=YSWB8EJUJVX7N'
-              }
-            >
-              donate
-            </Link>
-          </div>
-          <div className={styles.link}>
-            <Link href={'/apply-for-a-grant'}>apply for a grant</Link>
-          </div>
+          {pageInformationList
+            .sort((a: any, b: any) => a.order - b.order)
+            .map((item: any, index: number) => {
+              return (
+                <div key={index} className={styles.link}>
+                  <Link href={item.link}>{item.title}</Link>
+                </div>
+              );
+            })}
         </div>
 
         <div className={styles.socials}>
-          <Link href={'https://www.facebook.com/giashope'}>
+          <Link href={'https://www.facebook.com/livegiagrowforeverfoundation/'}>
             <FaFacebook className={styles.icon} />
           </Link>
-          <Link href={'https://www.facebook.com/giashope'}>
+          <Link href={'https://www.instagram.com/livegiagrowforeverfoundation'}>
             <FaInstagram className={styles.icon} />
-          </Link>
-          <Link href={'https://www.facebook.com/giashope'}>
-            <FaWordpress className={styles.icon} />
           </Link>
         </div>
 

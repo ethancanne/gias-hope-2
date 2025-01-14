@@ -5,20 +5,35 @@ import PostPreview from '@/components/post-preview/post-preview.component';
 import Button from '@/components/button/button.component';
 import { getPostsData } from '@/lib/getData';
 
-const Updates = () => {
-  const postsData = getPostsData();
-
+type Props = {
+  postsData: {
+    [slug: string]: {
+      id: number;
+      title: string;
+      image: string;
+      date: string;
+      category: string;
+      content: string;
+    };
+  };
+};
+const Updates = (props: Props) => {
   return (
     <div className={styles.wrapper}>
       <div className={styles.container}>
         <Title title={'Recent Updates'} subTitle={'Stay in the know'} />
         <div className={styles.postsContainer}>
-          {Object.keys(postsData)
+          {Object.keys(props.postsData)
             .slice(0, 4)
+            .sort(
+              (a: any, b: any) =>
+                new Date((props.postsData as any)[b].data.date).getTime() -
+                new Date((props.postsData as any)[a].data.date).getTime()
+            )
             .map((slug: any) => (
               <PostPreview
                 key={slug}
-                post={postsData[slug].data}
+                post={(props.postsData as any)[slug].data}
                 postSlug={slug}
               />
             ))}

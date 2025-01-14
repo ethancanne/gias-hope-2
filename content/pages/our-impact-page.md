@@ -1,10 +1,16 @@
 ---
-pageDescription: Lorem Lorem Lorem  Lorem Lorem Lorem  Lorem Lorem Lorem Lorem Lorem Lorem
-largePageImage: /family-2.png
-mobilePageImage: /family-small.png
+pageInformation:
+  title: Our Impact
+  link: /our-impact
+  description: Lorem Lorem Lorem  Lorem Lorem Lorem  Lorem Lorem Lorem Lorem Lorem Lorem
+  desktopPageImage: /family-2.png
+  mobilePageImage: /family-small.png
+  isHidden: false
+  hasButton: false
+  order: 1
 featuredData:
   - text: Grants Given
-    number: 32
+    number: 1221
   - text: Famililes Served
     number: 1000
   - text: Families Served
@@ -29,8 +35,10 @@ detailsData:
     image: /family-small.png
     link: ''
   - title: Published a Children's Book to Bring Comfort
-    description: |-
-      We wrote a heartfelt children's book designed to comfort families grieving a loss. This resource helps minister to the hearts of both parents and children experiencing pain after a tragedy. All proceeds from book sales are donated back to the GIA'S Hope Foundation.
+    description: We wrote a heartfelt children's book designed to comfort families grieving a loss. This resource helps minister to the hearts of both parents and children experiencing pain after a tragedy. All proceeds from book sales are donated back to the GIA'S Hope Foundation.
     image: /vision-background.png
     link: https://www.amazon.com/Audible-Hopes-Garden-Song/dp/B0C41R5X2N
+title: our impact
+link: /our-impact
 ---
+

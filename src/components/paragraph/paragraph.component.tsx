@@ -8,7 +8,7 @@ type Props = {
 };
 const Paragraph = (props: Props) => {
   return (
-    <p
+    <div
       className={
         styles.container +
         ' ' +
@@ -22,7 +22,7 @@ const Paragraph = (props: Props) => {
       }
     >
       {props.children}
-    </p>
+    </div>
   );
 };
 export default Paragraph;

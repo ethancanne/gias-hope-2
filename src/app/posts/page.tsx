@@ -1,19 +1,21 @@
 import Intro from '@/layout/intro/intro.component';
 import PageWrapper from '@/layout/page-wrapper/page-wrapper.layout';
+import { getPagesData, getPostsData } from '@/lib/getData';
 import PostsList from '@/views/posts/posts-lists/posts-list.view';
 import React from 'react';
 
-const PostsPage = () => {
+const PostsPage = async () => {
+  const postsPageData = await getPagesData('posts-page');
+  const postsData = await getPostsData();
+
   return (
     <PageWrapper>
       <Intro
         size={'small'}
-        header={'Posts'}
-        subText={
-          'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, magnam.'
-        }
+        title={postsPageData.pageInformation.title}
+        description={postsPageData.pageInformation.description}
       />
-      <PostsList />
+      <PostsList postsData={postsData} />
     </PageWrapper>
   );
 };

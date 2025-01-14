@@ -8,7 +8,10 @@ import {
   LuShieldPlus,
 } from 'react-icons/lu';
 import Link from 'next/link';
-type Props = {};
+import Markdown from 'react-markdown';
+type Props = {
+  ourVisionText: string;
+};
 const OurVision = (props: Props) => {
   return (
     <div className={styles.container}>
@@ -43,10 +46,7 @@ const OurVision = (props: Props) => {
       <div className={styles.textContainer}>
         <Title title={'Our Vision'} subTitle={'Hope for the World'} />
         <Paragraph>
-          The vision of GIA'S Hope is a 4-part global initiative to plant God's
-          seed of love. Our mission is to grow abundant life and bloom radiant
-          hope through the four branches of our foundation for the most hurting
-          and broken.
+          <Markdown>{props.ourVisionText}</Markdown>
         </Paragraph>
       </div>
     </div>

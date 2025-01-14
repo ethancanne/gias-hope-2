@@ -5,15 +5,25 @@ import Button from '@/components/button/button.component';
 import { useState } from 'react';
 import Popup from '@/components/popup/popup.component';
 import GrantPopupContent from './components/grant-popup-content/grant-popup-content.component';
+import Markdown from 'react-markdown';
 
-type Props = {};
-
-const status = {
-  isOpen: true,
-  date: 'March 31, 2025',
+type Props = {
+  grantPageData: {
+    grantSettings: {
+      isOpen: boolean;
+      deadline: string;
+    };
+    grantInformationData: {
+      description: string;
+      guidelines: string;
+      image: string;
+    };
+  };
 };
+
 const AidOverview = (props: Props) => {
   const [popupIsOpen, setPopupIsOpen] = useState(false);
+  console.log('GRANT PAGE DATA', props.grantPageData);
 
   return (
     <div className={styles.wrapper}>
@@ -22,56 +32,51 @@ const AidOverview = (props: Props) => {
         onClose={() => setPopupIsOpen(false)}
         title="Application Process"
       >
-        <GrantPopupContent status={status} setPopupIsOpen={setPopupIsOpen} />
+        <GrantPopupContent
+          guidelines={props.grantPageData.grantInformationData.guidelines}
+          deadline={props.grantPageData.grantSettings.deadline}
+          setPopupIsOpen={setPopupIsOpen}
+        />
       </Popup>
       <div className={styles.container}>
         <SideBySide
           mainHeader="Adoption Aid"
           image="/family-small.png"
-          isNotParagraph={true}
-          content={
-            <>
-              <p>
-                One of the major challenges preventing waiting children from
-                finding families is the high cost of adoption. Our grants help
-                reduce this financial barrier, contributing to the placement of
-                over 32 children into loving, secure homes.
-              </p>
-              <p>
-                Each adoption story beautifully mirrors God’s work in our
-                lives—a testament to faith, redemption, and hope. We would be
-                thrilled to join you in rejoicing and praying for you and your
-                waiting children.
-              </p>
-              <p>
-                Thank you for being part of the adoption miracle and for helping
-                us honor the lasting light and legacy of our brave Gianna.
-              </p>
+          content={props.grantPageData.grantInformationData.description}
+          extraContent={
+            props.grantPageData.grantSettings.isOpen ? (
+              <>
+                <Button
+                  text={'Apply Now'}
+                  type="yellow"
+                  onClick={() => setPopupIsOpen(true)}
+                  large
+                />
 
-              {status.isOpen ? (
-                <>
-                  <Button
-                    text={'Apply Now'}
-                    type="yellow"
-                    onClick={() => setPopupIsOpen(true)}
-                    large
-                  />
-
-                  <div className={styles.status + ' ' + styles.open}>
-                    <p>
-                      Our current Adoption Aid grant application period is{' '}
-                      <strong>open through {status.date}</strong>
-                    </p>
-                  </div>
-                </>
-              ) : (
-                <div className={styles.status + ' ' + styles.closed}>
+                <div className={styles.status + ' ' + styles.open}>
                   <p>
-                    Our current Adoption Aid grant application period is closed
+                    Our current Adoption Aid grant application period is{' '}
+                    <strong>
+                      open through{' '}
+                      {new Date(
+                        props.grantPageData.grantSettings.deadline
+                      ).toLocaleString('en-US', {
+                        month: 'long',
+                        day: 'numeric',
+                        year: 'numeric',
+                      })}
+                      :
+                    </strong>
                   </p>
                 </div>
-              )}
-            </>
+              </>
+            ) : (
+              <div className={styles.status + ' ' + styles.closed}>
+                <p>
+                  Our current Adoption Aid grant application period is closed
+                </p>
+              </div>
+            )
           }
         />
       </div>

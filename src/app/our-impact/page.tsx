@@ -6,20 +6,20 @@ import ImpactDetails from '@/views/our-impact/2-impact-details/impact-details.vi
 import { getPagesData } from '@/lib/getData';
 
 type Props = {};
-const Page = (props: Props) => {
-  const ourImpactPageData = getPagesData('our-impact-page') as any;
+const Page = async (props: Props) => {
+  const ourImpactPageData = (await getPagesData('our-impact-page')) as any;
+  console.log('OUR IMPACT PAGE DATA', ourImpactPageData);
 
   return (
     <PageWrapper>
       <Intro
         size={'small'}
-        largeBackgroundImg={'/family-2.png'}
-        smallBackgroundImg={'/family-small.png'}
-        grayWave
-        header={'our impact'}
-        subText={
-          'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, magnam.'
+        desktopBackgroundImg={
+          ourImpactPageData.pageInformation.desktopPageImage
         }
+        mobileBackgroundImg={ourImpactPageData.pageInformation.mobilePageImage}
+        title={ourImpactPageData.pageInformation.title}
+        description={ourImpactPageData.pageInformation.description}
       />
       <ImpactOverview impactOverviewData={ourImpactPageData.featuredData} />
       <ImpactDetails impactDetailsData={ourImpactPageData.detailsData} />

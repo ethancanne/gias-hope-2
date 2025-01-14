@@ -4,12 +4,14 @@ import { TinaMarkdown } from 'tinacms/dist/rich-text';
 import Image from 'next/image';
 import Paragraph from '@/components/paragraph/paragraph.component';
 import Title from '@/components/title/title.component';
+import Markdown from 'react-markdown';
 
 type Props = {
   className?: string;
   mainHeader?: string;
   header?: string;
-  content: React.ReactNode;
+  content: string;
+  extraContent?: React.ReactNode;
   image?: string;
   colored?: Boolean;
   reverse?: Boolean;
@@ -40,12 +42,15 @@ const SideBySide = (props: Props) => {
         )}
 
         {props.isNotParagraph ? (
-          <div className={styles.paragraph}>{props.content}</div>
+          <div className={styles.paragraph}>
+            <Markdown>{props.content}</Markdown>
+          </div>
         ) : (
           <Paragraph small full className={styles.paragraph}>
-            {props.content}
+            <Markdown>{props.content}</Markdown>
           </Paragraph>
         )}
+        {props.extraContent && props.extraContent}
       </div>
       {props.image && (
         <div className={styles.imageContainer}>

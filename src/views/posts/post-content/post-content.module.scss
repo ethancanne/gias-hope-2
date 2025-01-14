@@ -23,7 +23,7 @@
         .backButton {
           position: absolute;
           left: 0;
-          bottom: 30px;
+          bottom: clamp(25px, 5vw, 30px);
           font-size: $fz-md;
 
           color: lighten($color-black, 30%);
@@ -39,7 +39,7 @@
 
       .title {
         font-family: var(--font-pt-bold);
-        font-size: clamp(2.5rem, 2.5vw, 3.5rem);
+        font-size: clamp($fz-md, 2.5vw, 3.5rem);
         margin-bottom: 20px;
 
         text-align: center;
@@ -63,6 +63,10 @@
       text-align: center;
       margin-top: -20px;
       color: lighten($color-black, 30%);
+
+      @include mobile {
+        font-size: $fz-xxs;
+      }
     }
     .category {
       text-align: center;
@@ -77,6 +81,10 @@
       z-index: 1;
 
       border: $color-white 2px solid;
+
+      @include mobile {
+        font-size: $fz-xxs;
+      }
     }
 
     .content {

@@ -1,11 +1,22 @@
 'use client';
+
 import { SubmitHandler, useForm } from 'react-hook-form';
 import styles from './application.module.scss';
 import Title from '@/components/title/title.component';
 import Button from '@/components/button/button.component';
-import { useEffect, useState } from 'react';
+import { useState, useEffect } from 'react';
+import { MongoClient } from 'mongodb';
+import { submitFormToMongo } from '@/lib/submitDataToMongo';
+import Loading from '@/components/loading/loading.component';
 
-type Props = {};
+type Props = {
+  grantFormFields: {
+    name: string;
+    type: string;
+    required: boolean;
+    label: string;
+  }[];
+};
 
 const Application = (props: Props) => {
   const {
@@ -17,78 +28,7 @@ const Application = (props: Props) => {
   } = useForm();
 
   const [formSubmitted, setFormSubmitted] = useState(false);
-
-  const formFields = [
-    { name: 'email', label: 'Email *', type: 'email', required: true },
-    {
-      name: 'fullName',
-      label: 'What is your full name? *',
-      type: 'text',
-      required: true,
-    },
-    {
-      name: 'phoneNumber',
-      label: 'What is your phone number?',
-      type: 'tel',
-      required: false,
-    },
-    {
-      name: 'socialProfile',
-      label: 'Please provide a link to your Facebook and/or Instagram profile.',
-      type: 'url',
-      required: false,
-    },
-    {
-      name: 'agency',
-      label: 'What agency are you with for this adoption? *',
-      type: 'text',
-      required: true,
-    },
-    {
-      name: 'adoptionStage',
-      label: 'What stage of adoption are you currently in? *',
-      type: 'text',
-      required: true,
-    },
-    {
-      name: 'estimatedTime',
-      label: 'Estimated time until travel and/or Gotcha day *',
-      type: 'text',
-      required: true,
-    },
-    {
-      name: 'moneyRaised',
-      label: 'How much money have you raised for this adoption so far? *',
-      type: 'number',
-      required: true,
-    },
-    {
-      name: 'fundraisingMethods',
-      label:
-        'Please briefly explain the primary way(s) that you have raised money thus far?',
-      type: 'text',
-      required: false,
-    },
-    {
-      name: 'moneyLeft',
-      label: 'How much money do you have left to raise? *',
-      type: 'number',
-      required: true,
-    },
-    {
-      name: 'webpages',
-      label:
-        'Add link to relatable webpages (ie fundraising page, blog, family page, etc.)',
-      type: 'url',
-      required: false,
-    },
-    {
-      name: 'adoptionStory',
-      label: 'What’s your adoption story in 750 words or less? *',
-      type: 'textarea',
-      required: true,
-    },
-  ];
+  const [loading, setLoading] = useState(false);
 
   const watchedValues = watch();
 
@@ -106,16 +46,31 @@ const Application = (props: Props) => {
     }
   }, [setValue]);
 
-  const onSubmit = (data: any) => {
+  const onSubmit: SubmitHandler<any> = async (data) => {
     console.log(data);
-    localStorage.removeItem('adoptionFormData');
-    localStorage.setItem('adoptionFormSubmitted', JSON.stringify(true));
-    setFormSubmitted(true);
+
+    setLoading(true);
+
+    // Call the Server Action to submit the form data to MongoDB
+    const result = await submitFormToMongo(data);
+    setLoading(false);
+
+    if (result.success) {
+      localStorage.removeItem('adoptionFormData');
+      localStorage.setItem('adoptionFormSubmitted', JSON.stringify(true));
+      setFormSubmitted(true);
+    } else {
+      console.error(result.error);
+    }
   };
 
   useEffect(() => {
     localStorage.setItem('adoptionFormData', JSON.stringify(watchedValues));
   }, [watchedValues]);
+
+  if (loading) {
+    return <Loading message="Submitting application..." />;
+  }
 
   return (
     <div className={styles.container}>
@@ -131,7 +86,7 @@ const Application = (props: Props) => {
         </p>
       ) : (
         <form onSubmit={handleSubmit(onSubmit)}>
-          {formFields.map((field, index) => (
+          {props.grantFormFields.map((field, index) => (
             <div key={index}>
               <label>{field.label}</label>
               {field.type === 'textarea' ? (
@@ -154,7 +109,7 @@ const Application = (props: Props) => {
               )}
               {errors[field.name] && (
                 <p>{(errors[field.name] as any).message}</p>
-              )}{' '}
+              )}
             </div>
           ))}
           <Button htmlType="submit" type="yellow">

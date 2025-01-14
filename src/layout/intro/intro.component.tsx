@@ -1,31 +1,39 @@
 import styles from './intro.module.scss';
 import Image from 'next/image';
 type Props = {
-  header?: string;
-  subText?: string;
+  title?: string;
+  description?: string;
   headerImg?: string;
   size: 'small' | 'large';
-  largeBackgroundImg?: string;
-  smallBackgroundImg?: string;
+  desktopBackgroundImg?: string;
+  mobileBackgroundImg?: string;
   grayWave?: boolean;
 };
 
 const Intro = (props: Props) => {
   return (
     <div className={styles.wrapper}>
-      <div className={styles.container + ' ' + styles[props.size]}>
-        {props.largeBackgroundImg && (
+      <div
+        className={
+          styles.container +
+          ' ' +
+          styles[props.size] +
+          ' ' +
+          (props.mobileBackgroundImg ? '' : styles.noBackground)
+        }
+      >
+        {props.desktopBackgroundImg && (
           <Image
-            src={props.largeBackgroundImg}
+            src={props.desktopBackgroundImg}
             alt="background"
             width={1920}
             height={680}
             className={styles.largeBackgroundImg}
           />
         )}
-        {props.smallBackgroundImg && (
+        {props.mobileBackgroundImg && (
           <Image
-            src={props.smallBackgroundImg}
+            src={props.mobileBackgroundImg}
             alt="background"
             width={1920}
             height={680}
@@ -52,9 +60,9 @@ const Intro = (props: Props) => {
               className={styles.headerImg}
             />
           ) : (
-            <h1 className={styles.headerTxt}>{props.header || 'Header'}</h1>
+            <h1 className={styles.headerTxt}>{props.title || 'Header'}</h1>
           )}
-          <p className={styles.subText}>{props.subText || 'Subtext'}</p>
+          <p className={styles.subText}>{props.description || 'Subtext'}</p>
         </div>
       </div>
     </div>
