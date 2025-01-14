@@ -4,14 +4,14 @@ import PageWrapper from '@/layout/page-wrapper/page-wrapper.layout';
 import AidOverview from '@/views/apply-for-a-grant/1-aid-overview/aid-overview.view';
 import Application from '@/views/apply-for-a-grant/2-application/application.view';
 import { useSearchParams } from 'next/navigation';
-import React, { use, useEffect, useState } from 'react';
+import React, { Suspense, useEffect, useState } from 'react';
 
 import { getPagesData } from '@/lib/getData';
 import Loading from '@/components/loading/loading.component';
 
 type Props = {};
 
-const Page = (props: Props) => {
+const ApplyForAGrant = (props: Props) => {
   const searchParams = useSearchParams();
 
   const [showApplication, setShowApplication] = useState(false);
@@ -60,6 +60,14 @@ const Page = (props: Props) => {
         <Application grantFormFields={applyForAGrantPageData.grantFormFields} />
       )}
     </PageWrapper>
+  );
+};
+
+const Page = (props: Props) => {
+  return (
+    <Suspense fallback={<Loading />}>
+      <ApplyForAGrant />
+    </Suspense>
   );
 };
 

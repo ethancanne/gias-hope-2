@@ -31,7 +31,10 @@ export async function getMarkdownData(folder: string) {
 }
 
 export async function getPostsData() {
-  return await getMarkdownData('./content/posts');
+  const markdownData = await getMarkdownData('./content/posts');
+  console.log('PLEASE', markdownData);
+
+  return markdownData;
 }
 
 export async function getPagesData(pageSlug: string | undefined = undefined) {

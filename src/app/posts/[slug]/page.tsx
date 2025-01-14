@@ -1,35 +1,36 @@
 import PageWrapper from '@/layout/page-wrapper/page-wrapper.layout';
 import PostContent from '@/views/posts/post-content/post-content.view';
 import React from 'react';
-import Markdown from 'react-markdown';
 import { getPostsData } from '@/lib/getData';
-import { GetStaticPaths } from 'next';
 
-interface Props {
-  params: { slug: string };
+// Generate paths for the slugs at build time
+export async function generateStaticParams() {
+  // Fetch the data
+  const postsData = await getPostsData();
+
+  const paths = Object.keys(postsData).map((slug) => ({
+    params: { slug },
+  }));
+
+  return paths;
 }
 
-//
-const PostPage = async ({ params }: Props) => {
+const PostPage = async ({ params }: any) => {
   const { slug } = params;
 
   const postsData = await getPostsData();
 
+  const post = postsData[slug]?.data;
+
+  if (!post) {
+    return <div>Post not found</div>;
+  }
+
   return (
     <PageWrapper>
-      <PostContent post={postsData[slug].data} />
+      <PostContent post={post} />
     </PageWrapper>
   );
-};
-
-export const getStaticPaths: GetStaticPaths = async () => {
-  const markdownData = getPostsData();
-  const paths = Object.keys(markdownData);
-
-  return {
-    paths,
-    fallback: false,
-  };
 };
 
 export default PostPage;

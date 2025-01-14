@@ -1,6 +1,5 @@
 import React from 'react';
 import styles from './image-scroll.module.scss';
-import { TinaMarkdown } from 'tinacms/dist/rich-text';
 import Image from 'next/image';
 import Paragraph from '@/components/paragraph/paragraph.component';
 import Title from '@/components/title/title.component';
