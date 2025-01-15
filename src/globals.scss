@@ -37,7 +37,7 @@ $fz-xxs: 0.9rem;
   }
 }
 
-html {
+.html {
   display: grid;
   align-items: center;
   justify-content: center;
@@ -45,7 +45,7 @@ html {
   width: 100vw;
 
   .body {
-    width: 100vw;
+    width: 100%;
     max-width: 2050px;
     overflow-x: hidden;
     color: $color-black;

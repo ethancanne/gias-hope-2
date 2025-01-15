@@ -37,7 +37,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="html">
       <body
         className={`${serifFont.variable}  ${sansFont.variable}  ${serifBoldFont.variable} body`}
       >
