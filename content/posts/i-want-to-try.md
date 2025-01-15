@@ -5,7 +5,7 @@ date: 2025-01-09T17:38:00
 author: NOW
 category: And
 content: |-
-  # I am trying to live but my mind is bothering me.
+  # I am trying .
 
   ![](/family-small.png)
 slug: testing-yo-5
