@@ -4,16 +4,16 @@ import React from 'react';
 import { getPostsData } from '@/lib/getData';
 
 // Generate paths for the slugs at build time
-export async function generateStaticParams() {
-  // Fetch the data
-  const postsData = await getPostsData();
+// export async function generateStaticParams() {
+//   // Fetch the data
+//   const postsData = await getPostsData();
 
-  const paths = Object.keys(postsData).map((slug) => ({
-    params: { slug },
-  }));
+//   const paths = Object.keys(postsData).map((slug) => ({
+//     params: { slug },
+//   }));
 
-  return paths;
-}
+//   return paths;
+// }
 
 const PostPage = async ({ params }: any) => {
   const { slug } = params;
