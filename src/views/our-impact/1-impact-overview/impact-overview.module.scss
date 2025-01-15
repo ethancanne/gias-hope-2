@@ -20,7 +20,6 @@
   .title {
     font-weight: 700;
     margin-bottom: 1rem;
-    max-width: 1800px;
     color: black;
     font-family: var(--font-pt);
     font-size: clamp(1.5rem, 2.5vw, 2rem);
@@ -55,7 +54,7 @@
 
     @include mobile {
       gap: 10px;
-      grid-template-columns: repeat(2, minmax(150px, auto));
+      grid-template-columns: repeat(2, minmax(40vw, auto));
       justify-content: space-evenly;
     }
 

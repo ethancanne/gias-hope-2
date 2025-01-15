@@ -8,14 +8,16 @@ $color-white: rgb(255, 255, 255);
 $mobile-width: 990px;
 $tablet-width: 1300px;
 
-$fz-xl: 60px;
-$fz-lg: 40px;
-$fz-mdl: 32px;
-$fz-md: 26px;
-$fz-sm: 19px;
-$fz-xs: 16px;
-$fz-xxs: 14px;
-$fz-xxxs: 12px;
+$fz-xxl: 4rem;
+$fz-xl: 3rem;
+$fz-lg: 2.3rem;
+$fz-mdl: 2rem;
+$fz-md: 1.6rem;
+$fz-sm: 1.3rem;
+$fz-xss: 1.1rem;
+$fz-xs: 1rem;
+$fz-xxs: 0.9rem;
+// $fz-xxxs: 0.5rem;
 
 @mixin mobile {
   @media (max-width:#{$mobile-width}) {
@@ -36,8 +38,15 @@ $fz-xxxs: 12px;
 }
 
 html {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100vw;
+
   .body {
-    max-width: 100vw;
+    width: 100vw;
+    max-width: 2050px;
     overflow-x: hidden;
     color: $color-black;
     background: $color-white;

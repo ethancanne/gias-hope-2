@@ -1,16 +1,31 @@
 @import '../../globals.scss';
 .wrapper {
-  position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
   z-index: 3;
+  position: fixed;
+  left: 0;
+  top: 0;
+
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 
   .container {
+    max-width: 2050px;
+    width: 100%;
+
+    @include mobile {
+      width: 100%;
+    }
+
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 50px;
+    padding: 30px 0;
     height: 4rem;
 
     transition: all 0.3s ease-in-out;
@@ -42,8 +57,13 @@
       display: flex;
       align-items: center;
       justify-content: flex-start;
+      padding-left: 50px;
 
       gap: 50px;
+
+      @include mobile {
+        padding-left: 10px;
+      }
 
       .logo {
         @include mobile {
@@ -90,6 +110,7 @@
 
           z-index: -1;
 
+          left: 0;
           top: -290px;
 
           &.open {
@@ -154,6 +175,11 @@
     }
 
     .right {
+      padding-right: 50px;
+      @include mobile {
+        padding-right: 20px;
+      }
+
       .rightButtons {
         display: flex;
         align-items: center;

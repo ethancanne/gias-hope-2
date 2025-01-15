@@ -203,6 +203,9 @@
       background-attachment: unset;
     }
 
+    &:first-child {
+      padding-top: 100px;
+    }
     &:last-child {
       padding-bottom: 200px;
       border-bottom: none;
@@ -220,14 +223,15 @@
     .visionContent {
       z-index: 0;
       .visionIcon {
-        font-size: 90px;
+        font-size: $fz-xxl;
         color: white;
         @include mobile {
-          font-size: 50px;
+          font-size: $fz-xl;
         }
       }
       .visionTitle {
         color: white;
+        font-size: $fz-lg;
 
         @include mobile {
           font-size: $fz-md;

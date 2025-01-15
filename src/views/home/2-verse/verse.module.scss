@@ -27,7 +27,6 @@
     .verse {
       font-size: $fz-lg;
       padding: 0 clamp(100px, calc(50px + 8vw), 200px);
-      max-width: 1900px;
 
       @include mobile {
         padding: 0 20px;
