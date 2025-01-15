@@ -47,6 +47,7 @@ pageInformation: &pageInformation
 backend:
   name: github
   repo: ethancanne/gias-hope-2
+  automatic_deployments: false
 media_folder: public
 public_folder: /
 collections:
