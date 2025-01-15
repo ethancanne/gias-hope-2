@@ -7,7 +7,7 @@ category: Funny
 content: |-
   # This
 
-  #### But now its.... NOT
+  #### But now its.... NOT....
 slug: testing-yo-3
 ---
 
