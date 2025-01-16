@@ -285,7 +285,6 @@ export default defineStackbitConfig({
                   {
                     name: 'name',
                     type: 'string',
-                    pattern: '^[a-z0-9]+(?:-[a-z0-9]+)*$',
                   },
                   {
                     name: 'type',
