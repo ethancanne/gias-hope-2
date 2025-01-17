@@ -12,14 +12,14 @@ const WhoIsGiannaView = (props: Props) => {
     <div className={styles.wrapper}>
       <div className={styles.container}>
         <Image
-          src={'/gianna-background-large.png'}
+          src={'/gianna-background-large.webp'}
           alt="background"
           width={1920}
           height={680}
           className={styles.largeBackgroundImg}
         />
         <Image
-          src={'/gianna-background-small.png'}
+          src={'/gianna-background-small.webp'}
           alt="background"
           width={1920}
           height={680}

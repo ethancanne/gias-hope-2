@@ -3,8 +3,8 @@ pageInformation:
   title: apply for a grant
   link: /apply-for-a-grant
   description: Change a life!
-  desktopPageImage: /family-2.png
-  mobilePageImage: /family-small.png
+  desktopPageImage: /family-2.webp
+  mobilePageImage: /family-small.webp
   isHidden: true
   hasButton: true
   buttonType: yellow
@@ -39,7 +39,7 @@ grantInformationData:
     ### Notifications
 
     You will receive notification of the outcome of your application by email.
-  image: /family-small.png
+  image: /family-small.webp
 grantSettings:
   isOpen: true
   deadline: 2025-01-14T18:11:00
@@ -93,4 +93,3 @@ grantFormFields:
     type: textarea
     required: true
 ---
-

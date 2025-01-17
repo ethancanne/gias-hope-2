@@ -3,8 +3,8 @@ pageInformation:
   title: Home
   link: /
   description: Witnessing goodness arise by shining God’s light and hope for the most broken, hurting, poor, orphaned and vulnerable ones here at home, and around the world in honor of Gianna Lilyfaith.
-  desktopPageImage: /family-2.png
-  mobilePageImage: /family-small.png
+  desktopPageImage: /family-2.webp
+  mobilePageImage: /family-small.webp
   isHidden: true
   hasButton: false
   order: null
@@ -13,13 +13,13 @@ whoWeAreData:
   featuredImages:
     - src: /vision-background.png
       alt: family
-    - src: /family-small.png
+    - src: /family-small.webp
       alt: family
-    - src: /family-small.png
+    - src: /family-small.webp
       alt: family
     - src: /vision-background.png
       alt: family
-    - src: /family-small.png
+    - src: /family-small.webp
       alt: family
     - src: /vision-background.png
       alt: family
@@ -43,11 +43,10 @@ howYouCanHelpData:
       alt: nanny
     - src: /how-you-can-help-1.png
       alt: nanny
-mobilePageImage: /family-small.png
+mobilePageImage: /family-small.webp
 description: Witnessing goodness arise by shining God’s light and hope for the most broken, hurting, poor, orphaned and vulnerable ones here at home, and around the world in honor of Gianna Lilyfaith.
 title: Home
 link: /
-largePageImage: /family-2.png
+largePageImage: /family-2.webp
 headerImage: /subtext.png
 ---
-

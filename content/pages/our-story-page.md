@@ -3,8 +3,8 @@ pageInformation:
   title: Our Story
   link: /our-story
   description: Lorem Ipsum, sharing our jouney!
-  desktopPageImage: /family-2.png
-  mobilePageImage: /family-small.png
+  desktopPageImage: /family-2.webp
+  mobilePageImage: /family-small.webp
   isHidden: false
   hasButton: false
   order: 2
@@ -26,7 +26,7 @@ storyBlocks:
       In 2014, God used our journey to Gianna and her life to push us off the comfortable shores of easy faith and into the deep waters of what it truly means to trust God, surrender all, and follow His heart straight into her broken heart. Her broken heart rescued us from a safe, comfortable faith. God gave us the grace to say a brave "YES" to her life, and we were able to see His glory through all our weaknesses.
 
       Even though our hearts are broken forever on this earth and we grieve beyond comprehension, we would not trade this overwhelming pain if it meant never knowing the overwhelming, radical joy of being hers forever. Loving will always be risky, but love always wins. Her life is a miracle and a testimony to the greatness of our God! What an honor it is to be her family forever, for all eternity!
-    image: /family-small.png
+    image: /family-small.webp
     coloredBlock: true
     reversedBlock: true
   - title: ''
@@ -46,7 +46,7 @@ storyBlocks:
       For those new to our journey and not familiar with her story, we adopted Gianna in 2014 from Lily's House (formerly Harmony House) in China. Born with a major heart defect (she had only half a heart), Gianna's health was fragile. It was truly a love explosion at first sight, but not without fear for the unpredictable and unknown road ahead. However, I am so thankful fear did not win…oh, how we would have missed so much goodness and beauty by staying safe!
 
       From the moment we embraced her, our hearts fiercely wrapped around her broken heart, and we knew we had been changed forever simply by holding such a precious miracle. We jumped off a cliff, trusting completely, knowing this holy collision of our lives would forever change our trajectory. We knew this moment was sacred and would be marked on our hearts eternally, and there was no going back. We would be different forever—never the same again—never satisfied with life on the shore, but out in the deep, seeing God bigger than we ever had. Her life wrecked us in all the right and radical ways. Oh, what a beautiful gift she is!
-    image: /family-small.png
+    image: /family-small.webp
     coloredBlock: true
     reversedBlock: false
   - title: ''
@@ -66,4 +66,3 @@ storyBlocks:
     coloredBlock: false
     reversedBlock: false
 ---
-
