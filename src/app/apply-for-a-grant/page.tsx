@@ -24,7 +24,7 @@ const ApplyForAGrant = (props: Props) => {
     const fetchData = async () => {
       const data = await getPagesData('apply-for-a-grant-page');
       setApplyForAGrantPageData(data);
-      console.log('Data fetched:', data);
+      // console.log('Data fetched:', data);
     };
     fetchData();
   }, []);

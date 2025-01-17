@@ -23,7 +23,7 @@ type Props = {
 
 const AidOverview = (props: Props) => {
   const [popupIsOpen, setPopupIsOpen] = useState(false);
-  console.log('GRANT PAGE DATA', props.grantPageData);
+  // console.log('GRANT PAGE DATA', props.grantPageData);
 
   return (
     <div className={styles.wrapper}>

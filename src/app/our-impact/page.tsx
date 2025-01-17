@@ -8,7 +8,7 @@ import { getPagesData } from '@/lib/getData';
 type Props = {};
 const Page = async (props: Props) => {
   const ourImpactPageData = (await getPagesData('our-impact-page')) as any;
-  console.log('OUR IMPACT PAGE DATA', ourImpactPageData);
+  // console.log('OUR IMPACT PAGE DATA', ourImpactPageData);
 
   return (
     <PageWrapper>

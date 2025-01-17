@@ -32,7 +32,7 @@ const iconMapping: { [key: string]: React.ComponentType } = {
 };
 
 const VisionOverview = (props: Props) => {
-  console.log('THIS IS HOME!', props.visionsData);
+  // console.log('THIS IS HOME!', props.visionsData);
 
   return (
     <div className={styles.container}>

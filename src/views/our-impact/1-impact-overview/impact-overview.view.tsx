@@ -13,7 +13,7 @@ type Props = {
 };
 
 const ImpactOverview = (props: Props) => {
-  console.log('HELP', props.impactOverviewData);
+  // console.log('HELP', props.impactOverviewData);
 
   return (
     <div className={styles.container}>

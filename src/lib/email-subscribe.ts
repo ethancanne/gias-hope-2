@@ -22,7 +22,7 @@ export async function subscribeToMailchimp(email: string) {
         },
       }
     );
-    console.log('DATA', response.data);
+    // console.log('DATA', response.data);
 
     return { success: true, data: response.data };
   } catch (error: any) {

@@ -47,7 +47,7 @@ const Application = (props: Props) => {
   }, [setValue]);
 
   const onSubmit: SubmitHandler<any> = async (data) => {
-    console.log(data);
+    // console.log(data);
 
     setLoading(true);
 
