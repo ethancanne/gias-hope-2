@@ -162,7 +162,7 @@ collections:
               - {
                   label: 'Background Color',
                   name: 'backgroundColor',
-                  widget: 'string',
+                  widget: 'color',
                 }
 
       - label: 'Our Story Page'
