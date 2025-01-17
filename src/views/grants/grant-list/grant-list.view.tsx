@@ -1,5 +1,5 @@
 'use client';
-import { getPagesData } from '@/lib/getData';
+import { fetchGrantsFromMongo, getPagesData } from '@/lib/getData';
 import styles from './grant-list.module.scss';
 import { useEffect, useState } from 'react';
 import ViewGrant from '../view-grant/view-grant.view';
@@ -17,7 +17,9 @@ const GrantList = (props: Props) => {
     const fetchData = async () => {
       try {
         setLoading(true);
-        // const grants = await fetchGrantsFromMongo();
+        const grants = await fetchGrantsFromMongo();
+        console.log('grants', grants);
+
         const data = await getPagesData('apply-for-a-grant-page');
         setLoading(false);
         setFormFields(data.grantFormFields);

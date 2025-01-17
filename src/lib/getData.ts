@@ -61,6 +61,8 @@ export async function fetchGrantsFromMongo() {
       _id: grant._id.toString(), // Convert _id to a string
     }));
 
+    console.log('grant data', data);
+
     client.close(); // Close the connection to MongoDB
 
     return plainGrants; // Return the fetched data

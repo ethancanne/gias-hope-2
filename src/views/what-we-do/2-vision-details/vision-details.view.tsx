@@ -45,6 +45,7 @@ const VisionDetails = (props: Props) => {
               className={styles.overlay}
               style={{
                 backgroundColor: vision.backgroundColor,
+                opacity: 0.9,
               }}
             ></div>
             <div className={styles.visionContent}>
