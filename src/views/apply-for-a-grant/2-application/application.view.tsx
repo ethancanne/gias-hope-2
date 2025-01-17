@@ -5,9 +5,8 @@ import styles from './application.module.scss';
 import Title from '@/components/title/title.component';
 import Button from '@/components/button/button.component';
 import { useState, useEffect } from 'react';
-import { MongoClient } from 'mongodb';
-// import { submitFormToMongo } from '@/lib/submitDataToMongo';
 import Loading from '@/components/loading/loading.component';
+import { submitFormToMongo } from '@/lib/submitDataToMongo';
 
 type Props = {
   grantFormFields: {
@@ -52,16 +51,16 @@ const Application = (props: Props) => {
     setLoading(true);
 
     // Call the Server Action to submit the form data to MongoDB
-    // const result = await submitFormToMongo(data);
+    const result = await submitFormToMongo(data);
     setLoading(false);
 
-    // if (result.success) {
-    //   localStorage.removeItem('adoptionFormData');
-    //   localStorage.setItem('adoptionFormSubmitted', JSON.stringify(true));
-    //   setFormSubmitted(true);
-    // } else {
-    //   console.error(result.error);
-    // }
+    if (result.success) {
+      localStorage.removeItem('adoptionFormData');
+      localStorage.setItem('adoptionFormSubmitted', JSON.stringify(true));
+      setFormSubmitted(true);
+    } else {
+      console.error(result.error);
+    }
   };
 
   useEffect(() => {
