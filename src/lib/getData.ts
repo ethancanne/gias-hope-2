@@ -3,7 +3,7 @@
 import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
-// import { MongoClient } from 'mongodb';
+import { MongoClient } from 'mongodb';
 
 export async function getMarkdownData(folder: string) {
   const folderPath = path.join(process.cwd(), folder);
@@ -47,26 +47,25 @@ export async function getPagesData(pageSlug: string | undefined = undefined) {
   }
 }
 
-// export async function fetchGrantsFromMongo() {
-//   try {
-//     // Connect to MongoDB using the connection URI
-//     const client = await MongoClient.connect(process.env.MONGODB_URI!);
+export async function fetchGrantsFromMongo() {
+  try {
+    // Connect to MongoDB using the connection URI
+    const client = await MongoClient.connect(process.env.MONGODB_URI!, {});
+    const db = client.db('grants');
+    const collection = db.collection('submissions');
 
-//     const db = client.db('grants'); // Replace with your database name
-//     const collection = db.collection('submissions'); // Replace with your collection name
+    // Fetch data from the collection
+    const data = await collection.find({}).toArray(); // Fetch all documents in the collection
+    const plainGrants = data.map((grant: any) => ({
+      ...grant,
+      _id: grant._id.toString(), // Convert _id to a string
+    }));
 
-//     // Fetch data from the collection
-//     const data = await collection.find({}).toArray(); // Fetch all documents in the collection
-//     const plainGrants = data.map((grant: any) => ({
-//       ...grant,
-//       _id: grant._id.toString(), // Convert _id to a string
-//     }));
+    client.close(); // Close the connection to MongoDB
 
-//     client.close(); // Close the connection to MongoDB
-
-//     return plainGrants; // Return the fetched data
-//   } catch (error) {
-//     console.error('Error fetching data from MongoDB:', error);
-//     return []; // Return an empty array in case of error
-//   }
-// }
+    return plainGrants; // Return the fetched data
+  } catch (error) {
+    console.error('Error fetching data from MongoDB:', error);
+    return []; // Return an empty array in case of error
+  }
+}
