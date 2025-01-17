@@ -24,7 +24,7 @@ visionsData:
   - title: Adoption Aid
     icon: LuHandCoins
     id: adoption-aid
-    description: Our Foundation was first birthed with the desire to come alongside other families who are stepping out in faith to adopt! We were very blessed to receive many grants while we were adopting and we want to pass on the blessing so that many more orphans can come home to their forever families! We open our grant application link one or two times a year (depending on funding) to apply for a grant. You can apply here.
+    description: Our Foundation was first birthed with the desire to come alongside other families who are stepping out in faith to adopt! We were very blessed to receive many grants while we were adopting and we want to pass on the blessing so that many more orphans can come home to their forever families! We open our grant application link one or two times a year (depending on funding) to apply for a grant.
     backgroundImage: /vision-background.png
     backgroundColor: rgba(40, 104, 55, 0.9)
   - title: Care Ministry
@@ -42,3 +42,4 @@ title: What We Do
 link: /what-we-do
 largePageImage: /family-2.webp
 ---
+
