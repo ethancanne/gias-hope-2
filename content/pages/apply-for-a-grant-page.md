@@ -38,7 +38,7 @@ grantInformationData:
 
     ### Notifications
 
-    You will receive notification of the outcome of your application by email.
+    You will receive notification of the outcome of your application by email
   image: /family-small.webp
 grantSettings:
   isOpen: true
@@ -93,3 +93,4 @@ grantFormFields:
     type: textarea
     required: true
 ---
+
