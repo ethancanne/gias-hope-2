@@ -9,7 +9,7 @@ pageInformation:
   hasButton: false
   order: 2
 storyBlocks:
-  - title: Gianna’s Big Heart
+  - title: Gianna’s Heart
     header: The Jar
     content: |-
       There's a mason jar sitting on our schoolroom shelf with about $12 in it. Just a month before Gianna went to heaven, she—along with Tahlia and Hudson—started a Farm Fresh egg business to raise money for babies in China who needed surgeries and families to adopt them. Every time they sold a dozen eggs, they would eagerly run to place the money in the jar and pray for the orphans in China, asking God that the money would one day help.
@@ -66,3 +66,4 @@ storyBlocks:
     coloredBlock: false
     reversedBlock: false
 ---
+
