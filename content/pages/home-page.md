@@ -2,7 +2,7 @@
 pageInformation:
   title: Home
   link: /
-  description: Witnessing goodness arise by shining God’s light and hope for the most broken, hurting, poor, orphaned and vulnerable ones here at home, and around the world in honor of Gianna Lilyfaith.
+  description: Witnessing goodness arise by shining God’s light and hope for the most broken, hurting, poor, orphaned and vulnerable ones here at home, and around the world in honor of Gianna Lilyfaith Cannelongo.
   desktopPageImage: /family-2.webp
   mobilePageImage: /family-small.webp
   isHidden: true
@@ -27,7 +27,7 @@ verseData:
   text: I would have lost heart, unless I had believed that I would see the goodness of the LORD In the land of the living.
   reference: Psalm 27:13
 whoIsGiannaText: |-
-  GIA’S Hope is a 501(c)3 founded in 2019 in honor of our brave, lemon loving, butterfly catching, flower picking, warrior daughter Gianna Lilyfaith. She was adopted from China at 2 years old with a 1/2 of a heart but full of so much joy! On April 22, 2018, Gianna Lilyfaith lost her earthly battle with cardiac heart disease and went home to be with Jesus at 6 years old. She won her eternal inheritance.  
+  GIA’S Hope is a 501(c)3 founded in 2019 in honor of our brave, lemon loving, butterfly catching, flower picking, warrior daughter Gianna Lilyfaith Cannelongo. She was adopted from China at 2 years old with a 1/2 of a heart but full of so much joy! On April 22, 2018, Gianna lost her earthly battle with cardiac heart disease and went home to be with Jesus at 6 years old. She won her eternal inheritance.  
 
   We miss and love her fiercely and grieve deeply till the day we will reunite on the shores of eternity. Her forever life continually reflects the light of Jesus and teaches us to live bold and brave for eternal treasures. 
 
@@ -44,7 +44,7 @@ howYouCanHelpData:
     - src: /how-you-can-help-1.png
       alt: nanny
 mobilePageImage: /family-small.webp
-description: Witnessing goodness arise by shining God’s light and hope for the most broken, hurting, poor, orphaned and vulnerable ones here at home, and around the world in honor of Gianna Lilyfaith.
+description: Witnessing goodness arise by shining God’s light and hope for the most broken, hurting, poor, orphaned and vulnerable ones here at home, and around the world in honor of Gianna Lilyfaith Cannelongo.
 title: Home
 link: /
 largePageImage: /family-2.webp

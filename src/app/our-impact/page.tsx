@@ -6,6 +6,7 @@ import ImpactDetails from '@/views/our-impact/2-impact-details/impact-details.vi
 import { getPagesData } from '@/lib/getData';
 
 type Props = {};
+
 const Page = async (props: Props) => {
   const ourImpactPageData = (await getPagesData('our-impact-page')) as any;
   // console.log('OUR IMPACT PAGE DATA', ourImpactPageData);

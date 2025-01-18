@@ -1,6 +1,6 @@
 ---
 pageInformation:
-  title: apply for a grant
+  title: Apply for a Grant
   link: /apply-for-a-grant
   description: Change a life!
   desktopPageImage: /family-2.webp

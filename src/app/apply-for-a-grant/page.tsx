@@ -8,6 +8,7 @@ import React, { Suspense, useEffect, useState } from 'react';
 
 import { getPagesData } from '@/lib/getData';
 import Loading from '@/components/loading/loading.component';
+import { Metadata } from 'next';
 
 type Props = {};
 
@@ -40,6 +41,7 @@ const ApplyForAGrant = (props: Props) => {
   if (!applyForAGrantPageData) {
     return <Loading />;
   }
+
   return (
     <PageWrapper>
       <Intro

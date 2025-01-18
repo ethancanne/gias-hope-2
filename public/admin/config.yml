@@ -58,6 +58,7 @@ collections:
     slug: '{{slug}}'
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Description', name: 'description', widget: 'string' }
       - { label: 'Image', name: 'image', widget: 'image' }
       - { label: 'Date', name: 'date', widget: 'datetime' }
       - { label: 'Author', name: 'author', widget: 'string' }
@@ -153,7 +154,12 @@ collections:
               - { label: 'Title', name: 'title', widget: 'string' }
               - { label: 'Icon', name: 'icon', widget: 'string' }
               - { label: 'ID', name: 'id', widget: 'string' }
-              - { label: 'Description', name: 'description', widget: 'text' }
+              - {
+                  label: 'Description',
+                  name: 'description',
+                  widget: 'text',
+                  hint: 'This is a short description of the post that will be shown in search engines.',
+                }
               - {
                   label: 'Background Image',
                   name: 'backgroundImage',

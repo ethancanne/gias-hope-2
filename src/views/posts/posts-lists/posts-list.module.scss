@@ -5,6 +5,10 @@
   justify-content: center;
   padding: 50px 100px 0 100px;
 
+  @include mobile {
+    padding: 50px 20px 0 20px;
+  }
+
   .container {
     width: 100%;
 

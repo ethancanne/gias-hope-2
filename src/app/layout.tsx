@@ -4,6 +4,9 @@ import '../globals.scss';
 import NavbarLayout from '@/layout/navbar/navbar.layout';
 import Footer from '@/layout/footer/footer.view';
 
+import { headers } from 'next/headers';
+import { getPagesData, getPostsData } from '@/lib/getData';
+
 const serifFont = localFont({
   src: '../fonts/PTSerif-Regular.ttf',
   variable: '--font-pt',
@@ -22,14 +25,62 @@ const sansFont = localFont({
   weight: '100 900',
 });
 
-export const metadata: Metadata = {
-  title: "Gia's Hope",
-  description:
-    'Witnessing goodness arise by shining God’s light and hope for the most broken, hurting, poor, orphaned and vulnerable ones here at home, and around the world in honor of Gianna Lilyfaith.',
-  icons: {
-    icon: '/favicon.ico',
-  },
-};
+export async function generateMetadata({ params }: any) {
+  const pathname = new URL((await headers()).get('x-request-url')!).pathname;
+
+  console.log('PATHNAME', pathname);
+
+  // Fetch data based on the slug
+
+  var pageInfo;
+
+  try {
+    if (pathname.includes('posts')) {
+      pageInfo = (await getPostsData())[
+        pathname.split('/')[pathname.split('/').length - 1]
+      ].data;
+    } else {
+      pageInfo = (
+        await getPagesData(
+          pathname.split('/')[pathname.split('/').length - 1] + '-page'
+        )
+      ).pageInformation;
+    }
+  } catch (e) {
+    pageInfo = (await getPagesData('home-page')).pageInformation;
+  }
+
+  console.log('data', pageInfo);
+
+  return {
+    title: `Gia's Hope | ${pageInfo.title}`,
+    description: pageInfo.description,
+    openGraph: {
+      title: `Gia's Hope | ${pageInfo.title}`,
+      description: pageInfo.description,
+      images: [
+        {
+          url: pageInfo.largePageImage,
+          width: 800,
+          height: 600,
+          alt: `Gia's Hope | ${pageInfo.title}`,
+        },
+        {
+          url: pageInfo.mobilePageImage,
+          width: 400,
+          height: 300,
+          alt: `Gia's Hope | ${pageInfo.title}`,
+        },
+      ],
+      siteName: "Gia's Hope",
+      locale: 'en_US',
+      type: 'website',
+    },
+    icons: {
+      icon: '/favicon.ico',
+    },
+  };
+}
 
 export default function RootLayout({
   children,
