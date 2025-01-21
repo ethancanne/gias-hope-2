@@ -2,7 +2,7 @@
 pageInformation:
   title: Our Story
   link: /our-story
-  description: Lorem Ipsum, sharing our jouney!
+  description: Our story shared
   desktopPageImage: /family-2.webp
   mobilePageImage: /family-small.webp
   isHidden: false
