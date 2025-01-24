@@ -7,5 +7,6 @@ pageInformation:
   mobilePageImage: ''
   isHidden: true
   hasButton: false
+  order: null
 ---
 
