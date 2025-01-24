@@ -2,7 +2,7 @@
 pageInformation:
   title: What We Do
   link: /what-we-do
-  description: Lorem ipsum
+  description: Learn how Gia's Hope brings support, healing, and hope to those in need through impactful programs and outreach.
   desktopPageImage: /pexels-nathan-cowley-1089168.jpg
   mobilePageImage: /pexels-nathan-cowley-1089168.jpg
   isHidden: false
@@ -36,8 +36,8 @@ visionsData:
       Some of our care ministries include home visits, letters and care packages sent to those who walk the road of grief, a mission's trip to Nicaragua to bring love to those who are broken and suffering, a newly launched local Farm Therapy ministry, and a Children's book that is in publication stage. We feel it's an honor to share Hope with others who need it because of the Hope Jesus gives us.
     backgroundImage: /pexels-chanita-sykes-1094544.jpg
     backgroundColor: '#8e2828'
-mobilePageImage: /family-small.webp
 description: Discover the work we do to bring hope and support to those in need.
+mobilePageImage: /family-small.webp
 title: What We Do
 link: /what-we-do
 largePageImage: /family-2.webp
