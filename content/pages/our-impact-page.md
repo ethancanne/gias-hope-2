@@ -2,7 +2,7 @@
 pageInformation:
   title: Our Impact
   link: /our-impact
-  description: Lorem Lorem Lorem  Lorem Lorem Lorem  Lorem Lorem Lorem Lorem Lorem Lorem
+  description: See the lives transformed and communities uplifted through the work of Gia's Hope.
   desktopPageImage: /pexels-steyn-viljoen-787647.jpg
   mobilePageImage: /pexels-steyn-viljoen-787647.jpg
   isHidden: false
