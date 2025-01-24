@@ -1,10 +1,13 @@
 ---
-title: My Post
+title: Test Post 2
 description: I want to test my post
-image: /family-small.webp
+image: /Screenshot 2024-12-02 at 10.49.04 PM.png
 date: 2025-01-18T08:22:00
 author: Ethan
 category: Test
-content: Thank you for testing with me.
+content: |-
+  This is another testing of the blog functionality.
+
+  ![](/gianna-background-small.webp)
 ---
 
