@@ -14,7 +14,7 @@ whoWeAreData:
     - src: /pexels-bri-schneiter-346529.jpg
       alt: family
     - src: /pexels-suzy-hazelwood-1098526.jpg
-      alt: family
+      alt: World
     - src: /pexels-zhang-kaiyv-189833.jpg
       alt: family
     - src: /pexels-chanita-sykes-1094544.jpg
@@ -43,8 +43,8 @@ howYouCanHelpData:
       alt: nanny
     - src: /pexels-ylanite-koppens-1906442.jpg
       alt: nanny
-description: Witnessing goodness arise by shining God’s light and hope for the most broken, hurting, poor, orphaned and vulnerable ones here at home, and around the world in honor of Gianna Lilyfaith Cannelongo.
 mobilePageImage: /family-small.webp
+description: Witnessing goodness arise by shining God’s light and hope for the most broken, hurting, poor, orphaned and vulnerable ones here at home, and around the world in honor of Gianna Lilyfaith Cannelongo.
 title: Home
 link: /
 largePageImage: /family-2.webp
