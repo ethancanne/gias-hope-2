@@ -3,7 +3,7 @@ pageInformation:
   title: Our Story
   link: /our-story
   description: Discover the heart and journey behind Gia's Hope, rooted in faith and compassion.
-  desktopPageImage: /pexels-anders-kristensen-13975.jpg
+  desktopPageImage: /pexels-ray-bilcliff-1579413.jpg
   mobilePageImage: /pexels-anders-kristensen-13975.jpg
   isHidden: false
   hasButton: false
