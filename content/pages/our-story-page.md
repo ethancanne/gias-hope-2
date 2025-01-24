@@ -3,8 +3,8 @@ pageInformation:
   title: Our Story
   link: /our-story
   description: Our story shared!
-  desktopPageImage: /family-2.webp
-  mobilePageImage: /family-small.webp
+  desktopPageImage: /pexels-ylanite-koppens-1906442.jpg
+  mobilePageImage: /pexels-ylanite-koppens-1906442.jpg
   isHidden: false
   hasButton: false
   order: 2
