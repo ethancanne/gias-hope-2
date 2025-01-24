@@ -3,8 +3,8 @@ pageInformation:
   title: What We Do
   link: /what-we-do
   description: Lorem ipsum
-  desktopPageImage: /family-2.webp
-  mobilePageImage: /family-small.webp
+  desktopPageImage: /pexels-nathan-cowley-1089168.jpg
+  mobilePageImage: /pexels-nathan-cowley-1089168.jpg
   isHidden: false
   hasButton: false
   order: 0
