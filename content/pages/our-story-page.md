@@ -2,7 +2,7 @@
 pageInformation:
   title: Our Story
   link: /our-story
-  description: Our story shared!
+  description: God is so good
   desktopPageImage: /pexels-anders-kristensen-13975.jpg
   mobilePageImage: /pexels-anders-kristensen-13975.jpg
   isHidden: false
