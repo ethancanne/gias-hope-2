@@ -11,17 +11,17 @@ pageInformation:
 whoWeAreData:
   text: We are a family commissioned to plant God’s seed of love so that abundant life can grow and hope can bloom through the four branches of orphan care, orphan prevention, adoption aid and care ministry for the most hurting and broken, where we have seen God’s goodness arising and hope shining.
   featuredImages:
-    - src: /vision-background.png
+    - src: /pexels-bri-schneiter-346529.jpg
       alt: family
-    - src: /family-small.webp
+    - src: /pexels-suzy-hazelwood-1098526.jpg
       alt: family
-    - src: /family-small.webp
+    - src: /pexels-zhang-kaiyv-189833.jpg
       alt: family
-    - src: /vision-background.png
+    - src: /pexels-chanita-sykes-1094544.jpg
       alt: family
-    - src: /family-small.webp
+    - src: /pexels-anders-kristensen-13975.jpg
       alt: family
-    - src: /vision-background.png
+    - src: /Screenshot 2024-12-02 at 10.49.04 PM.png
       alt: family
 verseData:
   text: I would have lost heart, unless I had believed that I would see the goodness of the LORD In the land of the living.
@@ -39,14 +39,15 @@ howYouCanHelpData:
   images:
     - src: /how-you-can-help-1.png
       alt: nanny
-    - src: /how-you-can-help-1.png
+    - src: /pexels-steyn-viljoen-787647.jpg
       alt: nanny
-    - src: /how-you-can-help-1.png
+    - src: /pexels-ylanite-koppens-1906442.jpg
       alt: nanny
-mobilePageImage: /family-small.webp
 description: Witnessing goodness arise by shining God’s light and hope for the most broken, hurting, poor, orphaned and vulnerable ones here at home, and around the world in honor of Gianna Lilyfaith Cannelongo.
+mobilePageImage: /family-small.webp
 title: Home
 link: /
 largePageImage: /family-2.webp
 headerImage: /subtext.png
 ---
+
