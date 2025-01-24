@@ -3,8 +3,8 @@ pageInformation:
   title: Apply for a Grant
   link: /apply-for-a-grant
   description: Change a life!
-  desktopPageImage: /family-2.webp
-  mobilePageImage: /family-small.webp
+  desktopPageImage: ''
+  mobilePageImage: ''
   isHidden: true
   hasButton: true
   buttonType: yellow
