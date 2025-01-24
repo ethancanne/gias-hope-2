@@ -17,7 +17,7 @@ storyBlocks:
       Our tiny missionaries understood that God could use their big hearts to change the world. The jar still sits there, but that $12 has multiplied in countless, unimaginable ways, even in the depths of our wilderness. It was Gia's hand that was the last to place money in the jar, and both my heart aches and rejoices as I think of how many lives have been touched by Gianna's big heart and her legacy of light. I see that jar as a visual miracle, like the loaves and fish that continue to be poured out from her life, pointing others straight to the Gospel. God has multiplied that $12 with miracles of new life and hope that continue to grow in honor of our tiny missionary.
 
       We ache deeply to have her back in our arms and will grieve forever until that glorious day when we hold her again on the shores of eternity and all that is wrong will be made right again. Living with her absence on earth remains the worst pain imaginable. We lean every day into our God who promises eternal life from death, and we await, with hope, the day when He will make all things new!
-    image: /vision-background.png
+    image: /family-small.webp
     coloredBlock: false
     reversedBlock: false
   - title: ''
@@ -26,7 +26,7 @@ storyBlocks:
       In 2014, God used our journey to Gianna and her life to push us off the comfortable shores of easy faith and into the deep waters of what it truly means to trust God, surrender all, and follow His heart straight into her broken heart. Her broken heart rescued us from a safe, comfortable faith. God gave us the grace to say a brave "YES" to her life, and we were able to see His glory through all our weaknesses.
 
       Even though our hearts are broken forever on this earth and we grieve beyond comprehension, we would not trade this overwhelming pain if it meant never knowing the overwhelming, radical joy of being hers forever. Loving will always be risky, but love always wins. Her life is a miracle and a testimony to the greatness of our God! What an honor it is to be her family forever, for all eternity!
-    image: /family-small.webp
+    image: /pexels-pixabay-325944.jpg
     coloredBlock: true
     reversedBlock: true
   - title: ''
@@ -46,7 +46,7 @@ storyBlocks:
       For those new to our journey and not familiar with her story, we adopted Gianna in 2014 from Lily's House (formerly Harmony House) in China. Born with a major heart defect (she had only half a heart), Gianna's health was fragile. It was truly a love explosion at first sight, but not without fear for the unpredictable and unknown road ahead. However, I am so thankful fear did not win…oh, how we would have missed so much goodness and beauty by staying safe!
 
       From the moment we embraced her, our hearts fiercely wrapped around her broken heart, and we knew we had been changed forever simply by holding such a precious miracle. We jumped off a cliff, trusting completely, knowing this holy collision of our lives would forever change our trajectory. We knew this moment was sacred and would be marked on our hearts eternally, and there was no going back. We would be different forever—never the same again—never satisfied with life on the shore, but out in the deep, seeing God bigger than we ever had. Her life wrecked us in all the right and radical ways. Oh, what a beautiful gift she is!
-    image: /family-small.webp
+    image: /pexels-zhang-kaiyv-189833.jpg
     coloredBlock: true
     reversedBlock: false
   - title: ''

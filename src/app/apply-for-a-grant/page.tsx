@@ -8,7 +8,6 @@ import React, { Suspense, useEffect, useState } from 'react';
 
 import { getPagesData } from '@/lib/getData';
 import Loading from '@/components/loading/loading.component';
-import { Metadata } from 'next';
 
 type Props = {};
 

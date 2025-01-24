@@ -52,27 +52,27 @@ export async function generateMetadata({ params }: any) {
 
   console.log('data', pageInfo);
 
+  const title = pageInfo.title;
+  const description = pageInfo.description;
+  const imageUrl = pageInfo.mobilePageImage;
+
+  console.log(imageUrl);
+
   return {
-    title: `Gia's Hope | ${pageInfo.title}`,
-    description: pageInfo.description,
+    title: `GIA's Hope | ${title}`,
+    description: description,
     openGraph: {
-      title: `Gia's Hope | ${pageInfo.title}`,
-      description: pageInfo.description,
+      title: `GIA's Hope | ${title}`,
+      description: description,
       images: [
         {
-          url: pageInfo.largePageImage,
+          url: imageUrl,
           width: 800,
           height: 600,
-          alt: `Gia's Hope | ${pageInfo.title}`,
-        },
-        {
-          url: pageInfo.mobilePageImage,
-          width: 400,
-          height: 300,
-          alt: `Gia's Hope | ${pageInfo.title}`,
+          alt: `Gia's Hope | ${title}`,
         },
       ],
-      siteName: "Gia's Hope",
+      siteName: "GIA's Hope",
       locale: 'en_US',
       type: 'website',
     },

@@ -202,6 +202,7 @@
       overflow: hidden;
       width: 100vw;
       max-width: 3000px;
+
       &.small {
         height: 500px;
         &.noBackground {
@@ -212,6 +213,26 @@
           height: 500px;
           &.noBackground {
             height: 360px;
+          }
+        }
+
+        @include desktop {
+          &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 1;
+            background: linear-gradient(
+              to right,
+              rgba(255, 255, 255, 1) 0%,
+              rgb(255, 255, 255) 30%,
+              rgba(255, 255, 255, 0.561) 50%,
+              rgba(255, 255, 255, 0.19) 57%,
+              /* Fully opaque white at the top */ rgba(255, 255, 255, 0) 100%
+            );
           }
         }
       }
