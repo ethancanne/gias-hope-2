@@ -20,7 +20,7 @@ whoWeAreData:
     - src: /pexels-chanita-sykes-1094544.jpg
       alt: family
     - src: /pexels-anders-kristensen-13975.jpg
-      alt: family
+      alt: Trees
     - src: /Screenshot 2024-12-02 at 10.49.04 PM.png
       alt: family
 verseData:
