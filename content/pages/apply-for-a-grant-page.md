@@ -2,7 +2,7 @@
 pageInformation:
   title: Apply for a Grant
   link: /apply-for-a-grant
-  description: Change a life!
+  description: Gia's Hope’s Adoption Aid grants help families overcome adoption costs, enabling children to find loving homes. This program celebrates faith, redemption, and the legacy of Gianna.
   desktopPageImage: ''
   mobilePageImage: ''
   isHidden: true

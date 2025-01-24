@@ -2,7 +2,7 @@
 pageInformation:
   title: Our Story
   link: /our-story
-  description: God is so good
+  description: Discover the heart and journey behind Gia's Hope, rooted in faith and compassion.
   desktopPageImage: /pexels-anders-kristensen-13975.jpg
   mobilePageImage: /pexels-anders-kristensen-13975.jpg
   isHidden: false
