@@ -11,7 +11,7 @@ pageInformation:
 whoWeAreData:
   text: We are a family commissioned to plant God’s seed of love so that abundant life can grow and hope can bloom through the four branches of orphan care, orphan prevention, adoption aid and care ministry for the most hurting and broken, where we have seen God’s goodness arising and hope shining.
   featuredImages:
-    - src: /pexels-bri-schneiter-346529.jpg
+    - src: /book.webp
       alt: family
     - src: /pexels-suzy-hazelwood-1098526.jpg
       alt: World
