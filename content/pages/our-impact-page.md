@@ -19,24 +19,32 @@ featuredData:
     number: 321
 detailsData:
   - title: Partnered with Ministries to Support Orphans and Prevent Orphanhood
-    description: We have provided financial support to the Lily’s Foundation, a foster home in China dedicated to caring for children with special needs. This vital support ensures that these vulnerable orphans receive the love, care, and resources they need to thrive. Through collaborations with organizations such as HopeStation, Unity4Orphans, OpenHearts Nicaragua, Tesoros de Dios, and Open Hearts for Orphans, we have financially supported orphan-prevention care ministries. These efforts focus on preserving vulnerable families by providing medical care, education, and essential resources to meet their basic needs.
+    description: Through our Live Gia Grow Forever Adoption Grant, we have awarded 38 grants, ranging from $500-$1000, to families adopting children with special needs from all over the world.
     image: /pexels-suzy-hazelwood-1098526.jpg
     link: ''
-  - title: Awarded Grants to Adopting Families
-    description: Over the past four years, we have awarded 32 grants to families pursuing adoption, helping make their dreams of providing a loving home to children in need a reality.
+  - title: 'Global Impact: Supporting Vulnerable Children and Orphan Prevention Ministries'
+    description: Financially supported vulnerable children and orphan-prevention care ministries through partnerships with organizations such as Lily's Foundation, HopeStation, Unity4Orphans, OpenHearts Nicaragua, Tesoros De Dios, Open Hearts for Orphans, Ting Ministries, and Impacting 1 Life at a Time Love without Boundaries, helping preserve vulnerable families and children through medical care, education, and basic needs.
     image: /pexels-blue-ox-studio-695299.jpg
     link: ''
-  - title: Awarded Grants to Adopting Families
-    description: Over the past four years, we have awarded 35 grants to families pursuing adoption, helping make their dreams of providing a loving home to children in need a reality.
+  - title: 'Serving the Marginalized: Our Mission Journeys to Guatemala and Nicaragua'
+    description: Had the honor of taking two mission trips to Guatemala and Nicaragua to serve and bring love and light to the most marginalized, poor, and vulnerable communities.
     image: /pexels-craig-adderley-1835926.jpg
     link: ''
-  - title: Established an Animal Therapy Farm
-    description: At GIA'S Hope Farm Friends, we created an animal therapy farm to bring joy, love, and healing through God's creation. This initiative offers individuals, especially those experiencing emotional or physical challenges, an opportunity to experience nurturing care and connection with animals.
+  - title: "Hope's Garden Song: Finding Hope in the Brokenness of Loss"
+    description: Wrote and published a children’s/family picture book, _Hope’s Garden Song_ (available on Amazon), to help families grieving or suffering from loss. All sales proceeds are donated back to the GIA's Hope Foundation. These books have been sent worldwide to families and communities in need of hope. It has also been translated and published into Ukrainian and sent copies to families in Ukraine suffering from the devastations of war.
     image: /pexels-pixabay-325944.jpg
     link: ''
-  - title: Published a Children's Book to Bring Comfort
-    description: We wrote a heartfelt children's book designed to comfort families grieving a loss. This resource helps minister to the hearts of both parents and children experiencing pain after a tragedy. All proceeds from book sales are donated back to the GIA'S Hope Foundation.
+  - title: 'GIA’s Hope Farm Friends: Healing Through Animals'
+    description: Started an animal therapy farm, _GIA’s Hope Farm Friends_, to minister to those in our local community who need extra joy, comfort, and love from God's creation.
     image: /pexels-aline-viana-prado-2465877.jpg
     link: https://www.amazon.com/Audible-Hopes-Garden-Song/dp/B0C41R5X2N
+  - title: 'Reaching the Unreached: Supporting Global Missions and Missionaries'
+    description: Supported international missions, particularly in the unreached 10/40 window, by sending financial donations to missionaries or by going ourselves. Three of our oldest children are full-time missionaries, providing new opportunities to help a broken and lost world.
+    image: /pexels-bri-schneiter-346529.jpg
+    link: ''
+  - title: 'Fighting Modern-Day Slavery: Partnering with Ting Ministries to Free Families'
+    description: Partnered with Ting Ministries to provide funds to free three families from modern-day slavery in a region of the Middle East, with plans to continue this mission close to our hearts.
+    image: /pexels-pixabay-325944.jpg
+    link: ''
 ---
 
