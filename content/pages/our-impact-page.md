@@ -10,10 +10,10 @@ pageInformation:
   order: 1
 featuredData:
   - text: Grants Given
-    number: 35
-  - text: Famililes Served
-    number: 1000
-  - text: Families Served
+    number: 38
+  - text: Ministries Supported
+    number: 10
+  - text: Families Freeed
     number: 1239
   - text: Families Served
     number: 321
