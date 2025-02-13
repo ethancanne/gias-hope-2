@@ -32,7 +32,7 @@ whoIsGiannaText: |-
   We miss and love her fiercely and grieve deeply till the day we will reunite on the shores of eternity. Her forever life continually reflects the light of Jesus and teaches us to live bold and brave for eternal treasures. 
 
   Therefore, through the GIA’S Hope Foundation, we desire to share this gift and hope with others.
-ourVisionText: The vision of GIA'S Hope is a 4-part global initiative to plant God's seed of love. Our mission is to grow abundant life and bloom radiant hope through the four branches of our foundation for the most hurting and broken.
+ourVisionText: Our Mission was birthed from the life of our brave daughter, adopted from China with half of a heart.  She endured 6 open heart surgeries and had a laugh that brought the world so much JOY. Her life was brief (6 years), yet her light still shines eternally because of the ONE who gives us all true HOPE. It's our mission to shine God’s HOPE to the broken, hurting, poor, orphaned and vulnerable ones in our community and around the world through the 4 branches of our vision.
 howYouCanHelpData:
   text: This is a mission that we can not do alone. We need your help to continue to be a light and bloom life and hope for those who need it most. It would be a blessing if you would consider partnering with us in prayer and financial support
   donateLink: https://www.paypal.com/donate?hosted_button_id=YSWB8EJUJVX7N
@@ -43,8 +43,8 @@ howYouCanHelpData:
       alt: nanny
     - src: /pexels-ylanite-koppens-1906442.jpg
       alt: nanny
-mobilePageImage: /family-small.webp
 description: Witnessing goodness arise by shining God’s light and hope for the most broken, hurting, poor, orphaned and vulnerable ones here at home, and around the world in honor of Gianna Lilyfaith Cannelongo.
+mobilePageImage: /family-small.webp
 title: Home
 link: /
 largePageImage: /family-2.webp
