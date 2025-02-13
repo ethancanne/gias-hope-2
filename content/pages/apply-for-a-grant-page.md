@@ -39,7 +39,7 @@ grantInformationData:
     ### Notifications
 
     You will receive notification of the outcome of your application by email
-  image: /family-small.webp
+  image: /grantfamily.jpg
 grantSettings:
   isOpen: true
   deadline: 2025-01-14T18:11:00
