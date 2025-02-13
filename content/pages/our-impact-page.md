@@ -11,12 +11,12 @@ pageInformation:
 featuredData:
   - text: Grants Given
     number: 38
-  - text: Ministries Supported
+  - text: Families Freed from Modern-day Slavery
     number: 10
-  - text: Families Freeed
-    number: 1239
-  - text: Families Served
-    number: 321
+  - text: Familes Served at Gia's Hope Farm Friends
+    number: 65
+  - text: Missionaries Supported
+    number: 8
 detailsData:
   - title: Partnered with Ministries to Support Orphans and Prevent Orphanhood
     description: Through our Live Gia Grow Forever Adoption Grant, we have awarded 38 grants, ranging from $500-$1000, to families adopting children with special needs from all over the world.
