@@ -9,14 +9,14 @@ pageInformation:
   hasButton: false
   order: 2
 storyBlocks:
-  - title: Gianna’s Heart
-    header: The Jar
+  - title: A Story of Hope, Love, and Miracles
+    header: The Seed
     content: |-
-      There's a mason jar sitting on our schoolroom shelf with about $12 in it. Just a month before Gianna went to heaven, she—along with Tahlia and Hudson—started a Farm Fresh egg business to raise money for babies in China who needed surgeries and families to adopt them. Every time they sold a dozen eggs, they would eagerly run to place the money in the jar and pray for the orphans in China, asking God that the money would one day help.
+      There's a mason jar sitting on our schoolroom shelf with about $12 in it. Just a month before Gianna went to heaven, she—along with her brother and sister—started a Farm Fresh egg business to raise money for babies in China who needed surgeries and families to adopt them. Every time they sold a dozen eggs, they would eagerly run to place the money in the jar and pray for the orphans in China, asking God that the money would one day help.
 
       Our tiny missionaries understood that God could use their big hearts to change the world. The jar still sits there, but that $12 has multiplied in countless, unimaginable ways, even in the depths of our wilderness. It was Gia's hand that was the last to place money in the jar, and both my heart aches and rejoices as I think of how many lives have been touched by Gianna's big heart and her legacy of light. I see that jar as a visual miracle, like the loaves and fish that continue to be poured out from her life, pointing others straight to the Gospel. God has multiplied that $12 with miracles of new life and hope that continue to grow in honor of our tiny missionary.
 
-      We ache deeply to have her back in our arms and will grieve forever until that glorious day when we hold her again on the shores of eternity and all that is wrong will be made right again. Living with her absence on earth remains the worst pain imaginable. We lean every day into our God who promises eternal life from death, and we await, with hope, the day when He will make all things new!
+      We ache deeply to have her back in our arms and will grieve forever until that glorious day when we hold her again on the shores of eternity, and all that is wrong will be made right again. Living with her absence on earth remains the worst pain imaginable. We lean into our God every day, who promises eternal life from death, and we await, with hope, the day when He will make all things new!
     image: /family-small.webp
     coloredBlock: false
     reversedBlock: false
