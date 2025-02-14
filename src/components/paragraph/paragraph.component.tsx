@@ -5,10 +5,12 @@ type Props = {
   small?: boolean;
   center?: boolean;
   full?: boolean;
+  id?: string;
 };
 const Paragraph = (props: Props) => {
   return (
     <div
+      id={props.id}
       className={
         styles.container +
         ' ' +

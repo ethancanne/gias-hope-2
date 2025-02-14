@@ -61,6 +61,7 @@
     .card {
       background-color: white;
       padding: 20px;
+      min-height: 150px;
       border-radius: 10px;
       box-shadow:
         rgba(14, 63, 126, 0.04) 0px 0px 0px 1px,
@@ -92,9 +93,8 @@
         font-family: var(--font-pt-bold);
         margin-top: 0px;
         // text-transform: lowercase;
-        word-break: break-all;
 
-        font-size: clamp(0.8rem, 1vw, 1rem);
+        font-size: clamp(0.9rem, 1vw, 1rem);
       }
     }
   }

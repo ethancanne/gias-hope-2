@@ -9,13 +9,13 @@ pageInformation:
   hasButton: false
   order: 1
 featuredData:
-  - text: Grants Given
+  - text: Adoption Grants Awarded
     number: 38
   - text: Families Freed from Modern-day Slavery
     number: 10
   - text: Familes Served at Gia's Hope Farm Friends
     number: 65
-  - text: Missionaries Supported
+  - text: International Missionaries Supported
     number: 8
 detailsData:
   - title: Partnered with Ministries to Support Orphans and Prevent Orphanhood

@@ -7,6 +7,12 @@ pageInformation: &pageInformation
     - { label: 'Link', name: 'link', widget: 'string' }
     - { label: 'Page Description', name: 'description', widget: 'string' }
     - {
+        label: 'Header Image',
+        name: 'headerImage',
+        widget: 'image',
+        required: false,
+      }
+    - {
         label: 'Desktop Page Image',
         name: 'desktopPageImage',
         widget: 'image',
@@ -35,6 +41,12 @@ pageInformation: &pageInformation
         name: 'buttonType',
         widget: 'select',
         options: ['yellow', 'green'],
+        required: false,
+      }
+    - {
+        label: 'Is the page under construction?',
+        name: 'isUnderConstruction',
+        widget: 'boolean',
         required: false,
       }
     - {
@@ -275,5 +287,11 @@ collections:
       - label: 'Donate Page'
         name: 'donatePage'
         file: /content/pages/donate-page.md
+        fields:
+          - *pageInformation
+
+      - label: 'Farm Friends Page'
+        name: 'farmFriendsPage'
+        file: /content/pages/farm-friends-page.md
         fields:
           - *pageInformation

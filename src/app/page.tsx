@@ -10,21 +10,26 @@ import UpdatesView from '@/views/home/6-updates/updates.view';
 
 export default async function Home() {
   const homePageData = (await getPagesData('home-page')) as any;
+  const whatWeDoPageData = (await getPagesData('what-we-do-page')) as any;
+
   const postsData = await getPostsData();
 
   return (
     <PageWrapper>
       <Intro
         size={'large'}
-        desktopBackgroundImg={homePageData.largePageImage}
-        mobileBackgroundImg={homePageData.mobilePageImage}
-        headerImg={homePageData.headerImage}
-        description={homePageData.description}
+        desktopBackgroundImg={homePageData.pageInformation.desktopPageImage}
+        mobileBackgroundImg={homePageData.pageInformation.mobilePageImage}
+        headerImg={homePageData.pageInformation.headerImage}
+        description={homePageData.pageInformation.description}
       />
       <WhoWeAreView whoWeAreData={homePageData.whoWeAreData} />
       <VerseView verseData={homePageData.verseData} />
       <WhoIsGiannaView whoIsGiannaText={homePageData.whoIsGiannaText} />
-      <OurVisionView ourVisionText={homePageData.ourVisionText} />
+      <OurVisionView
+        ourVisionText={homePageData.ourVisionText}
+        visionsData={whatWeDoPageData.visionsData}
+      />
       <HowYouCanHelpView howYouCanHelpData={homePageData.howYouCanHelpData} />
       <UpdatesView postsData={postsData} />
     </PageWrapper>

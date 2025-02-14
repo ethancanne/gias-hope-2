@@ -41,7 +41,7 @@ const AidOverview = (props: Props) => {
       <div className={styles.container}>
         <SideBySide
           mainHeader="Adoption Aid"
-          image="/family-small.webp"
+          image={props.grantPageData.grantInformationData.image}
           content={props.grantPageData.grantInformationData.description}
           extraContent={
             props.grantPageData.grantSettings.isOpen ? (

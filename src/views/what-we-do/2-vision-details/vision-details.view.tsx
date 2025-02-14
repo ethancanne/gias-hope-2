@@ -8,6 +8,7 @@ import { LuActivity } from 'react-icons/lu';
 
 import Paragraph from '@/components/paragraph/paragraph.component';
 import Image from 'next/image';
+import { visionIconMapping } from '@/components/vision-button/vision-button.component';
 
 type Props = {
   visionsData: {
@@ -20,19 +21,11 @@ type Props = {
   }[];
 };
 
-// Mapping of icon strings to actual components
-const iconMapping: { [key: string]: React.ComponentType } = {
-  LuHeartHandshake,
-  LuHandCoins,
-  LuShieldPlus,
-  LuActivity,
-};
-
 const VisionDetails = (props: Props) => {
   return (
     <div className={styles.container}>
       {props.visionsData.map((vision: any, key: number) => {
-        const IconComponent = iconMapping[vision.icon] as any;
+        const IconComponent = visionIconMapping[vision.icon] as any;
 
         return (
           <div
@@ -40,6 +33,7 @@ const VisionDetails = (props: Props) => {
             className={styles.vision}
             style={{ backgroundImage: `url(${vision.backgroundImage})` }}
             id={vision.id}
+            // id="CMS-vision"
           >
             <div
               className={styles.overlay}

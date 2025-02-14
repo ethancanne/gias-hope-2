@@ -2,7 +2,8 @@
 pageInformation:
   title: Home
   link: /
-  description: Witnessing goodness arise by shining God’s light and hope for the most broken, hurting, poor, orphaned and vulnerable ones here at home, and around the world in honor of Gianna Lilyfaith Cannelongo.
+  description: Witnessing goodness arise by shining God’s light and hope for the most broken, hurting, poor, orphaned and vulnerable ones here at home, and around the world.
+  headerImage: /subtext.png
   desktopPageImage: /family-2.webp
   mobilePageImage: /family-small.webp
   isHidden: true
@@ -43,11 +44,4 @@ howYouCanHelpData:
       alt: nanny
     - src: /pexels-ylanite-koppens-1906442.jpg
       alt: nanny
-description: Witnessing goodness arise by shining God’s light and hope for the most broken, hurting, poor, orphaned and vulnerable ones here at home, and around the world in honor of Gianna Lilyfaith Cannelongo.
-mobilePageImage: /family-small.webp
-title: Home
-link: /
-largePageImage: /family-2.webp
-headerImage: /subtext.png
 ---
-

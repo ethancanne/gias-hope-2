@@ -3,11 +3,9 @@ import styles from './vision-overview.module.scss';
 import Paragraph from '@/components/paragraph/paragraph.component';
 import Image from 'next/image';
 
-import { LuHeartHandshake } from 'react-icons/lu';
-import { LuHandCoins } from 'react-icons/lu';
-import { LuShieldPlus } from 'react-icons/lu';
-import { LuActivity } from 'react-icons/lu';
 import Link from 'next/link';
+import VisionButton from '@/components/vision-button/vision-button.component';
+import { visionIconMapping } from '@/components/vision-button/vision-button.component';
 
 type Props = {
   visionsData: {
@@ -22,13 +20,6 @@ type Props = {
       alt: string;
     }[];
   }[];
-};
-
-const iconMapping: { [key: string]: React.ComponentType } = {
-  LuHeartHandshake,
-  LuHandCoins,
-  LuShieldPlus,
-  LuActivity,
 };
 
 const VisionOverview = (props: Props) => {
@@ -50,16 +41,14 @@ const VisionOverview = (props: Props) => {
 
       <div className={styles.visionContainer}>
         {props.visionsData.map((vision: any, key: number) => {
-          const IconComponent = iconMapping[vision.icon] as any;
+          const IconComponent = visionIconMapping[vision.icon] as any;
           return (
-            <Link
+            <VisionButton
+              IconComponent={IconComponent}
+              text={vision.title}
+              id={vision.id}
               key={key}
-              className={styles.visionItem}
-              href={'#' + vision.id}
-            >
-              {IconComponent && <IconComponent className={styles.icon} />}
-              <h1 className={styles.text}>{vision.title}</h1>
-            </Link>
+            />
           );
         })}
       </div>

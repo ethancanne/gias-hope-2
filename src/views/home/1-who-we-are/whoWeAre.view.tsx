@@ -18,7 +18,7 @@ const WhoWeAreView = (props: Props) => {
   return (
     <div className={styles.container}>
       <Title title={'Who We Are'} center />
-      <Paragraph center>
+      <Paragraph center id="CMS-whoWeAre">
         <Markdown>{props.whoWeAreData.text}</Markdown>
       </Paragraph>
       <Button text={'Our Story'} href={'/our-story'} type={'yellow'} large />

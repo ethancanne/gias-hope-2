@@ -238,6 +238,8 @@
       }
 
       &.large {
+        height: 70vh;
+
         @include mobile {
           height: 90vh;
         }
@@ -266,8 +268,8 @@
           background: linear-gradient(
             to bottom,
             rgba(255, 255, 255, 1) 0%,
-            rgb(255, 255, 255) 30%,
-            rgba(255, 255, 255, 0.19) 57%,
+            rgb(255, 255, 255) 37%,
+            rgba(255, 255, 255, 0.19) 60%,
             /* Fully opaque white at the top */ rgba(255, 255, 255, 0) 100%
               /* Fully transparent at the bottom */
           );
@@ -332,7 +334,7 @@
         left: 20px;
         // bottom: 100px;
 
-        width: 50%;
+        width: 45%;
 
         line-height: 2;
 
@@ -367,7 +369,7 @@
           margin: 0;
           color: $color-green;
           font-family: var(--font-sans);
-          font-weight: 100;
+          font-weight: 400;
           @include mobile {
             font-size: $fz-xss;
             width: 100%;

@@ -3,6 +3,7 @@ import styles from './impact-details.module.scss';
 import Paragraph from '@/components/paragraph/paragraph.component';
 import Image from 'next/image';
 import Button from '@/components/button/button.component';
+import Markdown from 'react-markdown';
 
 type Props = {
   impactDetailsData: {
@@ -32,8 +33,8 @@ const ImpactDetails = (props: Props) => {
                 <Title small className={styles.title}>
                   {data.title}
                 </Title>
-                <Paragraph small className={styles.description}>
-                  {data.description}
+                <Paragraph className={styles.description} small>
+                  <Markdown>{data.description}</Markdown>
                 </Paragraph>
                 {data.link && (
                   <Button

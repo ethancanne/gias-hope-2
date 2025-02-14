@@ -45,56 +45,7 @@
       flex-direction: grid;
       grid-template-columns: repeat(2, 1fr);
 
-      gap: 40px;
-    }
-    .visionItem {
-      text-align: center;
-
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
-      position: relative;
-      z-index: 2;
-
-      background-color: white;
-      box-shadow:
-        rgba(14, 63, 126, 0.04) 0px 0px 0px 1px,
-        rgba(42, 51, 69, 0.04) 0px 1px 1px -0.5px,
-        rgba(42, 51, 70, 0.04) 0px 3px 3px -1.5px,
-        rgba(42, 51, 70, 0.04) 0px 6px 6px -3px,
-        rgba(14, 63, 126, 0.04) 0px 12px 12px -6px,
-        rgba(14, 63, 126, 0.04) 0px 24px 24px -12px;
-      padding: 20px;
-      height: 200px;
-      width: 200px;
-      transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-
-      &:hover {
-        cursor: pointer;
-        transform: scale(1.1);
-
-        box-shadow:
-          rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
-          rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
-      }
-
-      .icon {
-        font-size: $fz-xl;
-      }
-      .text {
-        font-family: var(--font-pt-bold);
-        font-size: $fz-sm;
-
-        @include mobile {
-          font-size: $fz-xs;
-        }
-      }
-
-      @include mobile {
-        height: 25vw;
-        width: 25vw;
-      }
+      gap: 10px;
     }
   }
 }
