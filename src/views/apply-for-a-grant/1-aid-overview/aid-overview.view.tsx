@@ -65,7 +65,6 @@ const AidOverview = (props: Props) => {
                         day: 'numeric',
                         year: 'numeric',
                       })}
-                      :
                     </strong>
                   </p>
                 </div>

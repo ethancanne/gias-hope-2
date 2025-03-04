@@ -3,6 +3,7 @@ import VisionDetails from '@/views/what-we-do/2-vision-details/vision-details.vi
 import VisionOverview from '@/views/what-we-do/1-vision-overview/vision-overview.view';
 import PageWrapper from '@/layout/page-wrapper/page-wrapper.layout';
 import { getPagesData } from '@/lib/getData';
+import SubPageIntro from '@/layout/sub-page-intro/intro.component';
 
 type Props = {};
 const Page = async (props: Props) => {
@@ -12,6 +13,7 @@ const Page = async (props: Props) => {
     <PageWrapper>
       <Intro
         size={'small'}
+        // backgroundImg={whatWeDoPageData.pageInformation.desktopPageImage}
         desktopBackgroundImg={whatWeDoPageData.pageInformation.desktopPageImage}
         mobileBackgroundImg={whatWeDoPageData.pageInformation.mobilePageImage}
         grayWave

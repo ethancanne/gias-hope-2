@@ -75,7 +75,7 @@ export async function generateMetadata({ params }: any) {
   };
 }
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;

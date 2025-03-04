@@ -1,0 +1,109 @@
+@import '../../globals.scss';
+
+.shadowWrapper {
+  filter: drop-shadow(0px 30px 90px rgba(0, 0, 0, 0.05));
+  .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-color: white;
+
+    .container {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      position: relative;
+      z-index: 1;
+      overflow: hidden;
+      width: 100vw;
+      max-width: 3000px;
+      border-bottom: $color-yellow 5px solid;
+
+      height: 500px;
+
+      .backgroundImg {
+        object-fit: cover;
+        width: 100%;
+      }
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: transparentize($color: $color-green, $amount: 0.2);
+        z-index: 0;
+      }
+
+      .content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: 50px;
+
+        position: absolute;
+        z-index: 1;
+        bottom: 40px;
+        width: 100%;
+        height: 100%;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+        // margin-bottom: 130px;
+
+        line-height: 2;
+
+        font-size: clamp($fz-sm, calc($fz-xs + 0.4vw), $fz-md);
+
+        .text {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          padding: 0 50px;
+          .headerTxt {
+            font-family: var(--font-pt-bold);
+            text-transform: lowercase;
+            font-size: $fz-xxl;
+            margin: 0;
+            padding: 0;
+            margin-bottom: -20px;
+            color: white;
+
+            text-align: center;
+            width: 100%;
+
+            @include mobile {
+              font-size: $fz-lg;
+            }
+          }
+
+          .subText {
+            padding: 0;
+            margin: 0;
+            color: white;
+            font-family: var(--font-sans);
+            font-weight: 400;
+            text-align: center;
+            max-width: 70%;
+            min-width: 500px;
+            width: 100%;
+            @include mobile {
+              font-size: $fz-xs;
+              margin-top: 10px;
+              min-width: unset;
+              width: 100%;
+
+              max-width: 600px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -30,8 +30,11 @@ const NavbarLayout = (props: Props) => {
       }
     };
 
-    // Add the scroll event listener
-    window.addEventListener('scroll', handleScroll);
+    if (pathname === '/posts' || pathname == '/apply-for-a-grant') {
+      setHasScrolledDown(true);
+    } else {
+      window.addEventListener('scroll', handleScroll);
+    }
 
     //get navigation data
 
@@ -55,7 +58,7 @@ const NavbarLayout = (props: Props) => {
     return (): void => {
       window.removeEventListener('scroll', handleScroll);
     };
-  }, []);
+  }, [pathname.toString()]);
 
   if (!navigationData) {
     return null;

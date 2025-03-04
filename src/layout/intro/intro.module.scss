@@ -211,6 +211,13 @@
 
         @include mobile {
           height: 600px;
+
+          .content {
+            .subText {
+              margin-top: 10px;
+            }
+          }
+
           &.noBackground {
             height: 360px;
           }
@@ -248,7 +255,7 @@
         }
 
         .smallBackgroundImg {
-          bottom: -150px;
+          bottom: -100px;
         }
       }
 

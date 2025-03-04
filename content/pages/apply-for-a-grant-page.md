@@ -3,7 +3,7 @@ pageInformation:
   title: Apply for a Grant
   link: /apply-for-a-grant
   description: Gia's Hope’s Adoption Aid grants assist families with adoption costs, helping children find loving homes and honoring Gianna's legacy.
-  desktopPageImage: ''
+  desktopPageImage: /apply-grant-background-image.jpg
   mobilePageImage: ''
   isHidden: true
   hasButton: true
@@ -42,7 +42,7 @@ grantInformationData:
   image: /grantfamily.jpg
 grantSettings:
   isOpen: true
-  deadline: 2025-01-14T18:11:00
+  deadline: 2025-03-30T18:11:00
 grantFormFields:
   - label: What is your email
     name: email

@@ -8,6 +8,7 @@ import React, { Suspense, useEffect, useState } from 'react';
 
 import { getPagesData } from '@/lib/getData';
 import Loading from '@/components/loading/loading.component';
+import SubPageIntro from '@/layout/sub-page-intro/intro.component';
 
 type Props = {};
 
@@ -43,14 +44,8 @@ const ApplyForAGrant = (props: Props) => {
 
   return (
     <PageWrapper>
-      <Intro
-        size={'small'}
-        desktopBackgroundImg={
-          applyForAGrantPageData.pageInformation.desktopPageImage
-        }
-        mobileBackgroundImg={
-          applyForAGrantPageData.pageInformation.mobilePageImage
-        }
+      <SubPageIntro
+        backgroundImg={applyForAGrantPageData.pageInformation.desktopPageImage}
         title={applyForAGrantPageData.pageInformation.title}
         description={applyForAGrantPageData.pageInformation.description}
       />

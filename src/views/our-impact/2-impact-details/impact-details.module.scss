@@ -67,6 +67,7 @@
           );
           gap: 1rem;
           border-bottom: darken($color-gray, 1%) 2px solid;
+          padding: 40px;
         }
 
         &:last-child {
@@ -102,7 +103,7 @@
           width: 700px;
 
           @include tablet {
-            left: 30px;
+            left: 140px;
           }
           // filter: blur(5px);
 
@@ -143,17 +144,17 @@
           position: relative;
           z-index: 1;
           // align-items: center;
-          max-width: 50%;
+
           min-width: 300px;
           height: 220px;
 
           @include mobile {
             height: fit-content;
+            margin-top: 30px;
           }
 
           // background-color: $color-yellow;
 
-          padding: 40px 20px 40px 20px;
           border-radius: 8px;
           position: relative;
 
@@ -177,7 +178,6 @@
           .description {
             font-size: $fz-xs;
             color: $color-black;
-            // line-height: 1.5;
 
             @include mobile {
               font-size: $fz-xxs;
@@ -186,12 +186,16 @@
 
           .button {
             margin-top: 20px;
+            @include mobile {
+              width: 100%;
+            }
           }
         }
 
         .image {
-          width: 90%;
-          max-width: 400px;
+          @include mobile {
+            width: 100%;
+          }
           object-fit: cover;
           border-radius: 8px;
           box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);

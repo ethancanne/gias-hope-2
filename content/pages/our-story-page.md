@@ -19,7 +19,7 @@ storyBlocks:
     coloredBlock: false
     reversedBlock: false
   - title: ''
-    header: 'A Harvest of Hope: Gianna’s Legacy of Love and Miracles'
+    header: ''
     content: |-
       Though our Gianna was born with only half of a heart, she knew who her Savior was, and she gave her whole heart and life to Him.  And so her HOPE was not lost just because she lost an earthly battle. Our Gianna is alive forever because Jesus lives! The JOY of this hope and this truth of eternal Joy propels us forward to share HOPE with the most vulnerable, lost, broken and hurting.  What started as an initiative and goal to give grants to families adopting children with special needs has blossomed into a garden of love that has burst forth a harvests of love to the world in various missions. 
 
@@ -28,7 +28,7 @@ storyBlocks:
     coloredBlock: false
     reversedBlock: false
   - title: ''
-    header: "Gianna's Story: A Life of Miracles"
+    header: Planting Hope Worldwide
     content: |-
       It's our mission to shine God’s HOPE to the broken, hurting, poor, orphaned and vulnerable ones in our community and around the world through the 4 branches of our purpose.
 
