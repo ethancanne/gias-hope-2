@@ -56,8 +56,6 @@
         justify-content: flex-end;
         // margin-bottom: 130px;
 
-        line-height: 2;
-
         font-size: clamp($fz-sm, calc($fz-xs + 0.4vw), $fz-md);
 
         .text {
@@ -72,7 +70,6 @@
             font-size: $fz-xxl;
             margin: 0;
             padding: 0;
-            margin-bottom: -20px;
             color: white;
 
             text-align: center;
@@ -86,6 +83,8 @@
           .subText {
             padding: 0;
             margin: 0;
+            line-height: 2;
+
             color: white;
             font-family: var(--font-sans);
             font-weight: 400;
