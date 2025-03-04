@@ -12,7 +12,7 @@ storyBlocks:
   - title: "Gia's Hope: A Legacy of Living Hope and Miracles"
     header: The Story
     content: |-
-      Gia's Hope is a tiny but mighty 401c(3) non-profit that was started in 2019 from the seed of the legacy of our daughter’s beautiful life. Our Gianna Lilyfaith, who was adopted from China at age 2 with a half of a heart,  moved to heaven 6 years ago at the age of 6.  Her life, though too short on earth, was a life that fully  displayed God’s miracles, glory and beauty.  Her life taught and continues to teach us that HOPE is worth the fight, and LOVE is worth the risk to lay your life down for another.
+      Gia's Hope is a tiny but mighty 501c(3) non-profit that was started in 2019 from the seed of the legacy of our daughter’s beautiful life. Our Gianna Lilyfaith, who was adopted from China at age 2 with a half of a heart,  moved to heaven 6 years ago at the age of 6.  Her life, though too short on earth, was a life that fully  displayed God’s miracles, glory and beauty.  Her life taught and continues to teach us that HOPE is worth the fight, and LOVE is worth the risk to lay your life down for another.
 
       Our Gianna Lilyfaith’s life of hope, bravery, love and light continues to bloom more miracles of hope and love around the world. It’s an honor to get to be a vehicle of God’s goodness to a world that needs more hope.  God has taken the most broken and painful part of our story and has transformed it into a beautiful mission of purpose and beauty like only HE can. Jesus is our redeemer and because of HIS life, death on a cross and resurrection, we are no longer slaves to despair…but we have **THIS LIVING HOPE** _(1 Peter 1:3)_ and this HOPE has been what has been the driving force behind Gia's Hope
     image: /IMG_7782.PNG
@@ -40,4 +40,3 @@ storyBlocks:
     coloredBlock: true
     reversedBlock: true
 ---
-
