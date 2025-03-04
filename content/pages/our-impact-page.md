@@ -3,8 +3,8 @@ pageInformation:
   title: Our Impact
   link: /our-impact
   description: See the lives transformed and communities uplifted through the work of Gia's Hope.
-  desktopPageImage: /pexels-steyn-viljoen-787647.jpg
-  mobilePageImage: /pexels-steyn-viljoen-787647.jpg
+  desktopPageImage: /pexels-shaani-sewwandi-2937148.jpg
+  mobilePageImage: /pexels-shaani-sewwandi-2937148.jpg
   isHidden: false
   hasButton: false
   order: 1
@@ -29,11 +29,11 @@ detailsData:
   - title: "Hope's Garden Song: Finding Hope in the Brokenness of Loss"
     description: Wrote and published a children’s/family picture book, _Hope’s Garden Song_ (available on Amazon), to help families grieving or suffering from loss. All sales proceeds are donated back to the GIA's Hope Foundation. These books have been sent worldwide to families and communities in need of hope. It has also been translated and published into Ukrainian and sent copies to families in Ukraine suffering from the devastations of war.
     image: /book.webp
-    link: ''
+    link: https://www.amazon.com/Audible-Hopes-Garden-Song/dp/B0C41R5X2N
   - title: 'GIA’s Hope Farm Friends: Healing Through Animals'
     description: Started an animal therapy farm, _GIA’s Hope Farm Friends_, to minister to those in our local community who need extra joy, comfort, and love from God's creation.
     image: /farm2.JPG
-    link: https://www.amazon.com/Audible-Hopes-Garden-Song/dp/B0C41R5X2N
+    link: ''
   - title: 'Reaching the Unreached: Supporting Global Missions and Missionaries'
     description: Supported international missions, particularly in the unreached 10/40 window, by sending financial donations to missionaries or by going ourselves. Three of our oldest children are full-time missionaries, providing new opportunities to help a broken and lost world.
     image: /missions1.jpg

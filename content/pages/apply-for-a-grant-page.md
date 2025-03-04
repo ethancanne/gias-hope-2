@@ -88,7 +88,7 @@ grantFormFields:
     name: webpages
     type: text
     required: false
-  - label: What’s your adoption story in 750 words or less?
+  - label: What’s your adoption story in 500 words or less?
     name: adoptionStory
     type: textarea
     required: true

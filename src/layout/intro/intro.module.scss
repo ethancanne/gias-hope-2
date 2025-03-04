@@ -246,6 +246,10 @@
         .content {
           bottom: 120px;
         }
+
+        .smallBackgroundImg {
+          bottom: -150px;
+        }
       }
 
       &::before {
@@ -257,10 +261,11 @@
         height: 100%;
         background: linear-gradient(
           to right,
-          $color-white,
-          rgba(37, 117, 252, 0)
+          $color-white 0%,
+          $color-white 30%,
+          rgba(255, 255, 255, 0) 80%
         );
-        opacity: 0.7;
+        opacity: 1;
         z-index: 0;
 
         @include mobile {
@@ -278,9 +283,16 @@
 
       .largeBackgroundImg {
         max-width: 1690px;
+        object-fit: cover;
+
+        position: absolute;
+        right: 0;
+        bottom: 0;
+
+        z-index: -1;
 
         @include tablet {
-          margin-right: -200px;
+          margin-right: -150px;
         }
         @include mobile {
           display: none;
@@ -296,7 +308,7 @@
           object-fit: cover;
 
           position: relative;
-          bottom: -100px;
+          bottom: -50px;
           z-index: -1;
         }
       }

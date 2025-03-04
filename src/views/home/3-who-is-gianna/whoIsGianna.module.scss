@@ -247,6 +247,7 @@
       @include mobile {
         display: block;
         width: 100%;
+        top: -40px;
         object-fit: cover;
         z-index: -1;
         position: relative;
