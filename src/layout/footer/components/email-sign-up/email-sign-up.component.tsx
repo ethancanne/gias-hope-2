@@ -47,8 +47,8 @@ const EmailSignUp = (props: Props) => {
     <div className={styles.wrapper}>
       <div className={styles.container}>
         <div className={styles.signUpContainer}>
-          <Title title={'Get Notified'} className={styles.emailTitle} />
-          <Paragraph small>
+          <Title title={'Get Notified'} className={styles.emailTitle} center />
+          <Paragraph small center>
             Subscribe to our newsletter and receive updates about our ministry
             in your email inbox.
           </Paragraph>
