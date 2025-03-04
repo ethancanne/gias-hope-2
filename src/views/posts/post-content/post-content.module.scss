@@ -8,6 +8,10 @@
     width: 100%;
     max-width: 700px;
 
+    @include mobile {
+      padding: 110px 20px;
+    }
+
     .about {
       display: flex;
       align-items: center;
@@ -22,7 +26,7 @@
 
         .backButton {
           position: absolute;
-          left: 0;
+          left: 0px;
           bottom: clamp(25px, 5vw, 30px);
           font-size: $fz-md;
 
@@ -88,6 +92,8 @@
     }
 
     .content {
+      overflow-x: hidden;
+
       img {
         width: 100%;
         height: auto;
