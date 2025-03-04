@@ -35,8 +35,8 @@
     }
 
     &.withBackground {
-      background-color: rgba(255, 255, 255, 0.901);
-      backdrop-filter: blur(10px);
+      background-color: rgb(255, 255, 255);
+      // backdrop-filter: blur(10px);
       box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
       height: 2rem;
     }
