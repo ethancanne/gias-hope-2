@@ -54,7 +54,7 @@ export async function generateMetadata({ params }: any) {
 
   const title = pageInfo.title;
   const description = pageInfo.description;
-  const imageUrl = 'https://giashope.org' + pageInfo.mobilePageImage;
+  const imageUrl = 'https://giashope.org/preview-logo.jpeg';
 
   console.log(imageUrl);
 
