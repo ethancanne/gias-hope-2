@@ -54,7 +54,7 @@ export async function generateMetadata({ params }: any) {
 
   const title = pageInfo.title;
   const description = pageInfo.description;
-  const imageUrl = pageInfo.mobilePageImage;
+  const imageUrl = 'https://giashope.org' + pageInfo.mobilePageImage;
 
   console.log(imageUrl);
 
@@ -64,14 +64,7 @@ export async function generateMetadata({ params }: any) {
     openGraph: {
       title: `GIA's Hope | ${title}`,
       description: description,
-      images: [
-        {
-          url: imageUrl,
-          width: 800,
-          height: 600,
-          alt: `Gia's Hope | ${title}`,
-        },
-      ],
+      images: [imageUrl],
       siteName: "GIA's Hope",
       locale: 'en_US',
       type: 'website',
