@@ -4,7 +4,7 @@ pageInformation:
   link: /apply-for-a-grant
   description: Gia's Hope’s Adoption Aid grants assist families with adoption costs, helping children find loving homes and honoring Gianna's legacy.
   desktopPageImage: /apply-grant-background-image.jpg
-  mobilePageImage: ''
+  mobilePageImage: /apply-grant-background-image.jpg
   isHidden: true
   hasButton: true
   buttonType: yellow
@@ -88,7 +88,7 @@ grantFormFields:
     name: webpages
     type: text
     required: false
-  - label: What’s your adoption story in 500 words or less?
+  - label: What’s your adoption story in 450 words or less?
     name: adoptionStory
     type: textarea
     required: true

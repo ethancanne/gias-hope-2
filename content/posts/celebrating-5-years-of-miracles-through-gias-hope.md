@@ -93,4 +93,3 @@ content: |-
   ![](/IMG_0102.jpeg)
 slug: testing-yo-5
 ---
-

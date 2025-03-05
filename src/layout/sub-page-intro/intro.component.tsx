@@ -4,6 +4,7 @@ type Props = {
   title?: string;
   description?: string;
   backgroundImg?: string;
+  mobileBackgroundImg?: string;
 };
 
 const SubPageIntro = (props: Props) => {
@@ -18,6 +19,15 @@ const SubPageIntro = (props: Props) => {
               width={1920}
               height={680}
               className={styles.backgroundImg}
+            />
+          )}
+          {props.mobileBackgroundImg && (
+            <Image
+              src={props.mobileBackgroundImg}
+              alt="background"
+              width={1920}
+              height={680}
+              className={styles.mobileBackgroundImg}
             />
           )}
 

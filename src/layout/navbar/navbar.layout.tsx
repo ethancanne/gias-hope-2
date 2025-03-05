@@ -16,25 +16,39 @@ const NavbarLayout = (props: Props) => {
   const pathname = usePathname();
 
   const [hasScrolledDown, setHasScrolledDown] = useState(false);
+  const [useWhiteText, setUseWhiteText] = useState(false);
+
   const [menuIsOpen, setMenuIsOpen] = useState(false);
 
   const [navigationData, setNavigationData]: any = useState([]);
+
+  const whiteTextChecker =
+    pathname === '/posts' ||
+    pathname == '/apply-for-a-grant' ||
+    pathname == '/farm-friends';
 
   useEffect((): (() => void) => {
     const handleScroll = () => {
       // Check if the scroll position is greater than 0
       const scrolled: boolean = window.scrollY > 0;
       setHasScrolledDown(scrolled);
+      if (whiteTextChecker) {
+        setUseWhiteText(!scrolled);
+      } else {
+        setUseWhiteText(false);
+      }
       if (scrolled) {
         setMenuIsOpen(false);
       }
     };
 
-    if (pathname === '/posts' || pathname == '/apply-for-a-grant') {
-      setHasScrolledDown(true);
+    if (whiteTextChecker) {
+      setUseWhiteText(true);
     } else {
-      window.addEventListener('scroll', handleScroll);
+      setUseWhiteText(false);
     }
+
+    window.addEventListener('scroll', handleScroll);
 
     //get navigation data
 
@@ -74,7 +88,7 @@ const NavbarLayout = (props: Props) => {
         <div className={styles.left}>
           <Link href={'/'}>
             <Image
-              src={'/logo.png'}
+              src={useWhiteText ? '/white-logo.png' : '/logo.png'}
               width={150}
               height={30}
               alt="logo"
@@ -94,9 +108,15 @@ const NavbarLayout = (props: Props) => {
                   className={
                     styles.link +
                     ' ' +
+                    (useWhiteText && styles.whiteText) +
+                    ' ' +
                     (pathname === item.link ? styles.active : '')
                   }
-                  onClick={() => setMenuIsOpen(false)}
+                  onClick={() => {
+                    setUseWhiteText(false);
+                    setHasScrolledDown(false);
+                    setMenuIsOpen(false);
+                  }}
                 >
                   {item.title}
                 </Link>
@@ -111,7 +131,12 @@ const NavbarLayout = (props: Props) => {
                       text={item.title}
                       href={item.link}
                       type={item.buttonType}
-                      onClick={() => setMenuIsOpen(false)}
+                      onClick={() => {
+                        setUseWhiteText(false);
+                        setHasScrolledDown(false);
+
+                        setMenuIsOpen(false);
+                      }}
                     />
                   </div>
                 ))}
@@ -130,7 +155,11 @@ const NavbarLayout = (props: Props) => {
                   text={item.title}
                   href={item.link}
                   type={item.buttonType}
-                  onClick={() => setMenuIsOpen(false)}
+                  onClick={() => {
+                    setUseWhiteText(false);
+                    setHasScrolledDown(false);
+                    setMenuIsOpen(false);
+                  }}
                 />
               ))}
           </div>
@@ -140,14 +169,18 @@ const NavbarLayout = (props: Props) => {
               onClick={() => {
                 setHasScrolledDown(true);
                 setMenuIsOpen(!menuIsOpen);
+                setUseWhiteText(!menuIsOpen);
               }}
             />
           ) : (
             <RxHamburgerMenu
               className={styles.hamburger}
+              color={useWhiteText ? 'white' : '#5a664f'}
+              size={20}
               onClick={() => {
                 setHasScrolledDown(true);
                 setMenuIsOpen(!menuIsOpen);
+                setUseWhiteText(false);
               }}
             />
           )}

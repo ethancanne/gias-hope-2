@@ -25,6 +25,17 @@
       .backgroundImg {
         object-fit: cover;
         width: 100%;
+        @include mobile {
+          display: none;
+        }
+      }
+      .mobileBackgroundImg {
+        object-fit: cover;
+        display: none;
+        width: 100%;
+        @include mobile {
+          display: block;
+        }
       }
 
       &::before {

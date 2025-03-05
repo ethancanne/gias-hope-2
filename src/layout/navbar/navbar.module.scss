@@ -86,6 +86,10 @@
           text-transform: lowercase;
           position: relative;
 
+          &.whiteText {
+            color: $color-white;
+          }
+
           &.active {
             font-family: var(--font-pt-bold);
             &::after {
@@ -200,6 +204,11 @@
 
         &.close {
           font-size: $fz-lg;
+          margin-right: -20px;
+        }
+
+        &.white {
+          color: $color-white;
         }
 
         @include mobile {

@@ -46,6 +46,9 @@ const ApplyForAGrant = (props: Props) => {
     <PageWrapper>
       <SubPageIntro
         backgroundImg={applyForAGrantPageData.pageInformation.desktopPageImage}
+        mobileBackgroundImg={
+          applyForAGrantPageData.pageInformation.mobilePageImage
+        }
         title={applyForAGrantPageData.pageInformation.title}
         description={applyForAGrantPageData.pageInformation.description}
       />

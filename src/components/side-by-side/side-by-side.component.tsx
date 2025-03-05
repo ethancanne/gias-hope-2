@@ -58,7 +58,7 @@ const SideBySide = (props: Props) => {
             alt="family"
             layout={'fill'}
             className={styles.image}
-            objectPosition={'center'}
+            objectPosition={'top'}
           />
         </div>
       )}

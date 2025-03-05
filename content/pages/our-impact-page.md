@@ -12,8 +12,8 @@ featuredData:
   - text: Adoption Grants Awarded
     number: 38
   - text: Families Freed from Modern-day Slavery
-    number: 10
-  - text: Familes Served at Gia's Hope Farm Friends
+    number: 3
+  - text: Families Served at Gia's Hope Farm Friends
     number: 65
   - text: International Missionaries Supported
     number: 8
@@ -43,4 +43,3 @@ detailsData:
     image: /ting-ministries2.webp
     link: ''
 ---
-

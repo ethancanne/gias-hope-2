@@ -13,6 +13,7 @@ const PostsPage = async () => {
     <PageWrapper>
       <SubPageIntro
         backgroundImg={postsPageData.pageInformation.desktopPageImage}
+        mobileBackgroundImg={postsPageData.pageInformation.mobilePageImage}
         title={postsPageData.pageInformation.title}
         description={postsPageData.pageInformation.description}
       />
