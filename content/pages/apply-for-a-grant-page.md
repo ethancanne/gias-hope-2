@@ -41,7 +41,7 @@ grantInformationData:
     You will receive notification of the outcome of your application by email
   image: /grantfamily.jpg
 grantSettings:
-  isOpen: true
+  isOpen: false
   deadline: 2025-03-30T18:11:00
 grantFormFields:
   - label: What is your email
