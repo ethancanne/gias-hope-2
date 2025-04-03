@@ -27,7 +27,7 @@ grantInformationData:
     - If you are working with an adoption consultant or using a multi-agency approach:
         - You cannot apply for a grant until you have been matched through a placing agency.
         - Consulting fees will not be considered as part of the total adoption costs.
-    - Applications **cannot** be submitted for:
+    - Applications cannot be submitted for:
         - Independent adoptions through lawyers, facilitators, or humanitarian organizations licensed to place children
         - Adoptions through foster care
         - Private family adoptions
