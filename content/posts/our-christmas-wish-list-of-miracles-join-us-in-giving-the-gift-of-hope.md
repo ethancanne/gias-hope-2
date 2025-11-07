@@ -38,13 +38,11 @@ content: |-
 
   “God sets the lonely in families.” — Psalm 68:6
 
-
   ### **🔓 $350–$1,000 · Free a Family from Modern-Day Slavery**
 
   Partner with us to bring restoration and freedom to families trapped in human trafficking and exploitation.
 
-  Your gift helps provide rescue, rehabilitation, and the hope of a new beginning. 
-
+  Your gift helps provide rescue, rehabilitation, and the hope of a new beginning.
 
   ### **❤️ $300–$1,000 · Save a Child’s Life**
 
@@ -52,13 +50,11 @@ content: |-
 
   This gift brings more than medical care — it brings hope, healing, and a future.
 
-
   ### **🧒 $400 · Keep a Family Together in China**
 
   Help a vulnerable child receive therapy, education, and medical care for a whole year.
 
   Your gift supports family counseling, therapy and resources that prevent children from being abandoned due to hardship and medical needs.
-
 
   ### **💦 $3,000 · Give a Village the Gift of Water — and the Living Water of Jesus**
 
@@ -70,20 +66,17 @@ content: |-
 
   “Whoever drinks the water I give them will never thirst.” — John 4:14
 
-
   ### **🌈 $200 · Bring Hope to 20 Children in Nicaragua**
 
   Support 20 children to attend Jesus Club at Ruby’s Ranch in Nicaragua — where vulnerable and impoverished children will hear the gospel, experience love, and encounter the life-changing hope of Jesus.
 
   “Let the little children come to me.” — Matthew 19:14
 
-
   ### **📦 $25 · Send a Care Package of Comfort**
 
   Send a box of hope to families walking through loss and trauma.
 
   Each package includes [Hope’s Garden Song](https://www.amazon.com/Hopes-Garden-Song-Johanna-Cannelongo/dp/1662918925/ref=tmm_hrd_swatch_0?_encoding=UTF8&dib_tag=se&dib=eyJ2IjoiMSJ9.rSSlrV9qFOvOMQ3fBzbo59P5G5CZzD75Ok7qMF8djDl31I2xlCL5utsosSlfBYn8pYeZmShVreP_8lSEAc7P4iNt253tEqznipsuVG8gdiar0-WwdvSahs8TWn6hgii02afUqOov6bxO7yyb8Ica3aqxS-KO7KapK0kp7RphVeHESUKq0N8TMNE5MjiHeGxQC1f1-bEedNWWLDB14mD8oy4kYuKMpIs-up3R7E8V7Ws.cuE59ikEKXC_IGR4c2NGI-gRFvCp08fNiug-k-QmFfA&qid=1762556550&sr=8-1), comfort items, and a reminder that they are not alone.
-
 
   ### **🐐 $10 · Sponsor an “Immanuel Experience” at GIA’s Hope Farm**
 
@@ -93,18 +86,15 @@ content: |-
 
   (We call this our “Farm Friends Fellowship” — where love and laughter meet healing.)
 
-
   ### **📚 $100 · Send 10 Ukrainian Books of Hope**
 
   Provide 10 Ukrainian-[translated copies of Hope’s Garden Song](https://www.amazon.com/-/es/%D0%94%D0%B6%D0%BE%D0%B0%D0%BD%D0%BD%D0%B0-%D0%9A%D0%B0%D0%BD%D0%BD%D0%B5%D0%BB%D0%BE%D0%BD%D0%B3%D0%BE/dp/B0CGL36DP4) to families living through war and trauma.
 
   Your gift helps plant hope in hearts weary from loss.
 
-
   ### **🌍 $150 · Take the Gospel to the Nations**
 
   Support international missions and Bible distribution that carry the hope of Christ to unreached regions of the world.
-
 
   ## **🌼 EVERY SEED MATTERS**
 
@@ -112,16 +102,13 @@ content: |-
 
   Be part of what God is doing through GIA’s Hope — where small seeds grow into eternal impact.
 
-
   ### **🌸 $50 · It Takes a Village to Bring Hope**
 
   Your generous heart joins a community of givers partnering to multiply miracles for His glory.
 
-
   ### **🌱 $25 · May Your Gift Be Multiplied 100-Fold**
 
   Your kindness will be joined with others to meet tangible needs and build God’s kingdom economy of love.
-
 
   ### **💫 $10 · A Seed of Hope**
 
@@ -129,24 +116,23 @@ content: |-
 
   Your gift will touch hearts and remind families they are not forgotten.
 
-
   ## **✨ Every Gift Tells a Story**
 
   This Christmas, your giving becomes a story of hope — one that echoes across families, nations, and generations.
 
   Together, we can watch God turn ashes into beauty, despair into dancing, and need into miracles.
 
-  🎄 Give today at[ www.GIASHope.org](https://giashope.org) and hit [DONATE](https://www.paypal.com/donate?hosted_button_id=YSWB8EJUJVX7N) button in the upper right corner. 
+  🎄 Give today at[ www.GIASHope.org](https://giashope.org) and hit [DONATE](https://www.paypal.com/donate?hosted_button_id=YSWB8EJUJVX7N) button in the upper right corner.
 
-  You can go straight to [paypal ](https://www.paypal.com/donate?hosted_button_id=YSWB8EJUJVX7N)and give your gift, (Please be sure to put in the description box what item/gift you would like to allocate your offering towards. We want to honor your heart's desire. 
+  You can go straight to [paypal ](https://www.paypal.com/donate?hosted_button_id=YSWB8EJUJVX7N)and give your gift, (Please be sure to put in the description box what item/gift you would like to allocate your offering towards. We want to honor your heart's desire.
 
   Let’s make this Christmas a season of Heaven touching Earth. Together we can shine God's light in the darkness and bring Hope to the most broken!
 
-  Love, 
+  Love,
 
   The Cannelongo Family
 
-  Isaiah 61:3
+  Isaiah 61:1-3
 
   Founders of[ GIA’s Hope](https://giashope.org) 🌿
 
