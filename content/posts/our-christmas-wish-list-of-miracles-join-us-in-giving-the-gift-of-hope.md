@@ -6,7 +6,7 @@ date: 2025-11-07T17:52:00
 author: Cannelongo family
 category: GIASHOPE.org
 content: |-
-  ### **Our family’s little ministry has seen God turn small offerings into great miracles and this Christmas, we invite you to be part of the story.**
+  ### **Our family’s little ministry has seen God turn small offerings into great miracles and this Christmas, we invite you to be part of the story...**
 
   For over five years, GIA’s Hope has been planting seeds of hope ...helping orphans come home and bringing comfort to the brokenhearted.
 
