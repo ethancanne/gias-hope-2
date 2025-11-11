@@ -100,7 +100,7 @@ content: |-
 
   ### **🌾 $75 · Sow into Miracles of Hope**
 
-  Be part of what God is doing through GIA’s Hope — where small seeds grow into eternal impact. 
+  Be part of what God is doing through GIA’s Hope — where small seeds grow into eternal impact.
 
   ### **🌸 $50 · It Takes a Village to Bring Hope**
 
@@ -122,9 +122,15 @@ content: |-
 
   Together, we can watch God turn ashes into beauty, despair into dancing, and need into miracles.
 
-  🎄 Give today at[ www.GIASHope.org](https://giashope.org) and hit [DONATE](https://www.paypal.com/donate?hosted_button_id=YSWB8EJUJVX7N) button in the upper right corner.
+  🎄 Give today at[ www.GIASHope.org](https://giashope.org) and hit -->
 
-  You can go straight to [paypal ](https://www.paypal.com/donate?hosted_button_id=YSWB8EJUJVX7N)and give your gift, (Please be sure to put in the description box what item/gift you would like to allocate your offering towards. We want to honor your heart's desire.
+   [DONATE](https://www.paypal.com/donate?hosted_button_id=YSWB8EJUJVX7N) button in the upper right corner.
+
+  or (shortcut!) You can go straight to
+
+   (click here-->) [paypal ](https://www.paypal.com/donate?hosted_button_id=YSWB8EJUJVX7N)
+
+  and give your gift, (Please be sure to put in the description box what item/gift you would like to allocate your offering towards. We want to honor your heart's desire.
 
   Let’s make this Christmas a season of Heaven touching Earth. Together we can shine God's light in the darkness and bring Hope to the most broken!
 
