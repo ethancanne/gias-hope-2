@@ -34,23 +34,23 @@ content: |-
 
   Help a child with special needs become an orphan no more.
 
-  Your gift supports adoption grants that give children the miracle of a forever, loving family.
+  Your gift supports adoption grants that give orphaned-children with special needs the miracle of a forever, loving family.
 
   “God sets the lonely in families.” — Psalm 68:6
 
   ### **🔓 $350–$1,000 · Free a Family from Modern-Day Slavery**
 
-  Partner with us to bring restoration and freedom to families trapped in human trafficking and exploitation.
+  Partner with us and to bring restoration and freedom to families trapped in human trafficking and exploitation.
 
   Your gift helps provide rescue, rehabilitation, and the hope of a new beginning.
 
   ### **❤️ $300–$1,000 · Save a Child’s Life**
 
-  Help fund a life-saving heart surgery for a child in poverty.
+  This one is especially important to our family as our Gianna was a brave heart-warrior.  You can Help fund a life-saving heart surgery for a vulnerable child in poverty.
 
   This gift brings more than medical care — it brings hope, healing, and a future.
 
-  ### **🧒 $400 · Keep a Family Together in China**
+  ### **🧒 $400 · Keeps a Family Together in China**
 
   Help a vulnerable child receive therapy, education, and medical care for a whole year.
 
@@ -78,13 +78,13 @@ content: |-
 
   Each package includes [Hope’s Garden Song](https://www.amazon.com/Hopes-Garden-Song-Johanna-Cannelongo/dp/1662918925/ref=tmm_hrd_swatch_0?_encoding=UTF8&dib_tag=se&dib=eyJ2IjoiMSJ9.rSSlrV9qFOvOMQ3fBzbo59P5G5CZzD75Ok7qMF8djDl31I2xlCL5utsosSlfBYn8pYeZmShVreP_8lSEAc7P4iNt253tEqznipsuVG8gdiar0-WwdvSahs8TWn6hgii02afUqOov6bxO7yyb8Ica3aqxS-KO7KapK0kp7RphVeHESUKq0N8TMNE5MjiHeGxQC1f1-bEedNWWLDB14mD8oy4kYuKMpIs-up3R7E8V7Ws.cuE59ikEKXC_IGR4c2NGI-gRFvCp08fNiug-k-QmFfA&qid=1762556550&sr=8-1), comfort items, and a reminder that they are not alone.
 
-  ### **🐐 $10 · Sponsor an “Immanuel Experience” at GIA’s Hope Farm**
+  ### **🐐 $20 · Sponsor an “Immanuel Experience” at GIA’s Hope Farm**
 
-  Help host hurting families for a day of healing and joy at[ giashope.org/farmfriends](https://giashope.org/farmfriends).
+  Help host a hurting family for a day of healing and joy at[ giashope.org/farmfriends](https://giashope.org/farmfriends) this spring or summer.
 
-  Each visit includes a warm meal, prayer, and playful time with our therapy animals — goats, chickens, ducks, and more — bringing laughter, peace, and the gentle presence of God.
+  Our little farm is known for being a place that brings comfort and joy. Truly a place where the presence of God comes so near.  Each visit includes a warm meal, prayer, reflection time in our garden, berry picking and playful time with our therapy animals — goats, chickens, ducks, and more — bringing laughter, peace, and the gentle loving presence of God.
 
-  (We call this our “Farm Friends Fellowship” — where love and laughter meet healing.)
+  (We call this our “Farm Friends Fellowship” — where God's love and laughter meet healing.)
 
   ### **📚 $100 · Send 10 Ukrainian Books of Hope**
 
@@ -96,17 +96,17 @@ content: |-
 
   Support international missions and Bible distribution that carry the hope of Christ to unreached regions of the world.
 
-  ## **🌼 EVERY SEED MATTERS**
+  ## **🌼 EVERY SEED MATTERS- and any donation is a gift.**
 
   ### **🌾 $75 · Sow into Miracles of Hope**
 
-  Be part of what God is doing through GIA’s Hope — where small seeds grow into eternal impact.
+  Be part of what God is doing through GIA’s Hope — where small seeds grow into eternal impact. 
 
   ### **🌸 $50 · It Takes a Village to Bring Hope**
 
   Your generous heart joins a community of givers partnering to multiply miracles for His glory.
 
-  ### **🌱 $25 · May Your Gift Be Multiplied 100-Fold**
+  ### **🌱 $25 · May Your beautiful Gift Be Multiplied 100-Fold**
 
   Your kindness will be joined with others to meet tangible needs and build God’s kingdom economy of love.
 
