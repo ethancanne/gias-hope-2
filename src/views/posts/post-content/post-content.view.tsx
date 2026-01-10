@@ -16,6 +16,7 @@ type Props = {
 };
 
 const PostContent = (props: Props) => {
+  console.log('Post content props:', props);
   return (
     <div className={styles.wrapper}>
       <div className={styles.container}>

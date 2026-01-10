@@ -31,8 +31,7 @@ export async function getMarkdownData(folder: string) {
 }
 
 export async function getPostsData() {
-  const markdownData = await getMarkdownData('./content/posts');
-  // console.log('PLEASE', markdownData);
+  const markdownData = await getMarkdownData('./content/posts');  
 
   return markdownData;
 }
