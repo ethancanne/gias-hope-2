@@ -11,9 +11,9 @@ pageInformation:
   order: 5
 grantInformationData:
   description: |-
-    One of the major challenges preventing waiting children from finding families is the high cost of adoption. Our grants help reduce this financial barrier, contributing to the placement of over 32 children into loving, secure homes. 
+    One of the major challenges preventing waiting children from finding families is the high cost of adoption. Our grants help reduce this financial barrier, contributing to the placement of over 32 children into loving, secure homes.
 
-    Each adoption story beautifully mirrors God’s work in our lives—a testament to faith, redemption, and hope. We would be thrilled to join you in rejoicing and praying for you and your waiting children.
+    Each adoption story beautifully mirrors God’s work in our lives—a testament to faith, redemption, and hope. We would be thrilled to join you in rejoicing and praying for you and your waiting children. 
 
     Thank you for being part of the adoption miracle and for helping us honor the lasting light and legacy of our brave Gianna.
   guidelines: |-
