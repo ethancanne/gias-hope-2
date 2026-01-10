@@ -10,13 +10,13 @@ pageInformation:
   order: 1
 featuredData:
   - text: Adoption Grants Awarded
-    number: 38
+    number: 42
   - text: Families Freed from Modern-day Slavery
-    number: 3
+    number: 4
   - text: Families Served at Gia's Hope Farm Friends
     number: 65
   - text: International Missionaries Supported
-    number: 8
+    number: 9
 detailsData:
   - title: Partnered with Ministries to Support Orphans and Prevent Orphanhood
     description: Through our Live Gia Grow Forever Adoption Grant, we have awarded 38 grants, ranging from $500-$1000, to families adopting children with special needs from all over the world.
@@ -43,3 +43,4 @@ detailsData:
     image: /ting-ministries2.webp
     link: ''
 ---
+
