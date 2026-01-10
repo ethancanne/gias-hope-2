@@ -16,7 +16,7 @@ const PostPage = async ({ params }: Props) => {
 
   const postsData = await getPostsData();
 
-  const post = postsData[decodeURIComponent(slug)];
+  const post = postsData[decodeURIComponent(slug)].data;
   
   if (!post) {
     return <PageWrapper><h1>Post not found</h1></PageWrapper>;
