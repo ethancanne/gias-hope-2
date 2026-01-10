@@ -42,7 +42,7 @@ grantInformationData:
   image: /grantfamily.jpg
 grantSettings:
   isOpen: true
-  deadline: 2025-03-30T18:11:00
+  deadline: 2025-01-18T18:11:00
 grantFormFields:
   - label: What is your email
     name: email
