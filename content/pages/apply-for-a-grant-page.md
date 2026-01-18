@@ -38,7 +38,7 @@ grantInformationData:
 
     ### Notifications
 
-    You will receive notification of the outcome of your application by email
+    You will receive notification of the outcome of your application by email.
   image: /grantfamily.jpg
 grantSettings:
   isOpen: false
